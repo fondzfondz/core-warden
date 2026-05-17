@@ -48,6 +48,11 @@ const UI = {
     archiveBody: "พลังไม่เคยได้มาฟรี ทุกเส้นทางมอบอำนาจ แต่ก็เชื้อเชิญความบิดเบี้ยว ความหมกมุ่น การกลายพันธุ์ และ Madness สมดุลจึงเป็นแก่นของโลกนี้",
     sealed: "ข้อมูลถูกปิดผนึก",
     futureStory: "พื้นที่นี้สามารถใช้ลงเนื้อเรื่องฉบับนิยายเต็มได้ในอนาคต",
+    contactKicker: "CONTACT THE ARCHIVE",
+    contactTitle: "ติดตามและเข้าร่วมชุมชน",
+    contactBody: "ติดตามอัปเดตโลก Core Warden ผ่าน TikTok หรือเข้าร่วม Discord เพื่อพูดคุย ทฤษฎี แชร์ไอเดีย และติดตามข่าวสารของจักรวาลนี้",
+    tiktokButton: "TikTok",
+    discordButton: "Discord",
   },
   en: {
     lang: "EN",
@@ -96,6 +101,11 @@ const UI = {
     archiveBody: "Power is never free. Every Path grants authority, but also invites distortion, obsession, mutation, and Madness. Balance is the heart of this world.",
     sealed: "Data Sealed",
     futureStory: "This area can later be used for the full novel story and expanded lore.",
+    contactKicker: "CONTACT THE ARCHIVE",
+    contactTitle: "Follow & Join the Community",
+    contactBody: "Follow Core Warden updates on TikTok or join the Discord community to discuss theories, share ideas, and follow future archive releases.",
+    tiktokButton: "TikTok",
+    discordButton: "Discord",
   },
 };
 
@@ -185,6 +195,7 @@ export default function CoreWardenWebsite() {
             <a href="#core-link" className="hover:text-white">{t.navLink}</a>
             <a href="#others" className="hover:text-white">{t.navOthers}</a>
             <a href="#archive" className="hover:text-white">{t.navArchive}</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
           </div>
           <div className="flex gap-2">
             {["th", "en"].map((code) => (
@@ -346,6 +357,34 @@ export default function CoreWardenWebsite() {
       )}
 
       <footer className="border-t border-white/10 px-6 py-10 text-center text-white/35 text-sm tracking-[0.3em]">© PANN.</footer>
+
+      <section id="contact" className="max-w-7xl mx-auto px-5 py-24">
+        <div className="rounded-[2rem] border border-violet-200/20 bg-white/[0.035] p-8 md:p-10 text-center">
+          <p className="text-violet-200/70 tracking-[0.35em] text-xs uppercase mb-4">{t.contactKicker}</p>
+          <h2 className="text-4xl md:text-6xl font-black mb-6">{t.contactTitle}</h2>
+          <p className="mx-auto max-w-3xl text-white/65 leading-relaxed text-lg">{t.contactBody}</p>
+
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="https://www.tiktok.com/@core.warden"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl bg-white px-8 py-4 font-black text-black transition hover:scale-105"
+            >
+              {t.tiktokButton}
+            </a>
+            <a
+              href="https://discord.gg/QwkXdtKF"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-white/20 bg-white/5 px-8 py-4 font-black text-white transition hover:bg-white/10 hover:scale-105"
+            >
+              {t.discordButton}
+            </a>
+          </div>
+        </div>
+      </section>
+
       <div className="mt-24 border-t border-white/10 py-10 text-center">
         <p className="text-xs tracking-[0.35em] text-white/30">
           © PANN.
