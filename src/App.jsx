@@ -266,7 +266,7 @@ export default function CoreWardenWebsite() {
               {activePaths.map((path) => (
                 <button key={path.name} onClick={() => setSelectedPath(path)} className="group rounded-3xl border border-white/10 bg-black/25 overflow-hidden hover:border-violet-200/40 transition hover:-translate-y-1">
                   <div className="aspect-[9/16] overflow-hidden bg-black">
-                    <img src={imagePathForPath(path.name)} alt={path.name} className="h-full w-full object-cover group-hover:scale-105 transition duration-500" />
+                    <img src={imagePathForPath(path.name)} alt={path.name} className="h-full w-full object-cover object-top group-hover:scale-105 transition duration-500" />
                   </div>
                   <div className="p-5 text-left">
                     <p className="text-xs tracking-[0.25em] uppercase text-white/40">{t.pathLabel}</p>
@@ -383,7 +383,7 @@ function LoreImageCard({ image, title, tag, body, meta }) {
   return (
     <div className="rounded-3xl overflow-hidden border border-white/10 bg-white/[0.04]">
       <div className="aspect-[9/16] bg-black overflow-hidden">
-        <img src={image} alt={title} className="h-full w-full object-cover" />
+        <img src={image} alt={title} className="h-full w-full object-cover object-top" />
       </div>
       <div className="p-5">
         <p className="text-xs uppercase tracking-[0.25em] text-violet-200/60 mb-2">{tag}</p>
@@ -417,10 +417,12 @@ function SealedLoreCard({ title, tag, body, meta, sealedLabel }) {
 
 function FullImagePanel({ image, title }) {
   return (
-    <div className="rounded-[2rem] overflow-hidden border border-white/10 bg-black/25">
-      <div className="aspect-[4/5] md:aspect-[3/4] bg-black overflow-hidden">
-        <img src={image} alt={title} className="h-full w-full object-cover" />
-      </div>
+    <div className="rounded-[2rem] overflow-hidden border border-white/10 bg-black/70">
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-auto object-contain bg-black"
+      />
     </div>
   );
 }
