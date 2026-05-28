@@ -231,6 +231,10 @@ const STORY_EPISODES = [
   }
 ];
 
+const RELEASED_EPISODES = 3;
+const RELEASED_STORIES = STORY_EPISODES.slice(0, RELEASED_EPISODES);
+const SEALED_STORY_COUNT = STORY_EPISODES.length - RELEASED_EPISODES;
+
 function slugify(name) {
   return name.toLowerCase().replaceAll(" ", "-");
 }
@@ -436,7 +440,7 @@ export default function CoreWardenWebsite() {
             Episode Navigator
           </p>
           <div className="flex gap-2 overflow-x-auto pb-2">
-            {STORY_EPISODES.map((episode) => (
+            {RELEASED_STORIES.map((episode) => (
               <a
                 key={episode.ep}
                 href={`#episode-${episode.ep}`}
@@ -449,9 +453,27 @@ export default function CoreWardenWebsite() {
         </div>
 
         <div className="mt-10 space-y-10">
-          {STORY_EPISODES.map((episode) => (
+          {RELEASED_STORIES.map((episode) => (
             <StoryEpisodeCard key={episode.ep} episode={episode} lang={lang} />
           ))}
+
+          {SEALED_STORY_COUNT > 0 && (
+            <div className="rounded-[2rem] border border-violet-200/20 bg-black/40 p-8 text-center">
+              <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">
+                Sealed Archive
+              </p>
+              <h3 className="mt-3 text-3xl font-black">
+                {lang === "th"
+                  ? `อีก ${SEALED_STORY_COUNT} ตอนยังไม่เปิดเผย`
+                  : `${SEALED_STORY_COUNT} Episodes Remain Sealed`}
+              </h3>
+              <p className="mx-auto mt-4 max-w-2xl text-white/55 leading-relaxed">
+                {lang === "th"
+                  ? "ข้อมูลตอนถัดไปถูกเก็บไว้ใน Core Archive และจะค่อยๆ เปิดเผยในอนาคต"
+                  : "The remaining records are sealed within the Core Archive and will be released gradually."}
+              </p>
+            </div>
+          )}
         </div>
       </SectionBlock>
 
