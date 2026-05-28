@@ -464,8 +464,8 @@ export default function CoreWardenWebsite() {
               </p>
               <h3 className="mt-3 text-3xl font-black">
                 {lang === "th"
-                  ? `อีก ${SEALED_STORY_COUNT} ตอนยังไม่เปิดเผย`
-                  : `${SEALED_STORY_COUNT} Episodes Remain Sealed`}
+                  ? `คลังข้อมูลถูกปิดผนึก`
+                  : `Archive Sealed`}
               </h3>
               <p className="mx-auto mt-4 max-w-2xl text-white/55 leading-relaxed">
                 {lang === "th"
