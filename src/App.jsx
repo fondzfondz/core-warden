@@ -431,6 +431,23 @@ export default function CoreWardenWebsite() {
 
 
       <SectionBlock id="story" kicker={t.storyKicker} title={t.storyTitle} text={t.storyBody}>
+        <div className="mt-10 rounded-3xl border border-white/10 bg-black/35 p-4 md:p-5">
+          <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/40">
+            Episode Navigator
+          </p>
+          <div className="flex gap-2 overflow-x-auto pb-2">
+            {STORY_EPISODES.map((episode) => (
+              <a
+                key={episode.ep}
+                href={`#episode-${episode.ep}`}
+                className="shrink-0 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-bold text-white/70 transition hover:border-violet-200/50 hover:bg-violet-300/15 hover:text-white"
+              >
+                EP {String(episode.ep).padStart(2, "0")}
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-10 space-y-10">
           {STORY_EPISODES.map((episode) => (
             <StoryEpisodeCard key={episode.ep} episode={episode} lang={lang} />
@@ -509,7 +526,7 @@ function StoryEpisodeCard({ episode, lang }) {
   const body = lang === "th" ? episode.bodyTH : episode.bodyEN;
 
   return (
-    <article className="rounded-[2rem] border border-white/10 bg-black/35 p-5 md:p-8 shadow-[0_0_60px_rgba(0,0,0,.25)]">
+    <article id={`episode-${episode.ep}`} className="scroll-mt-28 rounded-[2rem] border border-white/10 bg-black/35 p-5 md:p-8 shadow-[0_0_60px_rgba(0,0,0,.25)]">
       <div className="mb-5 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">
@@ -530,6 +547,15 @@ function StoryEpisodeCard({ episode, lang }) {
 
       <div className="mt-7 whitespace-pre-line rounded-3xl border border-white/10 bg-white/[0.035] p-6 text-base leading-8 text-white/72 md:text-lg md:leading-9">
         {body}
+      </div>
+
+      <div className="mt-6 flex justify-end">
+        <a
+          href="#story"
+          className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/50 transition hover:bg-white/10 hover:text-white"
+        >
+          ↑ Episodes
+        </a>
       </div>
     </article>
   );
