@@ -531,7 +531,7 @@ export default function CoreWardenWebsite() {
               {t.tiktokButton}
             </a>
             <a
-              href="https://discord.gg/QwkXdtKF"
+              href="https://discord.gg/RHyW3H4jJf"
               target="_blank"
               rel="noreferrer"
               className="rounded-2xl border border-white/20 bg-white/5 px-8 py-4 font-black text-white transition hover:bg-white/10 hover:scale-105"
