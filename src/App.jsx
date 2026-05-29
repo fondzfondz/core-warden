@@ -472,6 +472,15 @@ export default function CoreWardenWebsite() {
                   ? "ข้อมูลตอนถัดไปถูกเก็บไว้ใน Core Archive และจะค่อยๆ เปิดเผยในอนาคต"
                   : "The remaining records are sealed within the Core Archive and will be released gradually."}
               </p>
+
+              <div className="mx-auto mt-6 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.035] p-5">
+                <p className="text-xs uppercase tracking-[0.3em] text-violet-200/60">
+                  Author Verification
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-white/55 md:text-base">
+                  I will be posting this story on Royal Road under the username FFiaz.
+                </p>
+              </div>
             </div>
           )}
         </div>
