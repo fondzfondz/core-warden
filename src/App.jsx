@@ -303,6 +303,68 @@ const FEATURED_CHARACTERS = [
   },
 ];
 
+
+
+const PATH_ARCHIVES = {
+  Astronomy: {
+    image: "/images/paths/astronomy-banner.png",
+    accent: "from-indigo-500/25 via-violet-500/20 to-sky-400/10",
+    titleTH: "เส้นทางแห่งดาราศาสตร์",
+    titleEN: "Path of Astronomy",
+    subtitleTH: "โหนดดวงดาวและพลังงานจักรวาล",
+    subtitleEN: "Star Nodes and cosmic energy",
+    quoteTH: "ดวงดาวไม่เคยสูญสลาย มันเพียงเปลี่ยนรูป และรอเวลาจะกลับมาอีกครั้ง",
+    quoteEN: "Stars never truly perish. They merely change form and wait for the time to return.",
+    authority: "Stars • Star Nodes • Cosmic Energy • Gravity • Constellations",
+    conceptTitle: "Star Node Network",
+    conceptTH: "Star Node คือจุดพลังดาราที่ผู้ใช้เส้นทาง Astronomy สร้างขึ้นและเชื่อมต่อกันเป็นเครือข่าย ยิ่งระดับสูง เครือข่ายยิ่งครอบคลุมพื้นที่กว้างขึ้น ตั้งแต่สนามรบ เมือง ภูมิภาค ไปจนถึงขอบเขตมหาศาล ทุก Node ส่งข้อมูลกลับหากัน ทำให้ผู้ใช้รับรู้การเคลื่อนไหว การใช้พลัง และความเปลี่ยนแปลงในพื้นที่ราวกับมองสนามรบผ่านดวงดาวนับไม่ถ้วน ในระดับสูง Star Node ยังเป็นเส้นทางเชื่อมต่อสำหรับเดินทางผ่านดวงดาว ไม่ใช่การฉีกมิติ ไม่ใช่วาร์ป แต่เป็นทางลับของดาราที่เสถียรกว่า แม้อาจใช้เวลานานกว่าเทเลพอร์ตโดยตรง",
+    conceptEN: "Star Nodes are stellar energy points created by Astronomy users and linked into a network. As the user rises, the network expands from battlefields to cities, regions, and eventually enormous territories. Every Node exchanges information, allowing the user to sense movement, energy use, and changes across the area as if observing the battlefield through countless stars. At higher levels, Star Nodes also become routes for stellar travel. This is not dimensional tearing or teleportation, but a stable hidden pathway between stars, often slower than direct teleportation yet far safer.",
+    sequences: [
+      [9, "ผู้สังเกตดารา", "STAR OBSERVER", "อ่านตำแหน่งดวงดาว / รับรู้ทิศทางพลังจักรวาล / เพิ่มสัญชาตญาณการต่อสู้", "Observe stellar positions / sense cosmic energy flow / enhance combat instincts"],
+      [8, "ผู้ปรับจังหวะดารา", "STAR ATTUNER", "ปรับจังหวะพลังให้สอดคล้องกับจักรวาล / เพิ่มความแม่นยำ / เพิ่มเสถียรภาพ / ใช้พลังได้ต่อเนื่องขึ้น", "Synchronize with cosmic rhythm / increase precision / improve stability / sustain power more efficiently"],
+      [7, "ผู้สร้างจุดดารา", "STAR NODE CREATOR", "สร้าง Star Node จุดแรก / เคลื่อนที่ระยะสั้น / เริ่มเชื่อมโยงเครือข่ายดารา / Meteor Fragment เรียกเศษดาวตกโจมตีพื้นที่เป้าหมาย", "Create the first Star Node / short-range traversal / begin a stellar network / Meteor Fragment calls down shattered meteor fragments"],
+      [6, "จอมเวทดารา", "ASTRAL MAGE", "สร้างหลาย Star Node / เคลื่อนที่ข้ามพื้นที่ / ยิงแสงดารา / Star Pulse ทำลายวัตถุและเครื่องจักร", "Create multiple Star Nodes / traverse wider areas / wield stellar light / Star Pulse damages objects and machinery"],
+      [5, "ผู้ครองดารา", "STAR DOMINATOR", "สร้างเครือข่ายดารา / เคลื่อนที่อิสระในพื้นที่ / Orbit Crush บีบแรงโน้มถ่วงจำลองทำลายโครงสร้าง", "Build a stellar network / move freely within the area / Orbit Crush simulates gravity to destroy structures"],
+      [4, "ทูตแห่งดารา", "ANGEL OF STARS", "ร่างกายกึ่งพลังดารา / ผ่าน Star Node ได้อย่างไร้ร่องรอย / Star Step เคลื่อนที่ผ่าน Node อย่างรวดเร็ว", "A partially stellar body / pass through Star Nodes without trace / Star Step rapidly travels through Nodes"],
+      [3, "ผู้คุมกลุ่มดาว", "SOVEREIGN OF CONSTELLATION", "เชื่อม Star Node เป็นกลุ่มดาว / ควบคุมพื้นที่กว้าง / Node Collapse รวมพลังหลาย Node ทำลายล้างระดับเมือง", "Link Star Nodes into constellations / control vast areas / Node Collapse combines multiple Nodes into city-level destruction"],
+      [2, "เจ้าแห่งดาราโลก", "WORLD STAR LORD", "สร้าง Star Node ระดับภูมิภาค / เดินทางข้ามระยะมหาศาล / Stellar Descent เรียกพลังดาราถล่มพื้นที่", "Create regional Star Nodes / cross immense distances / Stellar Descent calls down overwhelming stellar power"],
+      [1, "เทพแห่งดารา", "PRIMORDIAL STAR DEITY", "ร่างคือส่วนหนึ่งของจักรวาล / ทุกจุดในจักรวาลคือ Star Node / Eternal Return และ Cosmic Traverse", "Become part of the cosmos / every point may become a Star Node / Eternal Return and Cosmic Traverse"],
+    ],
+    ascensionTH: "Level 0 คือการละทิ้งความเป็นมนุษย์ทั้งหมด ไม่ใช่ Warden ไม่ใช่ผู้ใช้พลัง แต่กลายเป็นแนวคิดแห่งดาราศาสตร์ Madness ไม่สามารถกัดกินได้อีก และในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว เขาไม่ได้ครอบครองเส้นทาง เขาคือเส้นทางนั้นเอง",
+    ascensionEN: "Level 0 means abandoning humanity completely. They are no longer a Warden or a wielder of power, but the Astronomical Concept itself. Madness can no longer corrupt them. Only one such existence may exist per Path. They do not possess the Path. They are the Path itself.",
+  },
+  Blood: {
+    image: "/images/paths/blood-banner.png",
+    accent: "from-red-700/30 via-rose-600/20 to-black/20",
+    titleTH: "เส้นทางแห่งโลหิต",
+    titleEN: "Path of Blood",
+    subtitleTH: "พลังแห่งการแลกเปลี่ยนโลหิต",
+    subtitleEN: "The power of crimson exchange",
+    quoteTH: "เลือดไม่เคยโกหก และพลังทุกหยดต้องแลกมาด้วยตัวตนของเจ้าเอง",
+    quoteEN: "Blood never lies. Every drop of power must be paid for with your own existence.",
+    authority: "Blood • Sacrifice • Exchange • Domination • Life Force",
+    conceptTitle: "Crimson Exchange",
+    conceptTH: "Blood คือเส้นทางของการแลกเปลี่ยน การไหลเวียน และการแทรกซึม ผู้ใช้ยิ่งเสียสละมากเท่าไร พลังยิ่งรุนแรงมากขึ้นเท่านั้น เลือดไม่ใช่แค่ของเหลวในร่างกาย แต่เป็นตัวตน ชีวิต สัญญา และราคาที่ต้องจ่าย เมื่อเลือดแทรกซึมสิ่งใด สิ่งนั้นจะค่อยๆ ถูกผูกเข้ากับผู้ใช้ และเข้าใกล้การถูกครอบงำ",
+    conceptEN: "Blood is the Path of exchange, circulation, and infiltration. The greater the sacrifice, the greater the power. Blood is not merely a fluid within the body; it is identity, life, contract, and price. Whatever the blood infiltrates becomes bound to the user and moves closer to domination.",
+    sequences: [
+      [9, "ผู้รับรู้โลหิต", "BLOOD SENSOR", "รับรู้การไหลเวียนโลหิต / ฟื้นตัวเล็กน้อย / ตรวจจับสิ่งมีชีวิตใกล้ตัว / ควบคุมเลือดตัวเองพื้นฐาน", "Sense blood flow / minor recovery / detect nearby life / basic self-blood control"],
+      [8, "ผู้ควบคุมโลหิต", "BLOOD CONTROLLER", "ควบคุมเลือดในร่างกาย / เร่งหรือชะลอการไหล / เพิ่มพลังกายชั่วคราว / เริ่มใช้เลือดเป็นพลัง", "Control blood within the body / accelerate or slow flow / temporary physical boost / begin using blood as power"],
+      [7, "ผู้หล่อหลอมโลหิต", "BLOOD SHAPER", "สร้างอาวุธจากเลือด / เปลี่ยนเลือดเป็นรูปแบบต่างๆ / โจมตีระยะกลาง / เริ่มเสียเลือดเพื่อพลัง", "Shape blood into weapons / transform blood into forms / mid-range attacks / begin paying blood for power"],
+      [6, "จอมเวทโลหิต", "BLOOD MAGE", "ควบคุมเลือดนอกตัว / ดูดเลือดศัตรู / เสริมพลังมหาศาล / เริ่มแลกพลังอย่างชัดเจน", "Control blood outside the body / drain enemy blood / gain massive enhancement / clear exchange of power"],
+      [5, "ผู้ครอบงำโลหิต", "BLOOD DOMINATOR", "เลือดแทรกซึมวัตถุ / ควบคุมสิ่งไม่มีชีวิตที่เปื้อนเลือด / บิดเบือนพลังงานและกลไก / ทำให้สิ่งที่ถูกเลือดคลั่ง", "Blood infiltrates objects / control blood-marked nonliving things / distort energy and mechanisms / drive marked targets into frenzy"],
+      [4, "ทูตแห่งโลหิต", "ANGEL OF CRIMSON PACT", "ร่างกายเชื่อมกับโลหิต / ใช้เลือดเป็นพลังโดยตรง / พันธะด้วยการเสียสละ / การต่อสู้คือสัญญา", "Body bound to blood / use blood as direct power / sacrifice-based pacts / combat becomes a contract"],
+      [3, "ผู้คุมสายโลหิต", "SOVEREIGN OF BLOODLINE", "ควบคุมเลือดจำนวนมาก / ควบคุมศัตรูผ่านสายเลือด / สร้างสนามโลหิต / ทุกคนในพื้นที่อยู่ใต้แรงกดดัน", "Control massive blood volumes / influence enemies through bloodline / create a blood field / all within the area fall under pressure"],
+      [2, "เจ้าแห่งโลหิตโลก", "WORLD BLOOD LORD", "ควบคุมพลังชีวิตระดับพื้นที่ / ดูดพลังชีวิตจำนวนมหาศาล / สนามรบกลายเป็นแหล่งพลังของตน", "Control life force across an area / drain enormous vitality / turn the battlefield into a personal power source"],
+      [1, "เทพโลหิต", "PRIMORDIAL BLOOD DEITY", "ควบคุมแก่นของชีวิต / สร้างหรือลบชีวิตผ่านเลือด / ทุกพลังแลกด้วยตัวตน / การโจมตีคือการพรากตัวตน", "Control the essence of life / create or erase life through blood / every power is paid with existence / every attack takes identity"],
+    ],
+    specialTitle: "CRIMSON ASSIMILATION",
+    specialTH: "เลือดของข้าแทรกซึมทุกสิ่งที่มันสัมผัส สิ่งนั้นจะกลายเป็นส่วนหนึ่งของข้า และข้าจะเป็นผู้กำหนดมัน",
+    specialEN: "My blood shall infiltrate all that it touches. What it claims becomes part of me, and I shall become its master.",
+    ascensionTH: "Level 0 คือการกลายเป็นแนวคิดแห่งโลหิตและการแลกเปลี่ยน ไม่ใช่ผู้ควบคุมเลือดอีกต่อไป แต่เป็นกฎที่กำหนดว่าชีวิตต้องจ่ายสิ่งใดเพื่อได้รับพลัง ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
+    ascensionEN: "Level 0 means becoming the Concept of Blood and Exchange. They no longer control blood; they become the law that decides what life must pay to obtain power. Only one such existence may exist within each Path.",
+  },
+};
+
 function slugify(name) {
   return name.toLowerCase().replaceAll(" ", "-");
 }
@@ -652,12 +714,16 @@ export default function CoreWardenWebsite() {
                   <h2 className="text-5xl md:text-7xl font-black">{lang === "th" ? selectedPath.thai : selectedPath.name}</h2>
                   <p className="text-white/45 mt-2 mb-6">{selectedPath.name}</p>
                   <p className="text-lg text-white/70 leading-relaxed mb-8">{lang === "th" ? selectedPath.descTH : selectedPath.descEN}</p>
-                  <div className="grid md:grid-cols-2 gap-5">
-                    <InfoCard title={t.authority} text={selectedPath.authority} />
-                    <InfoCard title={t.philosophy} text={lang === "th" ? "พลังที่ไร้สมดุลจะเชื้อเชิญการล่มสลาย" : "Power without balance invites collapse."} />
-                    <PowerExamples title={t.examples} examples={lang === "th" ? selectedPath.examplesTH : selectedPath.examplesEN} />
-                    <InfoCard title={t.archiveStatus} text={lang === "th" ? "ข้อมูล Sequence 9–1 ยังถูกปิดผนึก" : "Sequence 9–1 data remains sealed."} />
-                  </div>
+                  {PATH_ARCHIVES[selectedPath.name] ? (
+                    <FullPathArchive archive={PATH_ARCHIVES[selectedPath.name]} lang={lang} />
+                  ) : (
+                    <div className="grid md:grid-cols-2 gap-5">
+                      <InfoCard title={t.authority} text={selectedPath.authority} />
+                      <InfoCard title={t.philosophy} text={lang === "th" ? "พลังที่ไร้สมดุลจะเชื้อเชิญการล่มสลาย" : "Power without balance invites collapse."} />
+                      <PowerExamples title={t.examples} examples={lang === "th" ? selectedPath.examplesTH : selectedPath.examplesEN} />
+                      <InfoCard title={t.archiveStatus} text={lang === "th" ? "ข้อมูล Sequence 9–1 ยังถูกปิดผนึก" : "Sequence 9–1 data remains sealed."} />
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -821,6 +887,57 @@ function ComingSoonBar({ text }) {
     <div className="mt-8 flex items-center justify-end gap-3 text-violet-200/80">
       <span className="text-3xl">→</span>
       <span className="tracking-[0.25em] text-xs uppercase">{text}</span>
+    </div>
+  );
+}
+
+
+function FullPathArchive({ archive, lang }) {
+  return (
+    <div className="space-y-6">
+      <div className={`overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${archive.accent}`}>
+        <img src={archive.image} alt={lang === "th" ? archive.titleTH : archive.titleEN} className="h-64 w-full object-cover md:h-80" />
+        <div className="p-6">
+          <p className="text-xs uppercase tracking-[0.35em] text-white/45">Featured Path Archive</p>
+          <h3 className="mt-2 text-3xl font-black">{lang === "th" ? archive.titleTH : archive.titleEN}</h3>
+          <p className="mt-2 text-white/60">{lang === "th" ? archive.subtitleTH : archive.subtitleEN}</p>
+          <p className="mt-5 text-xl font-black leading-snug text-white/85">“{lang === "th" ? archive.quoteTH : archive.quoteEN}”</p>
+        </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-5">
+        <InfoCard title={lang === "th" ? "ขอบเขตอำนาจ" : "Authority"} text={archive.authority} />
+        <InfoCard title={archive.conceptTitle} text={lang === "th" ? archive.conceptTH : archive.conceptEN} />
+      </div>
+
+      {archive.specialTitle && (
+        <div className="rounded-3xl border border-red-300/20 bg-red-950/20 p-6">
+          <p className="text-xs uppercase tracking-[0.3em] text-red-200/60">Signature Power</p>
+          <h3 className="mt-2 text-2xl font-black">{archive.specialTitle}</h3>
+          <p className="mt-4 text-white/70 leading-relaxed">{lang === "th" ? archive.specialTH : archive.specialEN}</p>
+        </div>
+      )}
+
+      <div className="rounded-[2rem] border border-violet-200/15 bg-white/[0.035] p-6">
+        <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">Sequence Archive 9 → 1</p>
+        <div className="mt-6 grid gap-4">
+          {archive.sequences.map(([level, th, en, descTH, descEN]) => (
+            <div key={level} className="rounded-2xl border border-white/10 bg-black/35 p-5">
+              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <h4 className="text-xl font-black">{level} | {lang === "th" ? th : en}</h4>
+                <p className="text-sm tracking-[0.2em] text-white/40">{lang === "th" ? en : th}</p>
+              </div>
+              <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? descTH : descEN}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="rounded-[2rem] border border-amber-200/20 bg-amber-500/[0.06] p-6">
+        <p className="text-xs uppercase tracking-[0.35em] text-amber-200/70">Concept Ascension</p>
+        <h3 className="mt-2 text-3xl font-black">Level 0</h3>
+        <p className="mt-4 text-white/72 leading-relaxed">{lang === "th" ? archive.ascensionTH : archive.ascensionEN}</p>
+      </div>
     </div>
   );
 }
