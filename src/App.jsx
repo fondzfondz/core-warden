@@ -11,6 +11,16 @@ const UI = {
     navOthers: "อื่นๆ",
     navArchive: "คลังตำนาน",
     navStory: "เนื้อเรื่อง",
+    navCharacters: "ตัวละครหลัก",
+    charactersKicker: "MAIN CHARACTERS OF ARC I",
+    charactersTitle: "ตัวละครหลักของภาคแรก",
+    charactersBody: "สองตัวละครสำคัญที่เป็นแกนเดินเรื่องช่วงแรกของ Core Warden พร้อมเส้นทางพลังที่สะท้อนตัวตนของแต่ละคน",
+    viewCharacter: "เปิดข้อมูลตัวละคร",
+    viewPathArchive: "เปิดคลังเส้นทาง",
+    characterRole: "บทบาท",
+    characterPath: "เส้นทาง",
+    characterStatus: "สถานะเนื้อเรื่อง",
+    currentSequence: "ลำดับปัจจุบัน",
     enterWorld: "เข้าสู่โลก",
     beastArchive: "คลังข้อมูลบีช",
     heroDesc: "คลังข้อมูลดาร์กแฟนตาซีของ Core Energy, เส้นทางต้องห้าม, Core Beast และสมดุลอันเปราะบางระหว่างระเบียบกับความบ้าคลั่ง",
@@ -68,6 +78,16 @@ const UI = {
     navOthers: "Others",
     navArchive: "Archive",
     navStory: "Story",
+    navCharacters: "Characters",
+    charactersKicker: "MAIN CHARACTERS OF ARC I",
+    charactersTitle: "Main Characters of Arc I",
+    charactersBody: "Two key characters who drive the early arc of Core Warden, each defined by a Path that reflects their nature and role in the story.",
+    viewCharacter: "View Character",
+    viewPathArchive: "Open Path Archive",
+    characterRole: "Role",
+    characterPath: "Path",
+    characterStatus: "Story Status",
+    currentSequence: "Current Sequence",
     enterWorld: "Enter The World",
     beastArchive: "Beast Archive",
     heroDesc: "A dark fantasy codex of Core Energy, forbidden Paths, Core Beasts, and the fragile balance between order and madness.",
@@ -235,6 +255,54 @@ const RELEASED_EPISODES = 4;
 const RELEASED_STORIES = STORY_EPISODES.slice(0, RELEASED_EPISODES);
 const SEALED_STORY_COUNT = STORY_EPISODES.length - RELEASED_EPISODES;
 
+
+const FEATURED_CHARACTERS = [
+  {
+    key: "naran",
+    name: "NARAN",
+    nameTH: "นรัน",
+    path: "Path of Astronomy",
+    pathTH: "เส้นทางแห่งดาราศาสตร์",
+    image: "/images/paths/astronomy-banner.png",
+    accent: "from-indigo-500/25 via-violet-500/20 to-sky-400/10",
+    titleTH: "ผู้เฝ้ามองดวงดาว",
+    titleEN: "The Observer of Stars",
+    roleTH: "ตัวละครหลักภาคแรก / ผู้สังเกตการณ์ / แกนมุมมองของเรื่อง",
+    roleEN: "Main character of Arc I / observer / central viewpoint of the story",
+    statusTH: "กำลังเติบโตผ่านโลกที่ไร้เมตตา และกำลังเข้าใกล้วันปลุกพลัง",
+    statusEN: "Surviving a merciless world while approaching the day of awakening",
+    sequenceTH: "ยังไม่เปิดเผย",
+    sequenceEN: "Not yet revealed",
+    quoteTH: "ดวงดาวไม่เคยสูญสลาย มันเพียงเปลี่ยนรูป และรอเวลาจะกลับมาอีกครั้ง",
+    quoteEN: "Stars never truly perish. They merely change form and wait for the time to return.",
+    conceptTH: "Astronomy คือเส้นทางของ Star Node เครือข่ายดาราที่ใช้รับรู้สนามรบ ควบคุมพื้นที่ และเดินทางผ่านเส้นทางแห่งดวงดาวในระดับสูง",
+    conceptEN: "Astronomy is the Path of Star Nodes: stellar networks used for battlefield awareness, territorial control, and high-level travel through routes between stars.",
+    tags: ["Stars", "Star Nodes", "Cosmic Energy"],
+  },
+  {
+    key: "seren",
+    name: "SEREN",
+    nameTH: "เซเรน",
+    path: "Path of Blood",
+    pathTH: "เส้นทางแห่งโลหิต",
+    image: "/images/paths/blood-banner.png",
+    accent: "from-red-600/30 via-rose-500/20 to-black/20",
+    titleTH: "ราคาของพลัง",
+    titleEN: "The Price of Power",
+    roleTH: "ตัวละครหลักระยะยาว / นักสู้สายโลหิต / เงาอันเย็นชาของภาคแรก",
+    roleEN: "Long-running main character / blood combatant / cold shadow of Arc I",
+    statusTH: "หนึ่งในตัวละครแกนหลักที่เส้นทางของเธอผูกกับการแลกเปลี่ยน การเสียสละ และการครอบงำ",
+    statusEN: "A core character whose Path is bound to exchange, sacrifice, and domination.",
+    sequenceTH: "ยังไม่เปิดเผย",
+    sequenceEN: "Not yet revealed",
+    quoteTH: "เลือดไม่เคยโกหก และพลังทุกหยดต้องแลกมาด้วยตัวตนของเจ้าเอง",
+    quoteEN: "Blood never lies. Every drop of power must be paid for with your own existence.",
+    conceptTH: "Blood คือเส้นทางแห่งการแลกเปลี่ยนโลหิต ยิ่งเสียสละมาก พลังยิ่งสูงขึ้น เลือดที่แทรกซึมสิ่งใด ย่อมทำให้สิ่งนั้นเข้าใกล้การถูกครอบงำ",
+    conceptEN: "Blood is the Path of crimson exchange. The greater the sacrifice, the greater the power. Whatever the blood infiltrates moves closer to domination.",
+    tags: ["Blood", "Sacrifice", "Domination"],
+  },
+];
+
 function slugify(name) {
   return name.toLowerCase().replaceAll(" ", "-");
 }
@@ -251,6 +319,7 @@ export default function CoreWardenWebsite() {
   const [lang, setLang] = useState("th");
   const [activePillar, setActivePillar] = useState("Primordials");
   const [selectedPath, setSelectedPath] = useState(null);
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
   const [musicOn, setMusicOn] = useState(false);
   const audioRef = useRef(null);
   const t = UI[lang];
@@ -291,6 +360,7 @@ export default function CoreWardenWebsite() {
         <div className="mx-auto max-w-7xl px-5 py-4 flex items-center justify-between gap-4">
           <div className="font-black tracking-[0.35em] text-sm">CORE WARDEN</div>
           <div className="hidden lg:flex gap-6 text-sm text-white/60">
+            <a href="#characters" className="hover:text-white">{t.navCharacters}</a>
             <a href="#world" className="hover:text-white">{t.navWorld}</a>
             <a href="#pillars" className="hover:text-white">{t.navPillars}</a>
             <a href="#beasts" className="hover:text-white">{t.navBeasts}</a>
@@ -331,11 +401,51 @@ export default function CoreWardenWebsite() {
           </div>
           <p className="mt-8 max-w-3xl mx-auto text-lg md:text-2xl text-white/65 leading-relaxed">{t.heroDesc}</p>
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
-            <a href="#world" className="px-8 py-4 rounded-2xl bg-white text-black font-black hover:scale-105 transition">{t.enterWorld}</a>
+            <a href="#characters" className="px-8 py-4 rounded-2xl bg-white text-black font-black hover:scale-105 transition">{t.navCharacters}</a>
+            <a href="#world" className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 hover:bg-white/10 transition">{t.enterWorld}</a>
             <a href="#beasts" className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 hover:bg-white/10 transition">{t.beastArchive}</a>
           </div>
         </div>
       </header>
+
+      <SectionBlock id="characters" kicker={t.charactersKicker} title={t.charactersTitle} text={t.charactersBody}>
+        <div className="mt-10 grid lg:grid-cols-2 gap-7">
+          {FEATURED_CHARACTERS.map((character) => (
+            <button
+              key={character.key}
+              type="button"
+              onClick={() => setSelectedCharacter(character)}
+              className={`group overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${character.accent} text-left transition hover:-translate-y-1 hover:border-violet-200/45 hover:shadow-[0_0_70px_rgba(139,92,246,.18)]`}
+            >
+              <div className="relative aspect-video overflow-hidden bg-black">
+                <img
+                  src={character.image}
+                  alt={character.name}
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/35 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <p className="text-xs uppercase tracking-[0.32em] text-violet-100/75">{lang === "th" ? character.pathTH : character.path}</p>
+                  <h3 className="mt-3 text-4xl md:text-5xl font-black">{lang === "th" ? character.nameTH : character.name}</h3>
+                  <p className="mt-2 text-lg text-white/75">{lang === "th" ? character.titleTH : character.titleEN}</p>
+                </div>
+              </div>
+              <div className="p-6 md:p-7">
+                <p className="text-white/65 leading-relaxed">{lang === "th" ? character.conceptTH : character.conceptEN}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {character.tags.map((tag) => (
+                    <span key={tag} className="rounded-full border border-white/10 bg-black/25 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white/55">{tag}</span>
+                  ))}
+                </div>
+                <div className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-violet-100">
+                  <span>{t.viewCharacter}</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </button>
+          ))}
+        </div>
+      </SectionBlock>
 
       <SectionBlock id="world" kicker={t.worldKicker} title={t.worldTitle} text={t.worldBody} bgImage="/images/backgrounds/world-bg.png">
         <div className="mt-8 rounded-3xl border border-violet-200/20 bg-black/35 p-6">
@@ -485,6 +595,48 @@ export default function CoreWardenWebsite() {
           )}
         </div>
       </SectionBlock>
+
+      {selectedCharacter && (
+        <div className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-xl overflow-y-auto">
+          <div className="min-h-screen max-w-6xl mx-auto px-5 py-16">
+            <button onClick={() => setSelectedCharacter(null)} className="fixed top-6 right-6 z-50 rounded-full border border-white/15 bg-black/50 px-5 py-3 hover:bg-white/10">{t.close}</button>
+            <div className={`overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${selectedCharacter.accent}`}>
+              <div className="relative aspect-video max-h-[520px] overflow-hidden bg-black">
+                <img src={selectedCharacter.image} alt={selectedCharacter.name} className="h-full w-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#03030a] via-black/40 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-7 md:p-10">
+                  <p className="text-xs uppercase tracking-[0.35em] text-violet-100/75">MAIN CHARACTER · ARC I</p>
+                  <h2 className="mt-3 text-5xl md:text-7xl font-black">{lang === "th" ? selectedCharacter.nameTH : selectedCharacter.name}</h2>
+                  <p className="mt-3 text-xl text-white/75">{lang === "th" ? selectedCharacter.titleTH : selectedCharacter.titleEN}</p>
+                </div>
+              </div>
+              <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-6 p-6 md:p-8">
+                <div className="rounded-3xl border border-white/10 bg-black/35 p-6">
+                  <p className="text-xs uppercase tracking-[0.3em] text-violet-200/60">Quote</p>
+                  <p className="mt-4 text-2xl md:text-3xl font-black leading-snug">“{lang === "th" ? selectedCharacter.quoteTH : selectedCharacter.quoteEN}”</p>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-5">
+                  <InfoCard title={t.characterPath} text={lang === "th" ? selectedCharacter.pathTH : selectedCharacter.path} />
+                  <InfoCard title={t.currentSequence} text={lang === "th" ? selectedCharacter.sequenceTH : selectedCharacter.sequenceEN} />
+                  <InfoCard title={t.characterRole} text={lang === "th" ? selectedCharacter.roleTH : selectedCharacter.roleEN} />
+                  <InfoCard title={t.characterStatus} text={lang === "th" ? selectedCharacter.statusTH : selectedCharacter.statusEN} />
+                </div>
+              </div>
+              <div className="px-6 pb-8 md:px-8">
+                <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+                  <p className="text-xs uppercase tracking-[0.3em] text-violet-200/60">Core Concept</p>
+                  <p className="mt-4 text-lg leading-relaxed text-white/72">{lang === "th" ? selectedCharacter.conceptTH : selectedCharacter.conceptEN}</p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {selectedCharacter.tags.map((tag) => (
+                      <span key={tag} className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white/55">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {selectedPath && (
         <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-xl overflow-y-auto">
