@@ -702,30 +702,32 @@ export default function CoreWardenWebsite() {
 
       {selectedPath && (
         <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-xl overflow-y-auto">
-          <div className="min-h-screen max-w-6xl mx-auto px-5 py-16">
+          <div className="min-h-screen max-w-7xl mx-auto px-5 py-16">
             <button onClick={() => setSelectedPath(null)} className="fixed top-6 right-6 z-50 rounded-full border border-white/15 bg-black/40 px-5 py-3 hover:bg-white/10">{t.close}</button>
             <div className="rounded-[2rem] overflow-hidden border border-white/10 bg-[#06060f]">
-              <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-8 p-8">
-                <div className="rounded-[2rem] overflow-hidden border border-white/10 bg-black aspect-[9/16] max-w-sm mx-auto w-full">
-                  <video src={videoPathForPath(selectedPath.name)} poster={imagePathForPath(selectedPath.name)} autoPlay muted loop playsInline controls className="w-full h-full object-cover" />
+              {PATH_ARCHIVES[selectedPath.name] ? (
+                <div className="p-5 md:p-8">
+                  <FullPathArchive archive={PATH_ARCHIVES[selectedPath.name]} lang={lang} />
                 </div>
-                <div>
-                  <p className="tracking-[0.35em] uppercase text-xs text-white/40 mb-3">{t.pathDetail}</p>
-                  <h2 className="text-5xl md:text-7xl font-black">{lang === "th" ? selectedPath.thai : selectedPath.name}</h2>
-                  <p className="text-white/45 mt-2 mb-6">{selectedPath.name}</p>
-                  <p className="text-lg text-white/70 leading-relaxed mb-8">{lang === "th" ? selectedPath.descTH : selectedPath.descEN}</p>
-                  {PATH_ARCHIVES[selectedPath.name] ? (
-                    <FullPathArchive archive={PATH_ARCHIVES[selectedPath.name]} lang={lang} />
-                  ) : (
+              ) : (
+                <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-8 p-8">
+                  <div className="rounded-[2rem] overflow-hidden border border-white/10 bg-black aspect-[9/16] max-w-sm mx-auto w-full">
+                    <video src={videoPathForPath(selectedPath.name)} poster={imagePathForPath(selectedPath.name)} autoPlay muted loop playsInline controls className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <p className="tracking-[0.35em] uppercase text-xs text-white/40 mb-3">{t.pathDetail}</p>
+                    <h2 className="text-5xl md:text-7xl font-black">{lang === "th" ? selectedPath.thai : selectedPath.name}</h2>
+                    <p className="text-white/45 mt-2 mb-6">{selectedPath.name}</p>
+                    <p className="text-lg text-white/70 leading-relaxed mb-8">{lang === "th" ? selectedPath.descTH : selectedPath.descEN}</p>
                     <div className="grid md:grid-cols-2 gap-5">
                       <InfoCard title={t.authority} text={selectedPath.authority} />
                       <InfoCard title={t.philosophy} text={lang === "th" ? "พลังที่ไร้สมดุลจะเชื้อเชิญการล่มสลาย" : "Power without balance invites collapse."} />
                       <PowerExamples title={t.examples} examples={lang === "th" ? selectedPath.examplesTH : selectedPath.examplesEN} />
                       <InfoCard title={t.archiveStatus} text={lang === "th" ? "ข้อมูล Sequence 9–1 ยังถูกปิดผนึก" : "Sequence 9–1 data remains sealed."} />
                     </div>
-                  )}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
@@ -896,47 +898,53 @@ function FullPathArchive({ archive, lang }) {
   return (
     <div className="space-y-6">
       <div className={`overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${archive.accent}`}>
-        <img src={archive.image} alt={lang === "th" ? archive.titleTH : archive.titleEN} className="h-64 w-full object-cover md:h-80" />
-        <div className="p-6">
-          <p className="text-xs uppercase tracking-[0.35em] text-white/45">Featured Path Archive</p>
-          <h3 className="mt-2 text-3xl font-black">{lang === "th" ? archive.titleTH : archive.titleEN}</h3>
-          <p className="mt-2 text-white/60">{lang === "th" ? archive.subtitleTH : archive.subtitleEN}</p>
-          <p className="mt-5 text-xl font-black leading-snug text-white/85">“{lang === "th" ? archive.quoteTH : archive.quoteEN}”</p>
+        <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
+          <img
+            src={archive.image}
+            alt={lang === "th" ? archive.titleTH : archive.titleEN}
+            className="h-64 w-full object-cover md:h-96 lg:h-full"
+          />
+          <div className="p-6 md:p-8 flex flex-col justify-center">
+            <p className="text-xs uppercase tracking-[0.35em] text-white/45">Featured Path Archive</p>
+            <h3 className="mt-3 text-4xl md:text-5xl font-black leading-tight">{lang === "th" ? archive.titleTH : archive.titleEN}</h3>
+            <p className="mt-3 text-white/60">{lang === "th" ? archive.subtitleTH : archive.subtitleEN}</p>
+            <p className="mt-7 text-xl md:text-2xl font-black leading-snug text-white/85">“{lang === "th" ? archive.quoteTH : archive.quoteEN}”</p>
+          </div>
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-5">
-        <InfoCard title={lang === "th" ? "ขอบเขตอำนาจ" : "Authority"} text={archive.authority} />
-        <InfoCard title={archive.conceptTitle} text={lang === "th" ? archive.conceptTH : archive.conceptEN} />
-      </div>
-
-      {archive.specialTitle && (
-        <div className="rounded-3xl border border-red-300/20 bg-red-950/20 p-6">
-          <p className="text-xs uppercase tracking-[0.3em] text-red-200/60">Signature Power</p>
-          <h3 className="mt-2 text-2xl font-black">{archive.specialTitle}</h3>
-          <p className="mt-4 text-white/70 leading-relaxed">{lang === "th" ? archive.specialTH : archive.specialEN}</p>
-        </div>
-      )}
-
-      <div className="rounded-[2rem] border border-violet-200/15 bg-white/[0.035] p-6">
-        <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">Sequence Archive 9 → 1</p>
-        <div className="mt-6 grid gap-4">
-          {archive.sequences.map(([level, th, en, descTH, descEN]) => (
-            <div key={level} className="rounded-2xl border border-white/10 bg-black/35 p-5">
-              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <h4 className="text-xl font-black">{level} | {lang === "th" ? th : en}</h4>
-                <p className="text-sm tracking-[0.2em] text-white/40">{lang === "th" ? en : th}</p>
-              </div>
-              <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? descTH : descEN}</p>
+      <div className="grid gap-6 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+        <div className="grid gap-5 lg:sticky lg:top-24">
+          <InfoCard title={lang === "th" ? "ขอบเขตอำนาจ" : "Authority"} text={archive.authority} />
+          <InfoCard title={archive.conceptTitle} text={lang === "th" ? archive.conceptTH : archive.conceptEN} />
+          {archive.specialTitle && (
+            <div className="rounded-3xl border border-red-300/20 bg-red-950/20 p-6">
+              <p className="text-xs uppercase tracking-[0.3em] text-red-200/60">Signature Power</p>
+              <h3 className="mt-2 text-2xl font-black">{archive.specialTitle}</h3>
+              <p className="mt-4 text-white/70 leading-relaxed">{lang === "th" ? archive.specialTH : archive.specialEN}</p>
             </div>
-          ))}
+          )}
+          <div className="rounded-[2rem] border border-amber-200/20 bg-amber-500/[0.06] p-6">
+            <p className="text-xs uppercase tracking-[0.35em] text-amber-200/70">Concept Ascension</p>
+            <h3 className="mt-2 text-3xl font-black">Level 0</h3>
+            <p className="mt-4 text-white/72 leading-relaxed">{lang === "th" ? archive.ascensionTH : archive.ascensionEN}</p>
+          </div>
         </div>
-      </div>
 
-      <div className="rounded-[2rem] border border-amber-200/20 bg-amber-500/[0.06] p-6">
-        <p className="text-xs uppercase tracking-[0.35em] text-amber-200/70">Concept Ascension</p>
-        <h3 className="mt-2 text-3xl font-black">Level 0</h3>
-        <p className="mt-4 text-white/72 leading-relaxed">{lang === "th" ? archive.ascensionTH : archive.ascensionEN}</p>
+        <div className="rounded-[2rem] border border-violet-200/15 bg-white/[0.035] p-5 md:p-6">
+          <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">Sequence Archive 9 → 1</p>
+          <div className="mt-6 grid gap-4">
+            {archive.sequences.map(([level, th, en, descTH, descEN]) => (
+              <div key={level} className="rounded-2xl border border-white/10 bg-black/35 p-5">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <h4 className="text-xl font-black">{level} | {lang === "th" ? th : en}</h4>
+                  <p className="text-sm tracking-[0.2em] text-white/40">{lang === "th" ? en : th}</p>
+                </div>
+                <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? descTH : descEN}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
