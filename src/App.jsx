@@ -251,7 +251,7 @@ const STORY_EPISODES = [
   }
 ];
 
-const RELEASED_EPISODES = 4;
+const RELEASED_EPISODES = 5;
 const RELEASED_STORIES = STORY_EPISODES.slice(0, RELEASED_EPISODES);
 const SEALED_STORY_COUNT = STORY_EPISODES.length - RELEASED_EPISODES;
 
@@ -308,7 +308,9 @@ const FEATURED_CHARACTERS = [
 const PATH_ARCHIVES = {
   Astronomy: {
     image: "/images/paths/astronomy-banner.png",
+    video: "/videos/paths/astronomy.mp4",
     accent: "from-indigo-500/25 via-violet-500/20 to-sky-400/10",
+    level0Name: "ASTRONOMY",
     titleTH: "เส้นทางแห่งดาราศาสตร์",
     titleEN: "Path of Astronomy",
     subtitleTH: "โหนดดวงดาวและพลังงานจักรวาล",
@@ -330,12 +332,14 @@ const PATH_ARCHIVES = {
       [2, "เจ้าแห่งดาราโลก", "WORLD STAR LORD", "สร้าง Star Node ระดับภูมิภาค / เดินทางข้ามระยะมหาศาล / Stellar Descent เรียกพลังดาราถล่มพื้นที่", "Create regional Star Nodes / cross immense distances / Stellar Descent calls down overwhelming stellar power"],
       [1, "เทพแห่งดารา", "PRIMORDIAL STAR DEITY", "ร่างคือส่วนหนึ่งของจักรวาล / ทุกจุดในจักรวาลคือ Star Node / Eternal Return และ Cosmic Traverse", "Become part of the cosmos / every point may become a Star Node / Eternal Return and Cosmic Traverse"],
     ],
-    ascensionTH: "Level 0 คือการละทิ้งความเป็นมนุษย์ทั้งหมด ไม่ใช่ Warden ไม่ใช่ผู้ใช้พลัง แต่กลายเป็นแนวคิดแห่งดาราศาสตร์ Madness ไม่สามารถกัดกินได้อีก และในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว เขาไม่ได้ครอบครองเส้นทาง เขาคือเส้นทางนั้นเอง",
-    ascensionEN: "Level 0 means abandoning humanity completely. They are no longer a Warden or a wielder of power, but the Astronomical Concept itself. Madness can no longer corrupt them. Only one such existence may exist per Path. They do not possess the Path. They are the Path itself.",
+    ascensionTH: "Level 0 คือ ASTRONOMY — ตัวเส้นทางเอง ไม่ใช่ Warden ไม่ใช่ผู้ใช้พลัง และไม่ใช่สิ่งมีชีวิตอีกต่อไป แต่เป็นแนวคิดแห่งดาราศาสตร์ที่ดำรงอยู่ในจักรวาล Madness ไม่สามารถกัดกินได้อีก และในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
+    ascensionEN: "Level 0 is ASTRONOMY — the Path itself. They are no longer a Warden, no longer a wielder of power, and no longer a living being, but the Astronomical Concept existing within the cosmos. Madness can no longer corrupt them, and only one such existence may exist per Path.",
   },
   Blood: {
     image: "/images/paths/blood-banner.png",
+    video: "/videos/paths/blood.mp4",
     accent: "from-red-700/30 via-rose-600/20 to-black/20",
+    level0Name: "BLOOD",
     titleTH: "เส้นทางแห่งโลหิต",
     titleEN: "Path of Blood",
     subtitleTH: "พลังแห่งการแลกเปลี่ยนโลหิต",
@@ -344,15 +348,15 @@ const PATH_ARCHIVES = {
     quoteEN: "Blood never lies. Every drop of power must be paid for with your own existence.",
     authority: "Blood • Sacrifice • Exchange • Domination • Life Force",
     conceptTitle: "Crimson Exchange",
-    conceptTH: "Blood คือเส้นทางของการแลกเปลี่ยน การไหลเวียน และการแทรกซึม ผู้ใช้ยิ่งเสียสละมากเท่าไร พลังยิ่งรุนแรงมากขึ้นเท่านั้น เลือดไม่ใช่แค่ของเหลวในร่างกาย แต่เป็นตัวตน ชีวิต สัญญา และราคาที่ต้องจ่าย เมื่อเลือดแทรกซึมสิ่งใด สิ่งนั้นจะค่อยๆ ถูกผูกเข้ากับผู้ใช้ และเข้าใกล้การถูกครอบงำ",
-    conceptEN: "Blood is the Path of exchange, circulation, and infiltration. The greater the sacrifice, the greater the power. Blood is not merely a fluid within the body; it is identity, life, contract, and price. Whatever the blood infiltrates becomes bound to the user and moves closer to domination.",
+    conceptTH: "Blood คือเส้นทางของการแลกเปลี่ยน การไหลเวียน และการแทรกซึม ผู้ใช้ยิ่งเสียสละมากเท่าไร พลังยิ่งรุนแรงมากขึ้นเท่านั้น เลือดไม่ใช่แค่ของเหลวในร่างกาย แต่เป็นตัวตน ชีวิต และสัญญาที่จารึกด้วยการสูญเสีย เมื่อเลือดแทรกซึมสิ่งใด สิ่งนั้นจะเริ่มเข้าใกล้การถูกครอบงำ",
+    conceptEN: "Blood is the Path of exchange, circulation, and infiltration. The greater the sacrifice, the greater the power. Blood is not merely a fluid within the body, but identity, life, and a pact written through loss. Whatever blood infiltrates moves closer to domination.",
     sequences: [
-      [9, "ผู้รับรู้โลหิต", "BLOOD SENSOR", "รับรู้การไหลเวียนโลหิต / ฟื้นตัวเล็กน้อย / ตรวจจับสิ่งมีชีวิตใกล้ตัว / ควบคุมเลือดตัวเองพื้นฐาน", "Sense blood flow / minor recovery / detect nearby life / basic self-blood control"],
-      [8, "ผู้ควบคุมโลหิต", "BLOOD CONTROLLER", "ควบคุมเลือดในร่างกาย / เร่งหรือชะลอการไหล / เพิ่มพลังกายชั่วคราว / เริ่มใช้เลือดเป็นพลัง", "Control blood within the body / accelerate or slow flow / temporary physical boost / begin using blood as power"],
-      [7, "ผู้หล่อหลอมโลหิต", "BLOOD SHAPER", "สร้างอาวุธจากเลือด / เปลี่ยนเลือดเป็นรูปแบบต่างๆ / โจมตีระยะกลาง / เริ่มเสียเลือดเพื่อพลัง", "Shape blood into weapons / transform blood into forms / mid-range attacks / begin paying blood for power"],
-      [6, "จอมเวทโลหิต", "BLOOD MAGE", "ควบคุมเลือดนอกตัว / ดูดเลือดศัตรู / เสริมพลังมหาศาล / เริ่มแลกพลังอย่างชัดเจน", "Control blood outside the body / drain enemy blood / gain massive enhancement / clear exchange of power"],
-      [5, "ผู้ครอบงำโลหิต", "BLOOD DOMINATOR", "เลือดแทรกซึมวัตถุ / ควบคุมสิ่งไม่มีชีวิตที่เปื้อนเลือด / บิดเบือนพลังงานและกลไก / ทำให้สิ่งที่ถูกเลือดคลั่ง", "Blood infiltrates objects / control blood-marked nonliving things / distort energy and mechanisms / drive marked targets into frenzy"],
-      [4, "ทูตแห่งโลหิต", "ANGEL OF CRIMSON PACT", "ร่างกายเชื่อมกับโลหิต / ใช้เลือดเป็นพลังโดยตรง / พันธะด้วยการเสียสละ / การต่อสู้คือสัญญา", "Body bound to blood / use blood as direct power / sacrifice-based pacts / combat becomes a contract"],
+      [9, "ผู้รับรู้โลหิต", "BLOOD SENSOR", "รับรู้การไหลเวียนโลหิต / เพิ่มการฟื้นตัวเล็กน้อย / ตรวจจับสิ่งมีชีวิตใกล้ตัว / ควบคุมเลือดตัวเองพื้นฐาน", "Sense blood flow / slightly enhance recovery / detect nearby living beings / basic control over one's own blood"],
+      [8, "ผู้ควบคุมโลหิต", "BLOOD CONTROLLER", "ควบคุมเลือดในร่างกายตัวเอง / เร่งหรือชะลอการไหล / เพิ่มพลังกายชั่วคราว / เริ่มใช้เลือดเป็นพลัง", "Control blood within the body / accelerate or slow circulation / temporarily enhance physical strength / begin using blood as power"],
+      [7, "ผู้หล่อหลอมโลหิต", "BLOOD SHAPER", "สร้างอาวุธจากเลือด / เปลี่ยนเลือดเป็นรูปแบบต่างๆ / โจมตีระยะกลาง / เริ่มเสียเลือดเพื่อพลัง", "Shape blood into weapons / transform blood into different forms / attack at mid range / begin bleeding in exchange for power"],
+      [6, "จอมเวทโลหิต", "BLOOD MAGE", "ควบคุมเลือดนอกตัว / ดูดเลือดศัตรู / เสริมพลังมหาศาล / การแลกเปลี่ยนเริ่มชัดเจน", "Control blood outside the body / drain enemy blood / greatly enhance power / exchange becomes more explicit"],
+      [5, "ผู้ครอบงำโลหิต", "BLOOD DOMINATOR", "เลือดแทรกซึมและเกาะติดวัตถุ / ควบคุมสิ่งที่โดนเลือด / บิดเบือนพลังงานหรือกลไก / ทำให้สิ่งที่ถูกเลือดคลั่ง", "Blood infiltrates and clings to objects / control what the blood touches / distort energy or mechanisms / drive affected targets into frenzy"],
+      [4, "ทูตแห่งโลหิต", "ANGEL OF CRIMSON PACT", "ร่างกายเชื่อมกับโลหิต / ใช้เลือดเป็นพลังโดยตรง / พันธะด้วยการเสียสละ / การต่อสู้คือสัญญา", "Body connects directly with blood / use blood as direct power / form pacts through sacrifice / battle becomes a contract"],
       [3, "ผู้คุมสายโลหิต", "SOVEREIGN OF BLOODLINE", "ควบคุมเลือดจำนวนมาก / ควบคุมศัตรูผ่านสายเลือด / สร้างสนามโลหิต / ทุกคนในพื้นที่อยู่ใต้แรงกดดัน", "Control massive blood volumes / influence enemies through bloodline / create a blood field / all within the area fall under pressure"],
       [2, "เจ้าแห่งโลหิตโลก", "WORLD BLOOD LORD", "ควบคุมพลังชีวิตระดับพื้นที่ / ดูดพลังชีวิตจำนวนมหาศาล / สนามรบกลายเป็นแหล่งพลังของตน", "Control life force across an area / drain enormous vitality / turn the battlefield into a personal power source"],
       [1, "เทพโลหิต", "PRIMORDIAL BLOOD DEITY", "ควบคุมแก่นของชีวิต / สร้างหรือลบชีวิตผ่านเลือด / ทุกพลังแลกด้วยตัวตน / การโจมตีคือการพรากตัวตน", "Control the essence of life / create or erase life through blood / every power is paid with existence / every attack takes identity"],
@@ -360,8 +364,37 @@ const PATH_ARCHIVES = {
     specialTitle: "CRIMSON ASSIMILATION",
     specialTH: "เลือดของข้าแทรกซึมทุกสิ่งที่มันสัมผัส สิ่งนั้นจะกลายเป็นส่วนหนึ่งของข้า และข้าจะเป็นผู้กำหนดมัน",
     specialEN: "My blood shall infiltrate all that it touches. What it claims becomes part of me, and I shall become its master.",
-    ascensionTH: "Level 0 คือการกลายเป็นแนวคิดแห่งโลหิตและการแลกเปลี่ยน ไม่ใช่ผู้ควบคุมเลือดอีกต่อไป แต่เป็นกฎที่กำหนดว่าชีวิตต้องจ่ายสิ่งใดเพื่อได้รับพลัง ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
-    ascensionEN: "Level 0 means becoming the Concept of Blood and Exchange. They no longer control blood; they become the law that decides what life must pay to obtain power. Only one such existence may exist within each Path.",
+    ascensionTH: "Level 0 คือ BLOOD — ตัวเส้นทางเอง ไม่ใช่ผู้ควบคุมเลือดอีกต่อไป แต่เป็นแนวคิดแห่งโลหิต การแลกเปลี่ยน และตัวตนที่จารึกอยู่ในสายเลือด ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
+    ascensionEN: "Level 0 is BLOOD — the Path itself. They no longer control blood; they become the concept of blood, exchange, and identity written within the bloodstream. Only one such existence may exist within each Path.",
+  },
+  Flora: {
+    image: "/images/paths/flora-banner.png",
+    video: "/videos/paths/flora.mp4",
+    accent: "from-emerald-700/30 via-green-600/20 to-lime-400/10",
+    level0Name: "FLORA",
+    titleTH: "เส้นทางแห่งพฤกษา",
+    titleEN: "Path of Flora",
+    subtitleTH: "การเติบโต การควบคุมพฤกษา และการกลืนกิน",
+    subtitleEN: "Growth, plant control, and consumption",
+    quoteTH: "พฤกษาไม่เร่งรีบ แต่มันจะเติบโตจนไม่มีสิ่งใดหยุดมันได้",
+    quoteEN: "Flora does not rush. It grows until nothing can stop it.",
+    authority: "Seeds • Vines • Roots • Growth • Consumption • Natural Dominion",
+    conceptTitle: "Endless Growth",
+    conceptTH: "Flora ไม่ใช่เส้นทางแห่งการรักษา แต่คือธรรมชาติในรูปแบบดิบที่สุด เมล็ดพันธุ์หนึ่งเมล็ดสามารถกลายเป็นราก เถาวัลย์ ป่า และอาณาจักรที่กลืนกินทุกสิ่งรอบตัวได้ ยิ่งระดับสูง พฤกษาจะยิ่งแผ่ขยายจากการควบคุมพืชเล็กๆ ไปสู่การเปลี่ยนเมือง ภูมิภาค และโลกทั้งใบให้กลายเป็นป่าของตนเอง การเติบโตของ Flora ไม่ได้อ่อนโยน มันคือการแย่งทรัพยากร การครอบงำพื้นที่ และการกลืนกินเพื่อเติบโตต่อไป",
+    conceptEN: "Flora is not the Path of healing. It is nature in its rawest form. A single seed can become roots, vines, forests, and eventually a kingdom that consumes everything around it. As the user rises, Flora expands from controlling small plants to transforming cities, regions, and entire worlds into their own forest. Its growth is not gentle. It is the seizure of resources, domination of territory, and consumption in order to continue growing.",
+    sequences: [
+      [9, "ผู้กระซิบเมล็ด", "SEED WHISPERER", "รับรู้พืชรอบตัวและระดับใบเมล็ด / เร่งการงอกขั้นพื้นฐาน / สร้างเถาวัลย์อ่อนและรากเล็ก", "Sense nearby plants and seed-level life / accelerate basic germination / create young vines and small roots"],
+      [8, "นักพฤกษา", "HERBALIST", "ควบคุมพืชได้หลากหลายชนิด / สร้างพิษจากพฤกษาเป็นอาวุธ / เพิ่มความแข็งแกร่งและเร่งการเติบโตของพืช", "Control many kinds of plants / create plant-based toxins as weapons / strengthen and accelerate plant growth"],
+      [7, "ผู้ถักทอเถาวัลย์", "VINE WEAVER", "ควบคุมเถาวัลย์จำนวนมากพร้อมกัน / รัด ตรึง และโจมตีจากระยะไกล / สร้างเกราะหรือกำแพงเถาวัลย์ / เริ่มสร้างพื้นที่พฤกษาของตน", "Control many vines at once / bind, restrain, and strike from range / form vine armor or walls / begin creating a personal flora zone"],
+      [6, "จอมเวทพฤกษา", "WOODLAND MAGE", "เปลี่ยนพื้นที่รอบตัวให้เป็นป่าชั่วคราว / พืชโจมตีตามคำสั่งทางจิตหรือสายตา / ศัตรูเคลื่อนไหวช้าลงและอ่อนแอลง / ควบคุมสนามรบอย่างแท้จริง", "Turn the surroundings into a temporary forest / plants attack through mental or visual commands / enemies become slower and weaker / truly control the battlefield"],
+      [5, "ผู้พิทักษ์รากแก้ว", "ROOT GUARDIAN", "รากใต้ดินแผ่ขยายในวงกว้าง / ดูดพลังชีวิตจากพืชในพื้นที่เพื่อรักษาตนเอง / สร้างผู้พิทักษ์พฤกษา / ยับยั้งพลังและการเติบโตของศัตรู", "Underground roots spread across a wide area / draw life force from local plants to recover / create plant guardians / suppress enemy power and growth"],
+      [4, "ภูตพฤกษาพราว", "ANGEL OF VERDANT BLOOM", "ร่างกายกลายเป็นพฤกษา / สร้างป่าขนาดใหญ่ได้ทันที / ฟื้นคืนพลังด้วยการดูดซับพลังชีวิตจากศัตรู / โจมตีวงกว้างและทำลายล้างสูง", "Body becomes plant-like / instantly create a large forest / recover by absorbing enemy life force / unleash wide-area destructive attacks"],
+      [3, "ผู้คุมวัฏจักร", "HARVESTER OF SEASONS", "ควบคุมวัฏจักรการเติบโตและเหี่ยวเฉา / ทำให้พืชของศัตรูเหี่ยวเฉาในพริบตา / เร่งวงจรชีวิตเพื่อทำลายทุกสิ่ง / เปลี่ยนเมืองทั้งเมืองให้เป็นป่ากลืนกิน", "Control cycles of growth and withering / make enemy plants wither instantly / accelerate life cycles to destroy / turn an entire city into a devouring forest"],
+      [2, "จ้าวแห่งพฤกษาโลก", "LORD OF THE WORLD TREE", "เชื่อมต่อกับพฤกษาทั่วทั้งภูมิภาค / รากครอบคลุมแผ่นดินและเมืองใหญ่ / ดูดกลืนพลังชีวิตมหาศาลอย่างต่อเนื่อง / สร้างภัยพิบัติพฤกษา", "Connect with flora across an entire region / roots cover lands and great cities / continuously consume massive life force / create flora-scale disasters"],
+      [1, "ผู้หยั่งรากสู่โลก", "ROOTED WORLD SOVEREIGN", "ต้นกำเนิดของพลังพฤกษาทั้งปวง / สร้างหรือทำลายชีวิตตามต้องการ / เปลี่ยนโลกทั้งใบให้เป็นอาณาจักรพฤกษา / การโจมตีคือการกลืนกินทุกสรรพสิ่ง", "The origin of all flora power / create or destroy life at will / turn the entire world into a flora kingdom / every attack becomes consumption of all things"],
+    ],
+    ascensionTH: "Level 0 คือ FLORA — ตัวเส้นทางเอง ไม่ใช่ผู้ควบคุมพืชอีกต่อไป แต่เป็นป่า การเติบโต การแผ่ขยาย และการกลืนกินที่ไม่มีวันหยุด ตราบใดที่ยังมีเมล็ดพันธุ์ ราก หรือชีวิตพฤกษาหลงเหลืออยู่ การดำรงอยู่ของ FLORA จะไม่สิ้นสุด ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
+    ascensionEN: "Level 0 is FLORA — the Path itself. They no longer control plants; they become the forest, endless growth, expansion, and consumption without pause. As long as a seed, root, or trace of plant life remains, FLORA does not truly end. Only one such existence may exist within each Path.",
   },
 };
 
@@ -927,8 +960,21 @@ function FullPathArchive({ archive, lang }) {
           <div className="rounded-[2rem] border border-amber-200/20 bg-amber-500/[0.06] p-6">
             <p className="text-xs uppercase tracking-[0.35em] text-amber-200/70">Concept Ascension</p>
             <h3 className="mt-2 text-3xl font-black">Level 0</h3>
+            {archive.level0Name && <p className="mt-1 text-2xl font-black tracking-[0.18em] text-amber-100/90">{archive.level0Name}</p>}
             <p className="mt-4 text-white/72 leading-relaxed">{lang === "th" ? archive.ascensionTH : archive.ascensionEN}</p>
           </div>
+
+          {archive.video && (
+            <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/45">
+              <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
+                <p className="text-xs uppercase tracking-[0.32em] text-white/45">Path Video</p>
+                <p className="text-xs text-white/35">9:16</p>
+              </div>
+              <div className="mx-auto aspect-[9/16] max-h-[560px] bg-black">
+                <video src={archive.video} poster={archive.image} controls playsInline className="h-full w-full object-cover" />
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="rounded-[2rem] border border-violet-200/15 bg-white/[0.035] p-5 md:p-6">
