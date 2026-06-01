@@ -14,7 +14,7 @@ const UI = {
     navCharacters: "ตัวละครหลัก",
     charactersKicker: "MAIN CHARACTERS OF ARC I",
     charactersTitle: "ตัวละครหลักของภาคแรก",
-    charactersBody: "สองตัวละครสำคัญที่เป็นแกนเดินเรื่องช่วงแรกของ Core Warden พร้อมเส้นทางพลังที่สะท้อนตัวตนของแต่ละคน",
+    charactersBody: "สมาชิกหลักทั้งห้าคนของ Umbral Covenant กลุ่ม Warden ที่เป็นศูนย์กลางของ Arc I",
     viewCharacter: "เปิดข้อมูลตัวละคร",
     viewPathArchive: "เปิดคลังเส้นทาง",
     characterRole: "บทบาท",
