@@ -83,7 +83,7 @@ const UI = {
     navCharacters: "Characters",
     charactersKicker: "MAIN CHARACTERS OF ARC I",
     charactersTitle: "Main Characters of Arc I",
-    charactersBody: "Two key characters who drive the early arc of Core Warden, each defined by a Path that reflects their nature and role in the story.",
+    charactersBody: "The five core members of Umbral Covenant, the Warden team at the center of Arc I.",
     viewCharacter: "View Character",
     viewPathArchive: "Open Path Archive",
     characterRole: "Role",
@@ -263,45 +263,111 @@ const FEATURED_CHARACTERS = [
     key: "naran",
     name: "NARAN",
     nameTH: "นรัน",
-    path: "Path of Astronomy",
-    pathTH: "เส้นทางแห่งดาราศาสตร์",
-    image: "/images/paths/astronomy-banner.png",
+    path: "ASTRONOMY",
+    pathTH: "ดาราศาสตร์",
+    image: "/images/story/umbral-covenant.jpg",
     accent: "from-indigo-500/25 via-violet-500/20 to-sky-400/10",
-    titleTH: "ผู้เฝ้ามองดวงดาว",
-    titleEN: "The Observer of Stars",
-    roleTH: "ตัวละครหลักภาคแรก / ผู้สังเกตการณ์ / แกนมุมมองของเรื่อง",
-    roleEN: "Main character of Arc I / observer / central viewpoint of the story",
-    statusTH: "กำลังเติบโตผ่านโลกที่ไร้เมตตา และกำลังเข้าใกล้วันปลุกพลัง",
-    statusEN: "Surviving a merciless world while approaching the day of awakening",
-    sequenceTH: "ยังไม่เปิดเผย",
-    sequenceEN: "Not yet revealed",
-    quoteTH: "ดวงดาวไม่เคยสูญสลาย มันเพียงเปลี่ยนรูป และรอเวลาจะกลับมาอีกครั้ง",
+    titleTH: "Sequence 7 · Star Node Creator",
+    titleEN: "Sequence 7 · Star Node Creator",
+    roleTH: "สมองหลัก / วางแผน / รับรู้สถานการณ์",
+    roleEN: "Strategist / Tactical Planning / Battlefield Awareness",
+    statusTH: "หนึ่งในสมาชิกหลักของ Umbral Covenant ช่วงเปิด Arc I",
+    statusEN: "One of the core members of Umbral Covenant at the opening of Arc I.",
+    sequenceTH: "Sequence 7",
+    sequenceEN: "Sequence 7",
+    quoteTH: "ดวงดาวไม่เคยสูญสลาย มันเพียงเปลี่ยนรูป และรอเวลากลับมาอีกครั้ง",
     quoteEN: "Stars never truly perish. They merely change form and wait for the time to return.",
-    conceptTH: "Astronomy คือเส้นทางของ Star Node เครือข่ายดาราที่ใช้รับรู้สนามรบ ควบคุมพื้นที่ และเดินทางผ่านเส้นทางแห่งดวงดาวในระดับสูง",
-    conceptEN: "Astronomy is the Path of Star Nodes: stellar networks used for battlefield awareness, territorial control, and high-level travel through routes between stars.",
-    tags: ["Stars", "Star Nodes", "Cosmic Energy"],
+    conceptTH: "เส้นทางดาราศาสตร์คือพลังแห่ง Star Nodes การรับรู้สนามรบ และการเชื่อมโยงพื้นที่ผ่านเครือข่ายดารา",
+    conceptEN: "Astronomy is the Path of Star Nodes, battlefield awareness, and territorial connection through stellar networks.",
+    tags: ["Astronomy", "Star Nodes", "Cosmic Energy"],
   },
   {
     key: "seren",
     name: "SEREN",
     nameTH: "เซเรน",
-    path: "Path of Blood",
-    pathTH: "เส้นทางแห่งโลหิต",
-    image: "/images/paths/blood-banner.png",
+    path: "BLOOD",
+    pathTH: "โลหิต",
+    image: "/images/story/umbral-covenant.jpg",
     accent: "from-red-600/30 via-rose-500/20 to-black/20",
-    titleTH: "ราคาของพลัง",
-    titleEN: "The Price of Power",
-    roleTH: "ตัวละครหลักระยะยาว / นักสู้สายโลหิต / เงาอันเย็นชาของภาคแรก",
-    roleEN: "Long-running main character / blood combatant / cold shadow of Arc I",
-    statusTH: "หนึ่งในตัวละครแกนหลักที่เส้นทางของเธอผูกกับการแลกเปลี่ยน การเสียสละ และการครอบงำ",
-    statusEN: "A core character whose Path is bound to exchange, sacrifice, and domination.",
-    sequenceTH: "ยังไม่เปิดเผย",
-    sequenceEN: "Not yet revealed",
+    titleTH: "Sequence 7 · Blood Controller",
+    titleEN: "Sequence 7 · Blood Controller",
+    roleTH: "ต่อสู้ระยะประชิด / ควบคุมเลือด",
+    roleEN: "Close Combat / Blood Control",
+    statusTH: "หนึ่งในสมาชิกหลักของ Umbral Covenant ช่วงเปิด Arc I",
+    statusEN: "One of the core members of Umbral Covenant at the opening of Arc I.",
+    sequenceTH: "Sequence 7",
+    sequenceEN: "Sequence 7",
     quoteTH: "เลือดไม่เคยโกหก และพลังทุกหยดต้องแลกมาด้วยตัวตนของเจ้าเอง",
     quoteEN: "Blood never lies. Every drop of power must be paid for with your own existence.",
-    conceptTH: "Blood คือเส้นทางแห่งการแลกเปลี่ยนโลหิต ยิ่งเสียสละมาก พลังยิ่งสูงขึ้น เลือดที่แทรกซึมสิ่งใด ย่อมทำให้สิ่งนั้นเข้าใกล้การถูกครอบงำ",
-    conceptEN: "Blood is the Path of crimson exchange. The greater the sacrifice, the greater the power. Whatever the blood infiltrates moves closer to domination.",
+    conceptTH: "เส้นทางโลหิตคือการควบคุมเลือด พลังชีวิต และการแลกเปลี่ยน ยิ่งเสียสละมาก พลังยิ่งรุนแรง",
+    conceptEN: "Blood is the Path of blood control, life force, and crimson exchange. The greater the sacrifice, the greater the power.",
     tags: ["Blood", "Sacrifice", "Domination"],
+  },
+  {
+    key: "lavian",
+    name: "LAVIAN",
+    nameTH: "ลาเวียน",
+    path: "ILLUSION",
+    pathTH: "มายา",
+    image: "/images/story/umbral-covenant.jpg",
+    accent: "from-fuchsia-500/25 via-violet-500/20 to-black/20",
+    titleTH: "Sequence 7 · Illusion Controller",
+    titleEN: "Sequence 7 · Illusion Controller",
+    roleTH: "ลอบเร้น / ภาพลวง / เล่เหลี่ยม",
+    roleEN: "Stealth / Illusion / Deception",
+    statusTH: "หนึ่งในสมาชิกหลักของ Umbral Covenant ช่วงเปิด Arc I",
+    statusEN: "One of the core members of Umbral Covenant at the opening of Arc I.",
+    sequenceTH: "Sequence 7",
+    sequenceEN: "Sequence 7",
+    quoteTH: "สิ่งที่เจ้ามองเห็น อาจเป็นเพียงสิ่งที่ข้าอยากให้เจ้าเชื่อ",
+    quoteEN: "What you see may only be what I want you to believe.",
+    conceptTH: "เส้นทางมายาคือการบิดเบือนการรับรู้ ภาพลวง และการควบคุมความจริงในสายตาของศัตรู",
+    conceptEN: "Illusion is the Path of distorted perception, mirages, and the manipulation of what enemies believe to be real.",
+    tags: ["Illusion", "Deception", "Perception"],
+  },
+  {
+    key: "lucier",
+    name: "LUCIER",
+    nameTH: "ลูเซียร์",
+    path: "DARKNESS",
+    pathTH: "ความมืด",
+    image: "/images/story/umbral-covenant.jpg",
+    accent: "from-purple-700/30 via-slate-900/30 to-black/30",
+    titleTH: "Sequence 7 · Existence Eroder",
+    titleEN: "Sequence 7 · Existence Eroder",
+    roleTH: "ลบสิ่งมีอยู่ / ป้องกัน / กดดันศัตรู",
+    roleEN: "Erasure / Defense / Suppression",
+    statusTH: "หนึ่งในสมาชิกหลักของ Umbral Covenant ช่วงเปิด Arc I",
+    statusEN: "One of the core members of Umbral Covenant at the opening of Arc I.",
+    sequenceTH: "Sequence 7",
+    sequenceEN: "Sequence 7",
+    quoteTH: "สิ่งใดมีอยู่ สิ่งนั้นย่อมถูกลบได้",
+    quoteEN: "Whatever exists can be erased.",
+    conceptTH: "เส้นทางความมืดคือพลังแห่งการซ่อนเร้น ช่องว่าง ความกลัว และการกัดกร่อนการดำรงอยู่",
+    conceptEN: "Darkness is the Path of concealment, void, fear, and the erosion of existence.",
+    tags: ["Darkness", "Void", "Erasure"],
+  },
+  {
+    key: "selver",
+    name: "SELVER",
+    nameTH: "เซลเวอร์",
+    path: "HOLY LIGHT",
+    pathTH: "แสงศักดิ์สิทธิ์",
+    image: "/images/story/umbral-covenant.jpg",
+    accent: "from-yellow-300/25 via-amber-500/20 to-white/10",
+    titleTH: "Sequence 6 · Holy Light Mage",
+    titleEN: "Sequence 6 · Holy Light Mage",
+    roleTH: "หัวหน้าทีม / รักษา / โจมตีแสง",
+    roleEN: "Team Leader / Healing / Light-Based Offense",
+    statusTH: "หัวหน้าทีม Umbral Covenant ช่วงเปิด Arc I",
+    statusEN: "Leader of Umbral Covenant at the opening of Arc I.",
+    sequenceTH: "Sequence 6",
+    sequenceEN: "Sequence 6",
+    quoteTH: "แสงไม่ได้อ่อนโยนเสมอไป บางครั้งมันเกิดมาเพื่อลงทัณฑ์",
+    quoteEN: "Light is not always gentle. Sometimes it exists to punish.",
+    conceptTH: "เส้นทางแสงศักดิ์สิทธิ์คือพลังแห่งการชำระล้าง การรักษา การปกป้อง และการลงทัณฑ์ด้วยแสง",
+    conceptEN: "Holy Light is the Path of purification, healing, protection, and judgment through sacred radiance.",
+    tags: ["Holy Light", "Healing", "Judgment"],
   },
 ];
 
@@ -534,41 +600,56 @@ export default function CoreWardenWebsite() {
       </header>
 
       <SectionBlock id="characters" kicker={t.charactersKicker} title={t.charactersTitle} text={t.charactersBody}>
-        <div className="mt-10 grid lg:grid-cols-2 gap-7">
-          {FEATURED_CHARACTERS.map((character) => (
+        <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-black/25 shadow-[0_0_90px_rgba(139,92,246,.14)]">
+          <button
+            type="button"
+            onClick={() => setSelectedCharacter(FEATURED_CHARACTERS[0])}
+            className="group block w-full text-left"
+          >
+            <div className="relative overflow-hidden bg-black">
+              <img
+                src="/images/story/umbral-covenant.jpg"
+                alt="Umbral Covenant"
+                className="w-full object-cover transition duration-700 group-hover:scale-[1.02]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#03030a] via-black/35 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                <p className="text-xs uppercase tracking-[0.35em] text-violet-100/75">ARC I MAIN TEAM</p>
+                <h3 className="mt-3 text-4xl md:text-6xl font-black">UMBRAL COVENANT</h3>
+                <p className="mt-4 max-w-3xl text-white/75 leading-relaxed">
+                  {lang === "th"
+                    ? "สมาชิกหลักทั้งห้าคนของ Umbral Covenant กลุ่ม Warden ที่เป็นศูนย์กลางของ Arc I"
+                    : "Five Wardens bound by fate, walking different Paths toward the same destination."}
+                </p>
+              </div>
+            </div>
+          </button>
+
+          <div className="grid gap-3 p-5 md:grid-cols-5 md:p-6">
+            {FEATURED_CHARACTERS.map((character) => (
+              <button
+                key={character.key}
+                type="button"
+                onClick={() => setSelectedCharacter(character)}
+                className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-left transition hover:-translate-y-1 hover:border-violet-200/45 hover:bg-white/[0.08]"
+              >
+                <p className="text-lg font-black">{character.name}</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.25em] text-violet-100/65">{character.path}</p>
+                <p className="mt-3 text-xs text-white/45">{character.titleEN}</p>
+              </button>
+            ))}
+          </div>
+
+          <div className="border-t border-white/10 px-5 pb-6 md:px-6">
             <button
-              key={character.key}
               type="button"
-              onClick={() => setSelectedCharacter(character)}
-              className={`group overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${character.accent} text-left transition hover:-translate-y-1 hover:border-violet-200/45 hover:shadow-[0_0_70px_rgba(139,92,246,.18)]`}
+              onClick={() => setSelectedCharacter(FEATURED_CHARACTERS[0])}
+              className="mt-5 inline-flex items-center gap-2 rounded-full border border-violet-200/25 bg-violet-500/10 px-5 py-3 text-sm font-bold text-violet-100 transition hover:bg-violet-500/20"
             >
-              <div className="relative aspect-video overflow-hidden bg-black">
-                <img
-                  src={character.image}
-                  alt={character.name}
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/35 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                  <p className="text-xs uppercase tracking-[0.32em] text-violet-100/75">{lang === "th" ? character.pathTH : character.path}</p>
-                  <h3 className="mt-3 text-4xl md:text-5xl font-black">{lang === "th" ? character.nameTH : character.name}</h3>
-                  <p className="mt-2 text-lg text-white/75">{lang === "th" ? character.titleTH : character.titleEN}</p>
-                </div>
-              </div>
-              <div className="p-6 md:p-7">
-                <p className="text-white/65 leading-relaxed">{lang === "th" ? character.conceptTH : character.conceptEN}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {character.tags.map((tag) => (
-                    <span key={tag} className="rounded-full border border-white/10 bg-black/25 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white/55">{tag}</span>
-                  ))}
-                </div>
-                <div className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-violet-100">
-                  <span>{t.viewCharacter}</span>
-                  <span>→</span>
-                </div>
-              </div>
+              <span>{lang === "th" ? "เปิดข้อมูลตัวละคร" : "View Character Profiles"}</span>
+              <span>→</span>
             </button>
-          ))}
+          </div>
         </div>
       </SectionBlock>
 
