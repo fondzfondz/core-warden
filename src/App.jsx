@@ -807,8 +807,8 @@ export default function CoreWardenWebsite() {
           <div className="min-h-screen max-w-6xl mx-auto px-5 py-16">
             <button onClick={() => setSelectedCharacter(null)} className="fixed top-6 right-6 z-50 rounded-full border border-white/15 bg-black/50 px-5 py-3 hover:bg-white/10">{t.close}</button>
             <div className={`overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${selectedCharacter.accent}`}>
-              <div className="relative aspect-video max-h-[520px] overflow-hidden bg-black">
-                <img src={selectedCharacter.image} alt={selectedCharacter.name} className="h-full w-full object-cover" />
+              <div className="relative h-[520px] overflow-hidden bg-black">
+                <img src={selectedCharacter.image} alt={selectedCharacter.name} className="absolute inset-0 h-full w-full object-cover object-center" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#03030a] via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-7 md:p-10">
                   <p className="text-xs uppercase tracking-[0.35em] text-violet-100/75">MAIN CHARACTER · ARC I</p>
