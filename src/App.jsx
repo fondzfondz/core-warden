@@ -265,7 +265,7 @@ const FEATURED_CHARACTERS = [
     nameTH: "นรัน",
     path: "ASTRONOMY",
     pathTH: "ดาราศาสตร์",
-    image: "/images/story/umbral-covenant.jpg",
+    image: "/images/story/umbral-covenant.png",
     accent: "from-indigo-500/25 via-violet-500/20 to-sky-400/10",
     titleTH: "Sequence 7 · Star Node Creator",
     titleEN: "Sequence 7 · Star Node Creator",
