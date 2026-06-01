@@ -327,10 +327,10 @@ const PATH_ARCHIVES = {
       [7, "ผู้สร้างจุดดารา", "STAR NODE CREATOR", "สร้าง Star Node จุดแรก / เคลื่อนที่ระยะสั้น / เริ่มเชื่อมโยงเครือข่ายดารา / Meteor Fragment เรียกเศษดาวตกโจมตีพื้นที่เป้าหมาย", "Create the first Star Node / short-range traversal / begin a stellar network / Meteor Fragment calls down shattered meteor fragments"],
       [6, "จอมเวทดารา", "ASTRAL MAGE", "สร้างหลาย Star Node / เคลื่อนที่ข้ามพื้นที่ / ยิงแสงดารา / Star Pulse ทำลายวัตถุและเครื่องจักร", "Create multiple Star Nodes / traverse wider areas / wield stellar light / Star Pulse damages objects and machinery"],
       [5, "ผู้ครองดารา", "STAR DOMINATOR", "สร้างเครือข่ายดารา / เคลื่อนที่อิสระในพื้นที่ / Orbit Crush บีบแรงโน้มถ่วงจำลองทำลายโครงสร้าง", "Build a stellar network / move freely within the area / Orbit Crush simulates gravity to destroy structures"],
-      [4, "ทูตแห่งดารา", "ANGEL OF STARS", "ร่างกายกึ่งพลังดารา / ผ่าน Star Node ได้อย่างไร้ร่องรอย / Star Step เคลื่อนที่ผ่าน Node อย่างรวดเร็ว", "A partially stellar body / pass through Star Nodes without trace / Star Step rapidly travels through Nodes"],
-      [3, "ผู้คุมกลุ่มดาว", "SOVEREIGN OF CONSTELLATION", "เชื่อม Star Node เป็นกลุ่มดาว / ควบคุมพื้นที่กว้าง / Node Collapse รวมพลังหลาย Node ทำลายล้างระดับเมือง", "Link Star Nodes into constellations / control vast areas / Node Collapse combines multiple Nodes into city-level destruction"],
-      [2, "เจ้าแห่งดาราโลก", "WORLD STAR LORD", "สร้าง Star Node ระดับภูมิภาค / เดินทางข้ามระยะมหาศาล / Stellar Descent เรียกพลังดาราถล่มพื้นที่", "Create regional Star Nodes / cross immense distances / Stellar Descent calls down overwhelming stellar power"],
-      [1, "เทพแห่งดารา", "PRIMORDIAL STAR DEITY", "ร่างคือส่วนหนึ่งของจักรวาล / ทุกจุดในจักรวาลคือ Star Node / Eternal Return และ Cosmic Traverse", "Become part of the cosmos / every point may become a Star Node / Eternal Return and Cosmic Traverse"],
+      [4, "ทูตแห่งดารา", "ANGEL OF STARS", "ร่างกายกึ่งดารา / เดินทางผ่าน Star Node / Star Step", "A partially stellar body / travel through Star Nodes / Star Step", "ทำลายคำสาป พันธะ และการเชื่อมต่อพลังงานที่อ่อนแอกว่า", "Destroy weaker curses, pacts, and energy connections"],
+      [3, "ผู้คุมกลุ่มดาว", "SOVEREIGN OF CONSTELLATION", "สร้างกลุ่มดาว / ควบคุมอาณาเขตดารา / Node Collapse", "Create constellations / control stellar territory / Node Collapse", "ทำลายเครือข่ายพลังงาน โครงสร้างอาคม และสนามพลังที่เชื่อมต่อกัน", "Break energy networks, magical structures, and linked power fields"],
+      [2, "เจ้าแห่งดาราโลก", "WORLD STAR LORD", "เครือข่ายดาราระดับภูมิภาค / ควบคุมดาราทั้งฟ้า / Stellar Descent", "Regional Star Node network / command the sky of stars / Stellar Descent", "รบกวนการส่งผ่านพลังงาน ตัดการเชื่อมต่อระยะไกล และบั่นทอนเสถียรภาพของความสามารถ", "Disrupt energy transfer, sever long-range connections, and weaken ability stability"],
+      [1, "เทพแห่งดารา", "PRIMORDIAL STAR DEITY", "ทุกจุดคือ Star Node / Cosmic Traverse / Eternal Return", "Every point may become a Star Node / Cosmic Traverse / Eternal Return", "ตัดจุดเชื่อมต่อของพลัง แยกความสามารถออกจากต้นกำเนิด และทำให้พลังสูญเสียเสถียรภาพ", "Cut power connection points, separate abilities from their source, and destabilize power"],
     ],
     ascensionTH: "Level 0 คือ ASTRONOMY — ตัวเส้นทางเอง ไม่ใช่ Warden ไม่ใช่ผู้ใช้พลัง และไม่ใช่สิ่งมีชีวิตอีกต่อไป แต่เป็นแนวคิดแห่งดาราศาสตร์ที่ดำรงอยู่ในจักรวาล Madness ไม่สามารถกัดกินได้อีก และในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
     ascensionEN: "Level 0 is ASTRONOMY — the Path itself. They are no longer a Warden, no longer a wielder of power, and no longer a living being, but the Astronomical Concept existing within the cosmos. Madness can no longer corrupt them, and only one such existence may exist per Path.",
@@ -356,10 +356,10 @@ const PATH_ARCHIVES = {
       [7, "ผู้หล่อหลอมโลหิต", "BLOOD SHAPER", "สร้างอาวุธจากเลือด / เปลี่ยนเลือดเป็นรูปแบบต่างๆ / โจมตีระยะกลาง / เริ่มเสียเลือดเพื่อพลัง", "Shape blood into weapons / transform blood into different forms / attack at mid range / begin bleeding in exchange for power"],
       [6, "จอมเวทโลหิต", "BLOOD MAGE", "ควบคุมเลือดนอกตัว / ดูดเลือดศัตรู / เสริมพลังมหาศาล / การแลกเปลี่ยนเริ่มชัดเจน", "Control blood outside the body / drain enemy blood / greatly enhance power / exchange becomes more explicit"],
       [5, "ผู้ครอบงำโลหิต", "BLOOD DOMINATOR", "เลือดแทรกซึมและเกาะติดวัตถุ / ควบคุมสิ่งที่โดนเลือด / บิดเบือนพลังงานหรือกลไก / ทำให้สิ่งที่ถูกเลือดคลั่ง", "Blood infiltrates and clings to objects / control what the blood touches / distort energy or mechanisms / drive affected targets into frenzy"],
-      [4, "ทูตแห่งโลหิต", "ANGEL OF CRIMSON PACT", "ร่างกายเชื่อมกับโลหิต / ใช้เลือดเป็นพลังโดยตรง / พันธะด้วยการเสียสละ / การต่อสู้คือสัญญา", "Body connects directly with blood / use blood as direct power / form pacts through sacrifice / battle becomes a contract"],
-      [3, "ผู้คุมสายโลหิต", "SOVEREIGN OF BLOODLINE", "ควบคุมเลือดจำนวนมาก / ควบคุมศัตรูผ่านสายเลือด / สร้างสนามโลหิต / ทุกคนในพื้นที่อยู่ใต้แรงกดดัน", "Control massive blood volumes / influence enemies through bloodline / create a blood field / all within the area fall under pressure"],
-      [2, "เจ้าแห่งโลหิตโลก", "WORLD BLOOD LORD", "ควบคุมพลังชีวิตระดับพื้นที่ / ดูดพลังชีวิตจำนวนมหาศาล / สนามรบกลายเป็นแหล่งพลังของตน", "Control life force across an area / drain enormous vitality / turn the battlefield into a personal power source"],
-      [1, "เทพโลหิต", "PRIMORDIAL BLOOD DEITY", "ควบคุมแก่นของชีวิต / สร้างหรือลบชีวิตผ่านเลือด / ทุกพลังแลกด้วยตัวตน / การโจมตีคือการพรากตัวตน", "Control the essence of life / create or erase life through blood / every power is paid with existence / every attack takes identity"],
+      [4, "ทูตแห่งโลหิต", "ANGEL OF CRIMSON PACT", "ร่างกายเชื่อมกับโลหิต / ทุกการต่อสู้คือการแลกเปลี่ยน", "Body connects with blood / every battle becomes an exchange", "จารึกพันธะผ่านโลหิต และเชื่อมชะตากรรมผ่านสายเลือด", "Inscribe pacts through blood and bind fate through bloodlines"],
+      [3, "ผู้คุมสายโลหิต", "SOVEREIGN OF BLOODLINE", "สร้างสนามโลหิต / ควบคุมผ่านสายเลือด", "Create a blood field / control through bloodlines", "ครอบงำเจตจำนงและความทรงจำผ่านสายเลือด", "Dominate will and memory through bloodlines"],
+      [2, "เจ้าแห่งโลหิตโลก", "WORLD BLOOD LORD", "ดูดกลืนพลังชีวิตระดับพื้นที่ / สนามรบคือแหล่งพลัง", "Drain life force across an area / turn the battlefield into a power source", "ดูดกลืนตัวตน และกลืนกินร่องรอยของการดำรงอยู่", "Absorb identity and consume traces of existence"],
+      [1, "เทพโลหิต", "PRIMORDIAL BLOOD DEITY", "ควบคุมแก่นแห่งชีวิต / สร้างหรือลบชีวิต", "Control the essence of life / create or erase life", "พรากตัวตน ลบความทรงจำ และทำลายร่องรอยการดำรงอยู่", "Take identity, erase memories, and destroy traces of existence"],
     ],
     specialTitle: "CRIMSON ASSIMILATION",
     specialTH: "เลือดของข้าแทรกซึมทุกสิ่งที่มันสัมผัส สิ่งนั้นจะกลายเป็นส่วนหนึ่งของข้า และข้าจะเป็นผู้กำหนดมัน",
@@ -388,16 +388,44 @@ const PATH_ARCHIVES = {
       [7, "ผู้ถักทอเถาวัลย์", "VINE WEAVER", "ควบคุมเถาวัลย์จำนวนมากพร้อมกัน / รัด ตรึง และโจมตีจากระยะไกล / สร้างเกราะหรือกำแพงเถาวัลย์ / เริ่มสร้างพื้นที่พฤกษาของตน", "Control many vines at once / bind, restrain, and strike from range / form vine armor or walls / begin creating a personal flora zone"],
       [6, "จอมเวทพฤกษา", "WOODLAND MAGE", "เปลี่ยนพื้นที่รอบตัวให้เป็นป่าชั่วคราว / พืชโจมตีตามคำสั่งทางจิตหรือสายตา / ศัตรูเคลื่อนไหวช้าลงและอ่อนแอลง / ควบคุมสนามรบอย่างแท้จริง", "Turn the surroundings into a temporary forest / plants attack through mental or visual commands / enemies become slower and weaker / truly control the battlefield"],
       [5, "ผู้พิทักษ์รากแก้ว", "ROOT GUARDIAN", "รากใต้ดินแผ่ขยายในวงกว้าง / ดูดพลังชีวิตจากพืชในพื้นที่เพื่อรักษาตนเอง / สร้างผู้พิทักษ์พฤกษา / ยับยั้งพลังและการเติบโตของศัตรู", "Underground roots spread across a wide area / draw life force from local plants to recover / create plant guardians / suppress enemy power and growth"],
-      [4, "ภูตพฤกษาพราว", "ANGEL OF VERDANT BLOOM", "ร่างกายกลายเป็นพฤกษา / สร้างป่าขนาดใหญ่ได้ทันที / ฟื้นคืนพลังด้วยการดูดซับพลังชีวิตจากศัตรู / โจมตีวงกว้างและทำลายล้างสูง", "Body becomes plant-like / instantly create a large forest / recover by absorbing enemy life force / unleash wide-area destructive attacks"],
-      [3, "ผู้คุมวัฏจักร", "HARVESTER OF SEASONS", "ควบคุมวัฏจักรการเติบโตและเหี่ยวเฉา / ทำให้พืชของศัตรูเหี่ยวเฉาในพริบตา / เร่งวงจรชีวิตเพื่อทำลายทุกสิ่ง / เปลี่ยนเมืองทั้งเมืองให้เป็นป่ากลืนกิน", "Control cycles of growth and withering / make enemy plants wither instantly / accelerate life cycles to destroy / turn an entire city into a devouring forest"],
-      [2, "จ้าวแห่งพฤกษาโลก", "LORD OF THE WORLD TREE", "เชื่อมต่อกับพฤกษาทั่วทั้งภูมิภาค / รากครอบคลุมแผ่นดินและเมืองใหญ่ / ดูดกลืนพลังชีวิตมหาศาลอย่างต่อเนื่อง / สร้างภัยพิบัติพฤกษา", "Connect with flora across an entire region / roots cover lands and great cities / continuously consume massive life force / create flora-scale disasters"],
-      [1, "ผู้หยั่งรากสู่โลก", "ROOTED WORLD SOVEREIGN", "ต้นกำเนิดของพลังพฤกษาทั้งปวง / สร้างหรือทำลายชีวิตตามต้องการ / เปลี่ยนโลกทั้งใบให้เป็นอาณาจักรพฤกษา / การโจมตีคือการกลืนกินทุกสรรพสิ่ง", "The origin of all flora power / create or destroy life at will / turn the entire world into a flora kingdom / every attack becomes consumption of all things"],
+      [4, "ภูตพฤกษาพราว", "ANGEL OF VERDANT BLOOM", "ร่างกายกลายเป็นพฤกษา / สร้างป่าในพริบตา", "Body becomes flora / create a forest instantly", "หยั่งรากในพลังของศัตรู และเปลี่ยนพลังนั้นเป็นสารอาหาร", "Take root in enemy power and convert it into nourishment"],
+      [3, "ผู้คุมวัฏจักร", "HARVESTER OF SEASONS", "ควบคุมฤดูกาล / เร่งการเกิดและความตาย", "Control seasons / accelerate birth and death", "เร่งการเสื่อมสลายของพลัง และทำให้อาคมเข้าสู่ฤดูเหี่ยวเฉา", "Accelerate the decay of power and force spells into a withering season"],
+      [2, "จ้าวแห่งพฤกษาโลก", "LORD OF THE WORLD TREE", "รากครอบคลุมภูมิภาค / สร้างภัยพิบัติพฤกษา", "Roots cover regions / create flora disasters", "ดูดกลืนพลังจากเส้นทางอื่น และเปลี่ยนทุกสิ่งเป็นส่วนหนึ่งของระบบนิเวศ", "Absorb power from other Paths and convert everything into part of the ecosystem"],
+      [1, "ผู้หยั่งรากสู่โลก", "ROOTED WORLD SOVEREIGN", "เปลี่ยนโลกทั้งใบให้เป็นอาณาจักรพฤกษา", "Turn the entire world into a flora kingdom", "กลืนกินการดำรงอยู่ และเปลี่ยนทุกสิ่งเป็นส่วนหนึ่งของป่า", "Consume existence and turn everything into part of the forest"],
     ],
     ascensionTH: "Level 0 คือ FLORA — ตัวเส้นทางเอง ไม่ใช่ผู้ควบคุมพืชอีกต่อไป แต่เป็นป่า การเติบโต การแผ่ขยาย และการกลืนกินที่ไม่มีวันหยุด ตราบใดที่ยังมีเมล็ดพันธุ์ ราก หรือชีวิตพฤกษาหลงเหลืออยู่ การดำรงอยู่ของ FLORA จะไม่สิ้นสุด ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
     ascensionEN: "Level 0 is FLORA — the Path itself. They no longer control plants; they become the forest, endless growth, expansion, and consumption without pause. As long as a seed, root, or trace of plant life remains, FLORA does not truly end. Only one such existence may exist within each Path.",
   },
+  Tides: {
+    image: "/images/paths/tides-banner.png",
+    video: "/videos/paths/tides.mp4",
+    accent: "from-cyan-700/30 via-blue-600/20 to-slate-900/20",
+    level0Name: "TIDES",
+    titleTH: "เส้นทางแห่งกระแสน้ำ",
+    titleEN: "Path of Tides",
+    subtitleTH: "การไหล แรงดัน การปรับเปลี่ยน และวัฏจักรแห่งวารี",
+    subtitleEN: "Flow, pressure, adaptation, and the cycle of water",
+    quoteTH: "น้ำไม่เคยหยุดนิ่ง และทุกสิ่งที่ขวางมัน...จะถูกเปลี่ยนไปตามมัน",
+    quoteEN: "Water never stands still. Everything that blocks it will be changed by its flow.",
+    authority: "Flow • Pressure • Adaptation • Change • Consumption • Water Cycle",
+    conceptTitle: "Endless Flow",
+    conceptTH: "Tides ไม่ใช่เพียงการควบคุมน้ำ แต่คือการไหลที่ไม่มีวันหยุด น้ำเปลี่ยนรูปร่างตามสิ่งกีดขวาง กัดเซาะทุกสิ่งอย่างต่อเนื่อง และกลืนทุกอย่างเข้าสู่วัฏจักรของมัน ยิ่งระดับสูง ผู้ใช้ยิ่งเปลี่ยนสนามรบ เมือง ภูมิภาค และโลกให้กลายเป็นส่วนหนึ่งของกระแสน้ำ",
+    conceptEN: "Tides is not merely water control. It is endless flow. Water adapts to obstacles, erodes everything over time, and draws all things into its cycle. As the user rises, battlefields, cities, regions, and eventually the world itself can be transformed into part of the current.",
+    sequences: [
+      [9, "ผู้รับกระแสน้ำ", "WATER LISTENER", "รับรู้การไหลของน้ำ / ควบคุมน้ำปริมาณเล็กน้อย / สร้างคลื่นพื้นฐาน / ตรวจจับศัตรูผ่านสายน้ำ", "Sense water flow / control small amounts of water / create basic waves / detect enemies through water"],
+      [8, "ผู้ควบคุมสายน้ำ", "FLOW CONTROLLER", "ควบคุมน้ำได้ต่อเนื่อง / สร้างกระแสน้ำโจมตี / ป้องกันด้วยน้ำเคลื่อนที่ / เริ่มใช้พลังในสนามรบ", "Sustain water control / attack with currents / defend with moving water / begin battlefield use"],
+      [7, "ผู้บิดกระแส", "CURRENT SHIFTER", "เปลี่ยนทิศทางน้ำทันที / ดึงหรือผลักศัตรูด้วยกระแสน้ำ / ควบคุมพื้นที่ / ทำให้ศัตรูเสียการทรงตัว", "Shift water direction instantly / pull or push enemies with currents / control areas / disrupt enemy balance"],
+      [6, "จอมเวทวารี", "TIDE MAGE", "สร้างคลื่นขนาดใหญ่ / เปลี่ยนสนามรบเป็นพื้นที่น้ำ / เคลื่อนที่ผ่านน้ำรวดเร็ว / ควบคุมจังหวะการต่อสู้", "Create large waves / turn the battlefield into water terrain / move rapidly through water / control combat rhythm"],
+      [5, "ผู้ครองคลื่น", "WAVE DOMINATOR", "ควบคุมแรงดันน้ำ / สร้างคลื่นยักษ์ / บีบอัดน้ำเป็นแรงโจมตี / เริ่มทำลายล้างวงกว้าง", "Control water pressure / create giant waves / compress water into destructive force / begin wide-area destruction"],
+      [4, "ทูตแห่งวารี", "ANGEL OF TIDES", "ร่างกายกึ่งวารี / สร้างทะเลบนผืนดิน", "Partially aquatic body / create a sea upon land", "ชะล้างพลัง คำสาป และอิทธิพลที่อ่อนแอกว่า", "Wash away weaker power, curses, and influence"],
+      [3, "ผู้คุมมหาสมุทร", "OCEAN SOVEREIGN", "ควบคุมมหาสมุทร / เปลี่ยนภูมิประเทศ", "Control oceans / reshape terrain", "กัดเซาะอำนาจ อิทธิพล และเสถียรภาพของพลัง", "Erode authority, influence, and the stability of power"],
+      [2, "เจ้าแห่งมหาสมุทรโลก", "WORLD OCEAN LORD", "เชื่อมต่อกับแหล่งน้ำทั่วโลก / สร้างภัยพิบัติระดับภูมิภาค", "Connect to water sources across the world / create regional disasters", "พัดพาพลังออกจากต้นกำเนิด และกลืนอิทธิพลเข้าสู่กระแสวารี", "Carry power away from its source and draw influence into the current"],
+      [1, "เทพวารี", "PRIMORDIAL TIDE DEITY", "ควบคุมการไหลของน้ำทั้งโลก / สร้างหรือสลายมหาสมุทร", "Control the flow of all water / create or dissolve oceans", "พัดพาอำนาจ กลืนกินอิทธิพล และเปลี่ยนทุกสิ่งให้เป็นส่วนหนึ่งของวัฏจักรแห่งสายน้ำ", "Carry away authority, consume influence, and transform all things into part of the water cycle"],
+    ],
+    ascensionTH: "Level 0 คือ TIDES — ตัวเส้นทางเอง ไม่ใช่ผู้ควบคุมน้ำอีกต่อไป แต่เป็นการไหล การเปลี่ยนแปลง แรงดัน และวัฏจักรแห่งวารี ไม่มีสิ่งใดขวางกระแสได้ตลอดกาล เพราะทุกสิ่งจะถูกเปลี่ยนไปตามมันในที่สุด ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
+    ascensionEN: "Level 0 is TIDES — the Path itself. They no longer control water; they become flow, change, pressure, and the cycle of water. Nothing can resist the current forever, for all things are eventually changed by it. Only one such existence may exist within each Path.",
+  },
 };
-
 function slugify(name) {
   return name.toLowerCase().replaceAll(" ", "-");
 }
@@ -980,13 +1008,19 @@ function FullPathArchive({ archive, lang }) {
         <div className="rounded-[2rem] border border-violet-200/15 bg-white/[0.035] p-5 md:p-6">
           <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">Sequence Archive 9 → 1</p>
           <div className="mt-6 grid gap-4">
-            {archive.sequences.map(([level, th, en, descTH, descEN]) => (
+            {archive.sequences.map(([level, th, en, descTH, descEN, conceptTH, conceptEN]) => (
               <div key={level} className="rounded-2xl border border-white/10 bg-black/35 p-5">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <h4 className="text-xl font-black">{level} | {lang === "th" ? th : en}</h4>
                   <p className="text-sm tracking-[0.2em] text-white/40">{lang === "th" ? en : th}</p>
                 </div>
                 <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? descTH : descEN}</p>
+                {conceptTH && (
+                  <div className="mt-4 rounded-2xl border border-amber-200/15 bg-amber-400/[0.06] p-4">
+                    <p className="text-[10px] uppercase tracking-[0.28em] text-amber-200/70">Concept Authority</p>
+                    <p className="mt-2 text-sm leading-relaxed text-white/70">{lang === "th" ? conceptTH : conceptEN}</p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
