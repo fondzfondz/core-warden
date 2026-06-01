@@ -265,7 +265,7 @@ const FEATURED_CHARACTERS = [
     nameTH: "นรัน",
     path: "ASTRONOMY",
     pathTH: "ดาราศาสตร์",
-    image: "/images/story/umbral-covenant.png",
+    image: "/images/characters/naran.png",
     accent: "from-indigo-500/25 via-violet-500/20 to-sky-400/10",
     titleTH: "Sequence 7 · Star Node Creator",
     titleEN: "Sequence 7 · Star Node Creator",
@@ -287,7 +287,7 @@ const FEATURED_CHARACTERS = [
     nameTH: "เซเรน",
     path: "BLOOD",
     pathTH: "โลหิต",
-    image: "/images/story/umbral-covenant.jpg",
+    image: "/images/characters/seren.png",
     accent: "from-red-600/30 via-rose-500/20 to-black/20",
     titleTH: "Sequence 7 · Blood Controller",
     titleEN: "Sequence 7 · Blood Controller",
@@ -309,7 +309,7 @@ const FEATURED_CHARACTERS = [
     nameTH: "ลาเวียน",
     path: "ILLUSION",
     pathTH: "มายา",
-    image: "/images/story/umbral-covenant.jpg",
+    image: "/images/characters/lavian.png",
     accent: "from-fuchsia-500/25 via-violet-500/20 to-black/20",
     titleTH: "Sequence 7 · Illusion Controller",
     titleEN: "Sequence 7 · Illusion Controller",
@@ -331,7 +331,7 @@ const FEATURED_CHARACTERS = [
     nameTH: "ลูเซียร์",
     path: "DARKNESS",
     pathTH: "ความมืด",
-    image: "/images/story/umbral-covenant.jpg",
+    image: "/images/characters/lucier.png",
     accent: "from-purple-700/30 via-slate-900/30 to-black/30",
     titleTH: "Sequence 7 · Existence Eroder",
     titleEN: "Sequence 7 · Existence Eroder",
@@ -353,7 +353,7 @@ const FEATURED_CHARACTERS = [
     nameTH: "เซลเวอร์",
     path: "HOLY LIGHT",
     pathTH: "แสงศักดิ์สิทธิ์",
-    image: "/images/story/umbral-covenant.jpg",
+    image: "/images/characters/selver.png",
     accent: "from-yellow-300/25 via-amber-500/20 to-white/10",
     titleTH: "Sequence 6 · Holy Light Mage",
     titleEN: "Sequence 6 · Holy Light Mage",
@@ -608,7 +608,7 @@ export default function CoreWardenWebsite() {
           >
             <div className="relative overflow-hidden bg-black">
               <img
-                src="/images/story/umbral-covenant.jpg"
+                src="/images/story/umbral-covenant.png"
                 alt="Umbral Covenant"
                 className="w-full object-cover transition duration-700 group-hover:scale-[1.02]"
               />
