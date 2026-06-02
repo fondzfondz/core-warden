@@ -65,10 +65,10 @@ const UI = {
     storyTitle: "คลังเนื้อเรื่อง",
     storyBody: "อ่านเนื้อเรื่อง Core Warden แบบเป็นตอน พร้อมภาพสตอรี่บอร์ดแนวนอนสำหรับแต่ละตอน ระบบจะเปลี่ยนภาษาไทย/อังกฤษตามปุ่มภาษาของเว็บ",
     contactKicker: "CONTACT THE ARCHIVE",
-    contactTitle: "ติดตามและเข้าร่วมชุมชน",
-    contactBody: "ติดตามอัปเดตโลก Core Warden ผ่าน TikTok หรือเข้าร่วม Discord เพื่อพูดคุย ทฤษฎี แชร์ไอเดีย และติดตามข่าวสารของจักรวาลนี้",
-    tiktokButton: "TikTok",
-    discordButton: "Discord",
+    contactTitle: "CONTACT THE ARCHIVE",
+    contactBody: "Records may be incomplete. If you discover inconsistencies within the Archive, submit a correction request.",
+    tiktokButton: "TikTok Archive: [REDACTED]",
+    discordButton: "Discord Archive: [REDACTED]",
   },
   en: {
     lang: "EN",
@@ -132,10 +132,10 @@ const UI = {
     storyTitle: "Story Archive",
     storyBody: "Read Core Warden in episode format with horizontal storyboard images for each chapter. The story automatically switches between Thai and English with the website language toggle.",
     contactKicker: "CONTACT THE ARCHIVE",
-    contactTitle: "Follow & Join the Community",
-    contactBody: "Follow Core Warden updates on TikTok or join the Discord community to discuss theories, share ideas, and follow future archive releases.",
-    tiktokButton: "TikTok",
-    discordButton: "Discord",
+    contactTitle: "CONTACT THE ARCHIVE",
+    contactBody: "Records may be incomplete. If you discover inconsistencies within the Archive, submit a correction request.",
+    tiktokButton: "TikTok Archive: [REDACTED]",
+    discordButton: "Discord Archive: [REDACTED]",
   },
 };
 
@@ -253,7 +253,7 @@ const STORY_EPISODES = [
   }
 ];
 
-const RELEASED_EPISODES = 5;
+const RELEASED_EPISODES = 6;
 const RELEASED_STORIES = STORY_EPISODES.slice(0, RELEASED_EPISODES);
 const SEALED_STORY_COUNT = STORY_EPISODES.length - RELEASED_EPISODES;
 
@@ -548,7 +548,7 @@ const PATH_ARCHIVES = {
       [4, "ทูตแห่งแสง", "ANGEL OF HOLY LIGHT", "ร่างกายเป็นแสง / ปล่อยคลื่นแสงทำลายล้าง / ศัตรูโดนชำระทันที / การโจมตีคือการพิพากษาในทันที", "Body becomes sacred light / release destructive waves of radiance / instantly cleanse enemies / every attack becomes immediate judgment"],
       [3, "ผู้พิพากษาแห่งแสง", "JUDICATOR OF RADIANCE", "พิพากษาศัตรูโดยตรง / แสงเลือกสิ่งที่ต้องถูกลบ / เผาศัตรูจนหายไป / สนามรบคือเขตตัดสิน", "Judge enemies directly / light selects what must be erased / burn enemies until they vanish / the battlefield becomes a court of judgment"],
       [2, "เจ้าแห่งแสงโลก", "WORLD RADIANCE LORD", "ปล่อยแสงระดับภูมิภาค / เผาทุกสิ่งที่ไม่บริสุทธิ์ / ลบสิ่งผิดเพี้ยนจำนวนมหาศาล / โลกเข้าสู่การชำระล้าง", "Release regional holy radiance / burn all impure things / erase massive distortion / force the land into purification"],
-      [1, "เทพแห่งแสงศักดิ์สิทธิ์", "PRIMORDIAL HOLY LIGHT DEITY", "ควบคุมการพิพากษา / แสงลบสิ่งที่ไม่ควรมี / ไม่มีการตัดสินผิด / การโจมตีคือการลบออกจากการมีอยู่", "Command divine judgment / light erases what should not exist / judgment cannot be mistaken / every attack removes existence itself"],
+      [1, "เทพแห่งแสงศักดิ์สิทธิ์", "PRIMORDIAL HOLY LIGHT DEITY", "ควบคุมการพิพากษา / แสงลบสิ่งที่ไม่ควรมี / คำพิพากษาไม่อาจคลาดเคลื่อน / การโจมตีคือการลบออกจากการมีอยู่", "Command divine judgment / light erases what should not exist / judgment cannot deviate / every attack removes existence itself"],
     ],
     ascensionTH: "Level 0 คือ HOLY LIGHT — ตัวเส้นทางเอง ไม่ใช่ผู้รักษา ไม่ใช่เทพ และไม่ใช่ผู้ใช้แสงอีกต่อไป แต่เป็นแนวคิดแห่งการพิพากษา การชำระล้าง และแสงศักดิ์สิทธิ์โดยสมบูรณ์ สิ่งผิดเพี้ยนไม่อาจดำรงอยู่ต่อหน้าพวกเขาได้ เพราะการมีอยู่ของพวกเขาคือคำตัดสิน ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
     ascensionEN: "Level 0 is HOLY LIGHT — the Path itself. They are no longer a healer, deity, or wielder of light, but the complete concept of judgment, purification, and sacred radiance. Distortion cannot exist before them, because their presence is judgment itself. Only one such existence may exist within each Path.",
@@ -591,8 +591,8 @@ const PATH_ARCHIVES = {
     titleEN: "Path of Illusion",
     subtitleTH: "การรับรู้ ความเชื่อ และความจริงที่ถูกบิดเบือน",
     subtitleEN: "Perception, belief, and distorted reality",
-    quoteTH: "ความจริงไม่สำคัญ ตราบใดที่เจ้าทำให้ทุกคนเชื่อในสิ่งที่ข้าเลือกให้เห็น",
-    quoteEN: "Reality is irrelevant, as long as I can make you believe what I choose you to see.",
+    quoteTH: "ความจริงไม่สำคัญ ตราบใดที่เจ้าทำให้ทุกคนเชื่อในสิ่งที่เจ้าเห็น",
+    quoteEN: "Reality is irrelevant, as long as you can make everyone believe what you see.",
     authority: "Belief • Perception • Deception • Cognition • Distorted Reality",
     conceptTitle: "Distorted Belief",
     conceptTH: "Illusion ไม่ใช่เพียงภาพลวงตา แต่คือการบิดเบือนระบบคิด ความเชื่อ และตรรกะของผู้รับรู้ เมื่อความเชื่อแข็งแรงพอ มายาจะเริ่มส่งผลต่อร่างกาย ระบบประสาท ความทรงจำ และในระดับสูงอาจทำให้สิ่งที่ผู้คนยอมรับกลายเป็นความจริงเทียมของโลก",
@@ -1002,24 +1002,23 @@ export default function CoreWardenWebsite() {
           <p className="text-violet-200/70 tracking-[0.35em] text-xs uppercase mb-4">{t.contactKicker}</p>
           <h2 className="text-4xl md:text-6xl font-black mb-6">{t.contactTitle}</h2>
           <p className="mx-auto max-w-3xl text-white/65 leading-relaxed text-lg">{t.contactBody}</p>
+          <div className="mt-8">
+            <p className="text-xs uppercase tracking-[0.35em] text-white/35 mb-3">Archive Contact</p>
+            <a
+              href="mailto:fondzdnc@gmail.com"
+              className="text-2xl md:text-3xl font-black text-white hover:text-violet-200 transition"
+            >
+              fondzdnc@gmail.com
+            </a>
+          </div>
 
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="https://www.tiktok.com/@core.warden"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-2xl bg-white px-8 py-4 font-black text-black transition hover:scale-105"
-            >
+            <span className="rounded-2xl bg-white/10 px-8 py-4 font-black text-white/45 border border-white/10 cursor-not-allowed">
               {t.tiktokButton}
-            </a>
-            <a
-              href="https://discord.gg/RHyW3H4jJf"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-2xl border border-white/20 bg-white/5 px-8 py-4 font-black text-white transition hover:bg-white/10 hover:scale-105"
-            >
+            </span>
+            <span className="rounded-2xl border border-white/10 bg-white/5 px-8 py-4 font-black text-white/45 cursor-not-allowed">
               {t.discordButton}
-            </a>
+            </span>
           </div>
         </div>
       </section>
