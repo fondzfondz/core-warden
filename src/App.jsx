@@ -629,6 +629,7 @@ export default function CoreWardenWebsite() {
   const [activePillar, setActivePillar] = useState("Primordials");
   const [selectedPath, setSelectedPath] = useState(null);
   const [selectedCharacter, setSelectedCharacter] = useState(null);
+  const [selectedEpisode, setSelectedEpisode] = useState(null);
   const [musicOn, setMusicOn] = useState(false);
   const audioRef = useRef(null);
   const t = UI[lang];
@@ -869,45 +870,62 @@ export default function CoreWardenWebsite() {
 
 
       <SectionBlock id="story" kicker={t.storyKicker} title={t.storyTitle} text={t.storyBody}>
-        <div className="mt-10 rounded-3xl border border-white/10 bg-black/35 p-4 md:p-5">
-          <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/40">
-            Episode Navigator
-          </p>
-          <div className="flex gap-2 overflow-x-auto pb-2">
+        <div className="mt-10 rounded-[2rem] border border-white/10 bg-black/35 p-5 md:p-7">
+          <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">
+                Episode Index
+              </p>
+              <h3 className="mt-2 text-3xl font-black">
+                {lang === "th" ? "เลือกตอนที่ต้องการอ่าน" : "Select an Episode"}
+              </h3>
+            </div>
+            <p className="text-sm text-white/40">
+              {lang === "th" ? `เผยแพร่แล้ว ${RELEASED_EPISODES} ตอน` : `${RELEASED_EPISODES} episodes released`}
+            </p>
+          </div>
+
+          <div className="grid gap-3">
             {RELEASED_STORIES.map((episode) => (
-              <a
+              <button
                 key={episode.ep}
-                href={`#episode-${episode.ep}`}
-                className="shrink-0 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-bold text-white/70 transition hover:border-violet-200/50 hover:bg-violet-300/15 hover:text-white"
+                type="button"
+                onClick={() => setSelectedEpisode(episode)}
+                className="group flex w-full flex-col gap-3 rounded-3xl border border-white/10 bg-white/[0.035] p-5 text-left transition hover:border-violet-200/40 hover:bg-violet-300/10 md:flex-row md:items-center md:justify-between"
               >
-                EP {String(episode.ep).padStart(2, "0")}
-              </a>
+                <div>
+                  <p className="text-xs uppercase tracking-[0.35em] text-violet-200/55">
+                    Episode {String(episode.ep).padStart(2, "0")}
+                  </p>
+                  <h4 className="mt-2 text-2xl font-black text-white">
+                    {lang === "th" ? episode.titleTH : episode.titleEN}
+                  </h4>
+                  <p className="mt-1 text-sm text-white/35">
+                    {lang === "th" ? episode.titleEN : episode.titleTH}
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm font-bold text-white/60 transition group-hover:border-violet-200/50 group-hover:text-white">
+                  {lang === "th" ? "อ่านตอนนี้" : "Read Episode"}
+                </span>
+              </button>
             ))}
           </div>
-        </div>
-
-        <div className="mt-10 space-y-10">
-          {RELEASED_STORIES.map((episode) => (
-            <StoryEpisodeCard key={episode.ep} episode={episode} lang={lang} />
-          ))}
 
           {SEALED_STORY_COUNT > 0 && (
-            <div className="rounded-[2rem] border border-violet-200/20 bg-black/40 p-8 text-center">
+            <div className="mt-6 rounded-3xl border border-violet-200/20 bg-black/40 p-6 text-center">
               <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">
                 Sealed Archive
               </p>
-              <h3 className="mt-3 text-3xl font-black">
-                {lang === "th"
-                  ? `คลังข้อมูลถูกปิดผนึก`
-                  : `Archive Sealed`}
+              <h3 className="mt-3 text-2xl font-black">
+                {lang === "th" ? `คลังข้อมูลถูกปิดผนึก` : `Archive Sealed`}
               </h3>
-              <p className="mx-auto mt-4 max-w-2xl text-white/55 leading-relaxed">
+              <p className="mx-auto mt-3 max-w-2xl text-white/55 leading-relaxed">
                 {lang === "th"
                   ? "ข้อมูลตอนถัดไปถูกเก็บไว้ใน Core Archive และจะค่อยๆ เปิดเผยในอนาคต"
                   : "The remaining records are sealed within the Core Archive and will be released gradually."}
               </p>
 
-              <div className="mx-auto mt-6 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.035] p-5">
+              <div className="mx-auto mt-5 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.035] p-5">
                 <p className="text-xs uppercase tracking-[0.3em] text-violet-200/60">
                   Author Verification
                 </p>
@@ -919,6 +937,21 @@ export default function CoreWardenWebsite() {
           )}
         </div>
       </SectionBlock>
+
+      {selectedEpisode && (
+        <div className="fixed inset-0 z-[100] overflow-y-auto bg-black/90 backdrop-blur-xl">
+          <div className="min-h-screen max-w-5xl mx-auto px-5 py-16">
+            <button
+              onClick={() => setSelectedEpisode(null)}
+              className="fixed top-6 right-6 z-50 rounded-full border border-white/15 bg-black/60 px-5 py-3 text-white/75 transition hover:bg-white/10 hover:text-white"
+            >
+              {lang === "th" ? "กลับไปเลือกตอน" : "Back to Episodes"}
+            </button>
+
+            <StoryEpisodeCard episode={selectedEpisode} lang={lang} />
+          </div>
+        </div>
+      )}
 
       {selectedCharacter && (
         <div className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-xl overflow-y-auto">
