@@ -1273,8 +1273,7 @@ function FullPathArchive({ archive, lang }) {
             {archive.sequences.map(([level, th, en, descTH, descEN, conceptTH, conceptEN]) => (
               <div key={level} className="rounded-2xl border border-white/10 bg-black/35 p-5">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h4 className="text-xl font-black">{level} | {lang === "th" ? th : en}</h4>
-                  <p className="text-sm tracking-[0.2em] text-white/40">{lang === "th" ? en : th}</p>
+                  <h4 className="text-xl font-black">{level} | {en}</h4>
                 </div>
                 <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? descTH : descEN}</p>
                 {conceptTH && (
