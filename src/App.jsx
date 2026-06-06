@@ -253,7 +253,8 @@ const STORY_EPISODES = [
   }
 ];
 
-const RELEASED_EPISODES = 8;
+const 
+RELEASED_EPISODES = 8;
 const RELEASED_STORIES = STORY_EPISODES.slice(0, RELEASED_EPISODES);
 const SEALED_STORY_COUNT = STORY_EPISODES.length - RELEASED_EPISODES;
 
@@ -372,6 +373,31 @@ const FEATURED_CHARACTERS = [
 ];
 
 
+
+const SACRED_REALMS = {
+  Flora: "Worldroot Expanse",
+  "FLORA HEAL": "Eden of Rebirth",
+  Tides: "Abyssal Tidemarch",
+  Ice: "Frozen Evernight",
+  Flame: "Eternal Pyre",
+  Gales: "Skybreak Expanse",
+  Terra: "Titanheart Dominion",
+  Thunder: "Stormcrown Ascendant",
+  RESTORATION: "Everlasting Sanctuary",
+  SPIRIT: "Veil of Eternal Souls",
+  "HOLY LIGHT": "Empyrean Radiance",
+  BLOOD: "Crimson Eternity",
+  WISDOM: "Infinite Codex",
+  TRUTH: "Throne of Absolute Law",
+  DARKNESS: "Eternal Abyss",
+  ILLUSION: "Eternal Mirage",
+  TIME: "Chronos Dominion",
+  ASTRONOMY: "Celestial Infinity",
+  "CHAOS-SPACE": "Fractured Cosmos",
+  FATE: "Loom of Destiny",
+  MACHINERY: "Eternal Forge",
+  SHADOW: "Umbral Sovereignty",
+};
 
 const PATH_ARCHIVES = {
   Astronomy: {
@@ -1189,6 +1215,9 @@ function ComingSoonBar({ text }) {
 
 
 function FullPathArchive({ archive, lang }) {
+  const sacredRealm = SACRED_REALMS[archive.level0Name];
+  const hasFullRankData = archive.sequences?.some(([level]) => level === 9) && archive.sequences?.some(([level]) => level === 1);
+
   return (
     <div className="space-y-6">
       <div className={`overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br ${archive.accent}`}>
@@ -1250,6 +1279,13 @@ function FullPathArchive({ archive, lang }) {
                 <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? descTH : descEN}</p>
                 {conceptTH && (
                   <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? conceptTH : conceptEN}</p>
+                )}
+                {level === 1 && sacredRealm && hasFullRankData && (
+                  <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4 text-white/80">
+                    <p>Only one Level 1 existence may exist within this Path at a time.</p>
+                    <div className="mt-3 font-black text-white">Sacred Realm:</div>
+                    <p className="mt-1 text-white/65">{sacredRealm}</p>
+                  </div>
                 )}
               </div>
             ))}
