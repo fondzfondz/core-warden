@@ -375,14 +375,14 @@ const FEATURED_CHARACTERS = [
 
 
 const SACRED_REALMS = {
-  Flora: "Worldroot Expanse",
+  FLORA: "Worldroot Expanse",
   "FLORA HEAL": "Eden of Rebirth",
-  Tides: "Abyssal Tidemarch",
-  Ice: "Frozen Evernight",
-  Flame: "Eternal Pyre",
-  Gales: "Skybreak Expanse",
-  Terra: "Titanheart Dominion",
-  Thunder: "Stormcrown Ascendant",
+  TIDES: "Abyssal Tidemarch",
+  ICE: "Frozen Evernight",
+  FLAME: "Eternal Pyre",
+  GALES: "Skybreak Expanse",
+  TERRA: "Titanheart Dominion",
+  THUNDER: "Stormcrown Ascendant",
   RESTORATION: "Everlasting Sanctuary",
   SPIRIT: "Veil of Eternal Souls",
   "HOLY LIGHT": "Empyrean Radiance",
