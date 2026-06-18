@@ -798,7 +798,25 @@ export default function CoreWardenWebsite() {
         </div>
       </SectionBlock>
 
-      <SectionBlock id="world" kicker={t.worldKicker} title={t.worldTitle} text={t.worldBody} bgImage="/images/backgrounds/world-bg.png">
+      
+      <SectionBlock
+        id="trailer"
+        kicker="OFFICIAL TRAILER"
+        title="Core Warden Trailer"
+        text="Power is not the answer. Balance is."
+      >
+        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black">
+          <video
+            src="/videos/core-warden-trailer.mp4"
+            controls
+            playsInline
+            preload="metadata"
+            className="w-full"
+          />
+        </div>
+      </SectionBlock>
+
+<SectionBlock id="world" kicker={t.worldKicker} title={t.worldTitle} text={t.worldBody} bgImage="/images/backgrounds/world-bg.png">
         <div className="mt-8 rounded-3xl border border-violet-200/20 bg-black/35 p-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
             <div>
