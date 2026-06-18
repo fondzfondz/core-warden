@@ -805,14 +805,16 @@ export default function CoreWardenWebsite() {
         title="Core Warden Trailer"
         text="Power is not the answer. Balance is."
       >
-        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black">
-          <video
-            src="/videos/core-warden-trailer.mp4"
-            controls
-            playsInline
-            preload="metadata"
-            className="w-full"
-          />
+        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black shadow-2xl">
+          <div className="relative aspect-video w-full">
+            <iframe
+              src="https://www.youtube.com/embed/l0zG-IP4wkk?rel=0&modestbranding=1"
+              title="Core Warden Trailer"
+              className="absolute inset-0 h-full w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
         </div>
       </SectionBlock>
 
