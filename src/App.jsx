@@ -808,7 +808,7 @@ export default function CoreWardenWebsite() {
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black shadow-2xl">
           <div className="relative aspect-video w-full">
             <iframe
-              src="https://www.youtube.com/embed/9iXsZBnO2AA?rel=0&modestbranding=1""
+              src="https://www.youtube.com/embed/9iXsZBnO2AA?rel=0&modestbranding=1"
               title="Core Warden Trailer"
               className="absolute inset-0 h-full w-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
