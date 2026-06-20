@@ -798,7 +798,6 @@ export default function CoreWardenWebsite() {
         </div>
       </SectionBlock>
 
-      
       <SectionBlock
         id="trailer"
         kicker="OFFICIAL TRAILER"
