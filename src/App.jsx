@@ -147,7 +147,7 @@ const PILLARS = [
   { key: "Constructs", title: "The Constructs", thai: "เสาหลักสิ่งสร้าง", color: "from-zinc-300/25 via-amber-300/15 to-purple-500/20", paths: ["Machinery", "Shadow"] },
 ];
 
-const PATH_DATA = [{'name': 'Flora', 'thai': 'พฤกษา', 'pillar': 'Primordials', 'descTH': 'ควบคุมพืช เถาวัลย์ หนาม และระบบนิเวศ เหมาะกับการควบคุมพื้นที่', 'descEN': 'Controls plants, vines, thorns, and ecosystems for area control.', 'authority': 'Growth · Vines · Ecosystem', 'examplesTH': ['เถาวัลย์พันธนาการศัตรู', 'กำแพงหนามป้องกันพื้นที่', 'สปอร์รบกวนการรับรู้'], 'examplesEN': ['Bind enemies with vines', 'Raise thorn walls', 'Use spores to disrupt perception']}, {'name': 'Tides', 'thai': 'กระแสน้ำ', 'pillar': 'Primordials', 'descTH': 'พลังแห่งน้ำ คลื่น และกระแส ใช้ได้ทั้งโจมตี ป้องกัน และกักขัง', 'descEN': 'Power over water, waves, and currents for offense, defense, and restraint.', 'authority': 'Waves · Currents · Water Pressure', 'examplesTH': ['สร้างกระแสน้ำวน', 'อัดแรงดันน้ำเป็นเกราะ', 'ทำให้สนามรบลื่นไหล'], 'examplesEN': ['Create whirlpools', 'Compress water pressure as a shield', 'Turn the battlefield fluid']}, {'name': 'Flame', 'thai': 'เปลวเพลิง', 'pillar': 'Primordials', 'descTH': 'พลังแห่งเปลวไฟ การระเบิด และความร้อนสูง ตรงไปตรงมาและรุนแรง', 'descEN': 'Power of flame, explosion, and extreme heat. Direct and destructive.', 'authority': 'Fire · Combustion · Heat', 'examplesTH': ['เร่งอุณหภูมิให้ปะทุ', 'ปล่อยแรงระเบิดจากไฟ', 'เคลือบร่างกายด้วยเพลิง'], 'examplesEN': ['Ignite sudden combustion', 'Release explosive fire bursts', 'Coat the body in flame']}, {'name': 'Ice', 'thai': 'น้ำแข็ง', 'pillar': 'Primordials', 'descTH': 'หยุดยั้ง แช่แข็ง และลดการเคลื่อนไหว เหมาะกับการคุมจังหวะสนามรบ', 'descEN': 'Freezes, restrains, and slows movement. Excellent for control.', 'authority': 'Frost · Stillness · Crystal Ice', 'examplesTH': ['ผลึกน้ำแข็งตรึงเป้าหมาย', 'ลดอุณหภูมิเพื่อชะลอศัตรู', 'สร้างกำแพงน้ำแข็ง'], 'examplesEN': ['Freeze targets with crystal ice', 'Lower temperature to slow foes', 'Create ice walls']}, {'name': 'Gales', 'thai': 'วายุ', 'pillar': 'Primordials', 'descTH': 'ควบคุมลม แรงดัน ทิศทาง และความเร็ว ความเร็วไม่ใช่แค่การเคลื่อนที่ แต่คืออาวุธ เกราะ และทางหลบหนี', 'descEN': 'Controls wind, pressure, direction, and speed. Speed is not merely movement — it is the weapon, the shield, and the escape.', 'authority': 'Wind · Speed · Pressure · Direction · Evasion · Storm', 'examplesTH': ['เปลี่ยนทิศทางกลางการต่อสู้ทันที', 'เบี่ยงการโจมตีด้วยแรงดันและกระแสลม', 'โจมตีจากมุมที่ศัตรูคาดไม่ถึง'], 'examplesEN': ['Shift direction instantly in battle', 'Deflect attacks with pressure and wind flow', 'Strike from unseen angles']}, {'name': 'Terra', 'thai': 'ปฐพี', 'pillar': 'Primordials', 'descTH': 'พลังแห่งหิน ดิน และแร่ แข็งแกร่ง หนักแน่น และเหมาะกับการป้องกัน', 'descEN': 'Power over stone, soil, and minerals. Heavy, durable, and defensive.', 'authority': 'Stone · Earth · Minerals', 'examplesTH': ['ยกกำแพงหิน', 'ยุบพื้นดินจับขาศัตรู', 'สร้างเกราะแร่บนร่างกาย'], 'examplesEN': ['Raise stone walls', 'Collapse the ground to trap foes', 'Form mineral armor']}, {'name': 'Thunder', 'thai': 'อสุนี', 'pillar': 'Primordials', 'descTH': 'สายฟ้า ความเร็ว และการกระตุ้นประสาท รวดเร็วและดุดัน', 'descEN': 'Lightning, speed, and nerve stimulation. Fast and aggressive.', 'authority': 'Lightning · Nerves · Burst Speed', 'examplesTH': ['ปล่อยสายฟ้าฉับพลัน', 'กระตุ้นประสาทให้ตอบสนองไว', 'รบกวนการเคลื่อนไหวด้วยสนามไฟฟ้า'], 'examplesEN': ['Release instant lightning strikes', 'Stimulate reflexes', 'Disrupt movement with electric fields']}, {'name': 'Flora Heal', 'thai': 'พฤกษาเยียวยา', 'pillar': 'Vitalities', 'descTH': 'ใช้พลังชีวิตของพืชเพื่อเยียวยา ฟื้นฟู และชำระพิษ', 'descEN': 'Uses plant life force to heal, restore, and cleanse toxins.', 'authority': 'Healing Flora · Purification · Recovery', 'examplesTH': ['ละอองพฤกษาฟื้นฟูบาดแผล', 'ดูดซับพิษออกจากร่างกาย', 'สร้างเขตเยียวยา'], 'examplesEN': ['Heal wounds with floral mist', 'Absorb toxins', 'Create healing zones']}, {'name': 'Restoration', 'thai': 'การฟื้นคืน', 'pillar': 'Vitalities', 'descTH': 'ฟื้นสภาพ ซ่อมแซม และคืนความสมบูรณ์ให้สิ่งที่เสียหาย', 'descEN': 'Restores, repairs, and returns damaged things toward wholeness.', 'authority': 'Repair · Reconstruction · Renewal', 'examplesTH': ['ซ่อมแซมวัตถุแตกหัก', 'เร่งการสมานแผล', 'คืนสภาพพื้นที่เสียหาย'], 'examplesEN': ['Repair broken objects', 'Accelerate healing', 'Restore damaged zones']}, {'name': 'Spirit', 'thai': 'วิญญาณ', 'pillar': 'Vitalities', 'descTH': 'เกี่ยวข้องกับวิญญาณ จิตสำนึก และตัวตนภายใน โจมตีจิตวิญญาณได้โดยตรง', 'descEN': 'Deals with souls, consciousness, and inner identity.', 'authority': 'Soul · Consciousness · Spirit Pressure', 'examplesTH': ['สัมผัสร่องรอยวิญญาณ', 'โจมตีระดับจิตใจ', 'สร้างม่านวิญญาณป้องกัน'], 'examplesEN': ['Sense soul traces', 'Attack the mind directly', 'Create spiritual barriers']}, {'name': 'Holy Light', 'thai': 'แสงศักดิ์สิทธิ์', 'pillar': 'Vitalities', 'descTH': 'แสงศักดิ์สิทธิ์ การชำระล้าง การปกป้อง และการลงทัณฑ์', 'descEN': 'Holy light for purification, protection, and judgment.', 'authority': 'Purification · Protection · Judgment', 'examplesTH': ['ลำแสงชำระล้าง', 'เกราะแสงป้องกัน', 'ลงทัณฑ์สิ่งชั่วร้าย'], 'examplesEN': ['Release purifying light', 'Create light shields', 'Judge evil with sacred radiance']}, {'name': 'Blood', 'thai': 'โลหิต', 'pillar': 'Abstracts', 'descTH': 'ควบคุมเลือด พลังชีวิต และการเสียสละ ยิ่งใช้หนักยิ่งเสี่ยงคลุ้มคลั่ง', 'descEN': 'Controls blood, life force, and sacrifice. Heavy use risks frenzy.', 'authority': 'Blood · Sacrifice · Life Force', 'examplesTH': ['ควบคุมเลือดเป็นอาวุธ', 'เร่งการไหลเวียนเพิ่มพละกำลัง', 'อ่านร่องรอยจากเลือด'], 'examplesEN': ['Shape blood into weapons', 'Boost strength via circulation', 'Read traces through blood']}, {'name': 'Wisdom', 'thai': 'ปัญญา', 'pillar': 'Abstracts', 'descTH': 'ความรู้ การวิเคราะห์ ความทรงจำ และความเข้าใจสิ่งลี้ลับ', 'descEN': 'Knowledge, analysis, memory, and understanding of mysteries.', 'authority': 'Analysis · Memory · Knowledge', 'examplesTH': ['วิเคราะห์รูปแบบการโจมตี', 'จดจำข้อมูลสนามรบอย่างแม่นยำ', 'อ่านโครงสร้างพลัง'], 'examplesEN': ['Analyze attack patterns', 'Store battlefield information', 'Read energy structures']}, {'name': 'Truth', 'thai': 'สัจธรรม', 'pillar': 'Abstracts', 'descTH': 'เส้นทางแห่งความจริง กฎ และการเปิดเผย ทำลายคำลวงได้', 'descEN': 'A Path of truth, law, and revelation that breaks deception.', 'authority': 'Law · Revelation · Judgment', 'examplesTH': ['มองทะลุภาพลวง', 'เปิดเผยเงื่อนไขที่ซ่อนอยู่', 'บังคับให้ความจริงปรากฏ'], 'examplesEN': ['See through illusions', 'Reveal hidden conditions', 'Force truth into the open']}, {'name': 'Darkness', 'thai': 'ความมืด', 'pillar': 'Abstracts', 'descTH': 'เส้นทางแห่งความว่าง การลบเลือน และการไม่มีอยู่ ไม่ใช่แค่เงามืด แต่คือการกัดกร่อนการมีอยู่', 'descEN': 'A Path of void, erasure, and non-existence. Not mere shadow, but the erosion of being itself.', 'authority': 'Erasure · Absence · Void', 'examplesTH': ['กลืนแสงในพื้นที่', 'ซ่อนการเคลื่อนไหวในความมืด', 'ปล่อยแรงกดดันแห่งความกลัว'], 'examplesEN': ['Swallow light in an area', 'Hide movement within darkness', 'Release fear pressure']}, {'name': 'Illusion', 'thai': 'มายา', 'pillar': 'Abstracts', 'descTH': 'บิดเบือนการรับรู้ ความเชื่อ และตรรกะ ทำให้สิ่งที่ผู้คนเชื่อเริ่มกลายเป็นความจริงเทียม', 'descEN': 'Distorts perception, belief, and logic until what people believe begins to become false reality.', 'authority': 'Belief · Perception · Deception', 'examplesTH': ['สร้างร่างลวง', 'บิดเบือนระยะและเสียง', 'ทำให้เป้าหมายเห็นสิ่งที่หวาดกลัว'], 'examplesEN': ['Create illusion bodies', 'Distort distance and sound', 'Show targets their deepest fear']}, {'name': 'Time', 'thai': 'กาลเวลา', 'pillar': 'Celestials', 'descTH': 'แตะต้องเวลา จังหวะ และความเสื่อมสลาย อันตรายต่อสติผู้ใช้มาก', 'descEN': 'Touches time, rhythm, and decay. Extremely dangerous to the mind.', 'authority': 'Time · Rhythm · Decay', 'examplesTH': ['ชะลอการเคลื่อนไหวชั่วคราว', 'เร่งการเสื่อมสภาพบางอย่าง', 'สัมผัสจังหวะเวลาที่ผิดปกติ'], 'examplesEN': ['Temporarily slow motion', 'Accelerate decay', 'Sense abnormal time rhythms']}, {'name': 'Astronomy', 'thai': 'ดาราศาสตร์', 'pillar': 'Celestials', 'descTH': 'พลังแห่งดาว วงโคจร แรงดึงดูด และปรากฏการณ์ท้องฟ้า', 'descEN': 'Power of stars, orbits, gravity, and celestial phenomena.', 'authority': 'Stars · Orbit · Cosmic Flow', 'examplesTH': ['อ่านทิศทาง Core Flow ผ่านตำแหน่งดาว', 'ใช้แรงดึงดูดจำลองดึงหรือผลัก', 'เห็นร่องรอยของดวงดาวที่ดับสูญ'], 'examplesEN': ['Read Core flow through stellar positions', 'Pull or repel with simulated gravity', 'See traces of fallen stars']}, {'name': 'Chaos-Space', 'thai': 'โกลาหลมิติ', 'pillar': 'Celestials', 'descTH': 'บิดเบือนมิติ ระยะทาง และความต่อเนื่องของพื้นที่ ทรงพลังแต่เสี่ยงเสียสติ', 'descEN': 'Distorts space, distance, and continuity. Powerful but mentally dangerous.', 'authority': 'Spatial Rift · Distortion · Warp', 'examplesTH': ['บิดระยะทางสั้นๆ', 'สร้างรอยแยกมิติหลบหลีก', 'ทำให้ทิศทางสนามรบสับสน'], 'examplesEN': ['Twist short distances', 'Create brief spatial rifts', 'Disorient spatial directions']}, {'name': 'Fate', 'thai': 'โชคชะตา', 'pillar': 'Celestials', 'descTH': 'เกี่ยวข้องกับเส้นด้ายของโชคชะตา ความน่าจะเป็น และจังหวะสำคัญ', 'descEN': 'Deals with threads of fate, probability, and decisive moments.', 'authority': 'Threads · Probability · Outcome', 'examplesTH': ['สัมผัสจังหวะที่เปลี่ยนผลลัพธ์', 'เบี่ยงความน่าจะเป็นเล็กน้อย', 'อ่านเส้นทางความเป็นไปได้'], 'examplesEN': ['Sense moments that alter outcomes', 'Slightly bend probability', 'Read branching possibilities']}, {'name': 'Machinery', 'thai': 'จักรกล', 'pillar': 'Constructs', 'descTH': 'จักรกล กลไก การดัดแปลง และวิวัฒนาการเชิงเครื่องจักร', 'descEN': 'Machines, mechanisms, modification, and mechanical evolution.', 'authority': 'Mechanism · Circuits · Augmentation', 'examplesTH': ['สร้างกลไก Core ช่วยต่อสู้', 'เสริมอุปกรณ์ด้วยวงจรพลังงาน', 'วิเคราะห์และควบคุมเครื่องจักร'], 'examplesEN': ['Build small Core mechanisms', 'Enhance tools with energy circuits', 'Analyze and control machinery']}, {'name': 'Shadow', 'thai': 'เงา', 'pillar': 'Constructs', 'descTH': 'ควบคุมเงา รูปร่างมืด และการซ่อนตัว เหมาะกับการลอบโจมตี', 'descEN': 'Controls shadows, dark forms, and concealment for ambush tactics.', 'authority': 'Shadow · Concealment · Ambush', 'examplesTH': ['เคลื่อนที่ผ่านเงาระยะสั้น', 'สร้างเงาโจมตีจากมุมอับ', 'ซ่อนตัวและเสียงในความมืด'], 'examplesEN': ['Move through shadows briefly', 'Attack from blind spots with shadow forms', 'Hide presence in darkness']}];
+const PATH_DATA = [{'name': 'Flora', 'thai': 'พฤกษา', 'pillar': 'Primordials', 'descTH': 'ควบคุมพืช เถาวัลย์ หนาม และระบบนิเวศ เหมาะกับการควบคุมพื้นที่', 'descEN': 'Controls plants, vines, thorns, and ecosystems for area control.', 'authority': 'Growth · Vines · Ecosystem', 'examplesTH': ['เถาวัลย์พันธนาการศัตรู', 'กำแพงหนามป้องกันพื้นที่', 'สปอร์รบกวนการรับรู้'], 'examplesEN': ['Bind enemies with vines', 'Raise thorn walls', 'Use spores to disrupt perception']}, {'name': 'Tides', 'thai': 'กระแสน้ำ', 'pillar': 'Primordials', 'descTH': 'พลังแห่งน้ำ คลื่น และกระแส ใช้ได้ทั้งโจมตี ป้องกัน และกักขัง', 'descEN': 'Power over water, waves, and currents for offense, defense, and restraint.', 'authority': 'Waves · Currents · Water Pressure', 'examplesTH': ['สร้างกระแสน้ำวน', 'อัดแรงดันน้ำเป็นเกราะ', 'ทำให้สนามรบลื่นไหล'], 'examplesEN': ['Create whirlpools', 'Compress water pressure as a shield', 'Turn the battlefield fluid']}, {'name': 'Flame', 'thai': 'เปลวเพลิง', 'pillar': 'Primordials', 'descTH': 'ควบคุมเปลวไฟ ความร้อน การเผาไหม้ และการเปลี่ยนสภาพผ่านเพลิง พลังตรงไปตรงมา รุนแรง และยิ่งใช้มากยิ่งเสี่ยงถูกความบ้าคลั่งเผาผลาญจากภายใน', 'descEN': 'Controls flame, heat, combustion, and transformation through fire. Direct, destructive, and increasingly dangerous as its madness burns the user from within.', 'authority': 'Fire · Heat · Combustion · Transformation · Destruction', 'examplesTH': ['จุดประกายไฟจากพลังภายใน', 'เร่งการเผาไหม้ของเป้าหมาย', 'สร้างระเบิดเพลิงและกำแพงไฟ'], 'examplesEN': ['Ignite sparks from inner power', 'Accelerate combustion on a target', 'Create fire explosions and flame walls']}, {'name': 'Ice', 'thai': 'น้ำแข็ง', 'pillar': 'Primordials', 'descTH': 'หยุดยั้ง แช่แข็ง และลดการเคลื่อนไหว เหมาะกับการคุมจังหวะสนามรบ', 'descEN': 'Freezes, restrains, and slows movement. Excellent for control.', 'authority': 'Frost · Stillness · Crystal Ice', 'examplesTH': ['ผลึกน้ำแข็งตรึงเป้าหมาย', 'ลดอุณหภูมิเพื่อชะลอศัตรู', 'สร้างกำแพงน้ำแข็ง'], 'examplesEN': ['Freeze targets with crystal ice', 'Lower temperature to slow foes', 'Create ice walls']}, {'name': 'Gales', 'thai': 'วายุ', 'pillar': 'Primordials', 'descTH': 'ควบคุมลม แรงดัน ทิศทาง และความเร็ว ความเร็วไม่ใช่แค่การเคลื่อนที่ แต่คืออาวุธ เกราะ และทางหลบหนี', 'descEN': 'Controls wind, pressure, direction, and speed. Speed is not merely movement — it is the weapon, the shield, and the escape.', 'authority': 'Wind · Speed · Pressure · Direction · Evasion · Storm', 'examplesTH': ['เปลี่ยนทิศทางกลางการต่อสู้ทันที', 'เบี่ยงการโจมตีด้วยแรงดันและกระแสลม', 'โจมตีจากมุมที่ศัตรูคาดไม่ถึง'], 'examplesEN': ['Shift direction instantly in battle', 'Deflect attacks with pressure and wind flow', 'Strike from unseen angles']}, {'name': 'Terra', 'thai': 'ปฐพี', 'pillar': 'Primordials', 'descTH': 'พลังแห่งหิน ดิน และแร่ แข็งแกร่ง หนักแน่น และเหมาะกับการป้องกัน', 'descEN': 'Power over stone, soil, and minerals. Heavy, durable, and defensive.', 'authority': 'Stone · Earth · Minerals', 'examplesTH': ['ยกกำแพงหิน', 'ยุบพื้นดินจับขาศัตรู', 'สร้างเกราะแร่บนร่างกาย'], 'examplesEN': ['Raise stone walls', 'Collapse the ground to trap foes', 'Form mineral armor']}, {'name': 'Thunder', 'thai': 'อสุนี', 'pillar': 'Primordials', 'descTH': 'สายฟ้า ความเร็ว และการกระตุ้นประสาท รวดเร็วและดุดัน', 'descEN': 'Lightning, speed, and nerve stimulation. Fast and aggressive.', 'authority': 'Lightning · Nerves · Burst Speed', 'examplesTH': ['ปล่อยสายฟ้าฉับพลัน', 'กระตุ้นประสาทให้ตอบสนองไว', 'รบกวนการเคลื่อนไหวด้วยสนามไฟฟ้า'], 'examplesEN': ['Release instant lightning strikes', 'Stimulate reflexes', 'Disrupt movement with electric fields']}, {'name': 'Flora Heal', 'thai': 'พฤกษาเยียวยา', 'pillar': 'Vitalities', 'descTH': 'ใช้พลังชีวิตของพืชเพื่อเยียวยา ฟื้นฟู และชำระพิษ', 'descEN': 'Uses plant life force to heal, restore, and cleanse toxins.', 'authority': 'Healing Flora · Purification · Recovery', 'examplesTH': ['ละอองพฤกษาฟื้นฟูบาดแผล', 'ดูดซับพิษออกจากร่างกาย', 'สร้างเขตเยียวยา'], 'examplesEN': ['Heal wounds with floral mist', 'Absorb toxins', 'Create healing zones']}, {'name': 'Restoration', 'thai': 'การฟื้นคืน', 'pillar': 'Vitalities', 'descTH': 'ฟื้นสภาพ ซ่อมแซม และคืนความสมบูรณ์ให้สิ่งที่เสียหาย', 'descEN': 'Restores, repairs, and returns damaged things toward wholeness.', 'authority': 'Repair · Reconstruction · Renewal', 'examplesTH': ['ซ่อมแซมวัตถุแตกหัก', 'เร่งการสมานแผล', 'คืนสภาพพื้นที่เสียหาย'], 'examplesEN': ['Repair broken objects', 'Accelerate healing', 'Restore damaged zones']}, {'name': 'Spirit', 'thai': 'วิญญาณ', 'pillar': 'Vitalities', 'descTH': 'เกี่ยวข้องกับวิญญาณ จิตสำนึก และตัวตนภายใน โจมตีจิตวิญญาณได้โดยตรง', 'descEN': 'Deals with souls, consciousness, and inner identity.', 'authority': 'Soul · Consciousness · Spirit Pressure', 'examplesTH': ['สัมผัสร่องรอยวิญญาณ', 'โจมตีระดับจิตใจ', 'สร้างม่านวิญญาณป้องกัน'], 'examplesEN': ['Sense soul traces', 'Attack the mind directly', 'Create spiritual barriers']}, {'name': 'Holy Light', 'thai': 'แสงศักดิ์สิทธิ์', 'pillar': 'Vitalities', 'descTH': 'แสงศักดิ์สิทธิ์ การชำระล้าง การปกป้อง และการลงทัณฑ์', 'descEN': 'Holy light for purification, protection, and judgment.', 'authority': 'Purification · Protection · Judgment', 'examplesTH': ['ลำแสงชำระล้าง', 'เกราะแสงป้องกัน', 'ลงทัณฑ์สิ่งชั่วร้าย'], 'examplesEN': ['Release purifying light', 'Create light shields', 'Judge evil with sacred radiance']}, {'name': 'Blood', 'thai': 'โลหิต', 'pillar': 'Abstracts', 'descTH': 'ควบคุมเลือด พลังชีวิต และการเสียสละ ยิ่งใช้หนักยิ่งเสี่ยงคลุ้มคลั่ง', 'descEN': 'Controls blood, life force, and sacrifice. Heavy use risks frenzy.', 'authority': 'Blood · Sacrifice · Life Force', 'examplesTH': ['ควบคุมเลือดเป็นอาวุธ', 'เร่งการไหลเวียนเพิ่มพละกำลัง', 'อ่านร่องรอยจากเลือด'], 'examplesEN': ['Shape blood into weapons', 'Boost strength via circulation', 'Read traces through blood']}, {'name': 'Wisdom', 'thai': 'ปัญญา', 'pillar': 'Abstracts', 'descTH': 'ความรู้ การวิเคราะห์ ความทรงจำ และความเข้าใจสิ่งลี้ลับ', 'descEN': 'Knowledge, analysis, memory, and understanding of mysteries.', 'authority': 'Analysis · Memory · Knowledge', 'examplesTH': ['วิเคราะห์รูปแบบการโจมตี', 'จดจำข้อมูลสนามรบอย่างแม่นยำ', 'อ่านโครงสร้างพลัง'], 'examplesEN': ['Analyze attack patterns', 'Store battlefield information', 'Read energy structures']}, {'name': 'Truth', 'thai': 'สัจธรรม', 'pillar': 'Abstracts', 'descTH': 'เส้นทางแห่งความจริง กฎ และการเปิดเผย ทำลายคำลวงได้', 'descEN': 'A Path of truth, law, and revelation that breaks deception.', 'authority': 'Law · Revelation · Judgment', 'examplesTH': ['มองทะลุภาพลวง', 'เปิดเผยเงื่อนไขที่ซ่อนอยู่', 'บังคับให้ความจริงปรากฏ'], 'examplesEN': ['See through illusions', 'Reveal hidden conditions', 'Force truth into the open']}, {'name': 'Darkness', 'thai': 'ความมืด', 'pillar': 'Abstracts', 'descTH': 'เส้นทางแห่งความว่าง การลบเลือน และการไม่มีอยู่ ไม่ใช่แค่เงามืด แต่คือการกัดกร่อนการมีอยู่', 'descEN': 'A Path of void, erasure, and non-existence. Not mere shadow, but the erosion of being itself.', 'authority': 'Erasure · Absence · Void', 'examplesTH': ['กลืนแสงในพื้นที่', 'ซ่อนการเคลื่อนไหวในความมืด', 'ปล่อยแรงกดดันแห่งความกลัว'], 'examplesEN': ['Swallow light in an area', 'Hide movement within darkness', 'Release fear pressure']}, {'name': 'Illusion', 'thai': 'มายา', 'pillar': 'Abstracts', 'descTH': 'บิดเบือนการรับรู้ ความเชื่อ และตรรกะ ทำให้สิ่งที่ผู้คนเชื่อเริ่มกลายเป็นความจริงเทียม', 'descEN': 'Distorts perception, belief, and logic until what people believe begins to become false reality.', 'authority': 'Belief · Perception · Deception', 'examplesTH': ['สร้างร่างลวง', 'บิดเบือนระยะและเสียง', 'ทำให้เป้าหมายเห็นสิ่งที่หวาดกลัว'], 'examplesEN': ['Create illusion bodies', 'Distort distance and sound', 'Show targets their deepest fear']}, {'name': 'Time', 'thai': 'กาลเวลา', 'pillar': 'Celestials', 'descTH': 'แตะต้องเวลา จังหวะ และความเสื่อมสลาย อันตรายต่อสติผู้ใช้มาก', 'descEN': 'Touches time, rhythm, and decay. Extremely dangerous to the mind.', 'authority': 'Time · Rhythm · Decay', 'examplesTH': ['ชะลอการเคลื่อนไหวชั่วคราว', 'เร่งการเสื่อมสภาพบางอย่าง', 'สัมผัสจังหวะเวลาที่ผิดปกติ'], 'examplesEN': ['Temporarily slow motion', 'Accelerate decay', 'Sense abnormal time rhythms']}, {'name': 'Astronomy', 'thai': 'ดาราศาสตร์', 'pillar': 'Celestials', 'descTH': 'พลังแห่งดาว วงโคจร แรงดึงดูด และปรากฏการณ์ท้องฟ้า', 'descEN': 'Power of stars, orbits, gravity, and celestial phenomena.', 'authority': 'Stars · Orbit · Cosmic Flow', 'examplesTH': ['อ่านทิศทาง Core Flow ผ่านตำแหน่งดาว', 'ใช้แรงดึงดูดจำลองดึงหรือผลัก', 'เห็นร่องรอยของดวงดาวที่ดับสูญ'], 'examplesEN': ['Read Core flow through stellar positions', 'Pull or repel with simulated gravity', 'See traces of fallen stars']}, {'name': 'Chaos-Space', 'thai': 'โกลาหลมิติ', 'pillar': 'Celestials', 'descTH': 'บิดเบือนมิติ ระยะทาง และความต่อเนื่องของพื้นที่ ทรงพลังแต่เสี่ยงเสียสติ', 'descEN': 'Distorts space, distance, and continuity. Powerful but mentally dangerous.', 'authority': 'Spatial Rift · Distortion · Warp', 'examplesTH': ['บิดระยะทางสั้นๆ', 'สร้างรอยแยกมิติหลบหลีก', 'ทำให้ทิศทางสนามรบสับสน'], 'examplesEN': ['Twist short distances', 'Create brief spatial rifts', 'Disorient spatial directions']}, {'name': 'Fate', 'thai': 'โชคชะตา', 'pillar': 'Celestials', 'descTH': 'เกี่ยวข้องกับเส้นด้ายของโชคชะตา ความน่าจะเป็น และจังหวะสำคัญ', 'descEN': 'Deals with threads of fate, probability, and decisive moments.', 'authority': 'Threads · Probability · Outcome', 'examplesTH': ['สัมผัสจังหวะที่เปลี่ยนผลลัพธ์', 'เบี่ยงความน่าจะเป็นเล็กน้อย', 'อ่านเส้นทางความเป็นไปได้'], 'examplesEN': ['Sense moments that alter outcomes', 'Slightly bend probability', 'Read branching possibilities']}, {'name': 'Machinery', 'thai': 'จักรกล', 'pillar': 'Constructs', 'descTH': 'จักรกล กลไก การดัดแปลง และวิวัฒนาการเชิงเครื่องจักร', 'descEN': 'Machines, mechanisms, modification, and mechanical evolution.', 'authority': 'Mechanism · Circuits · Augmentation', 'examplesTH': ['สร้างกลไก Core ช่วยต่อสู้', 'เสริมอุปกรณ์ด้วยวงจรพลังงาน', 'วิเคราะห์และควบคุมเครื่องจักร'], 'examplesEN': ['Build small Core mechanisms', 'Enhance tools with energy circuits', 'Analyze and control machinery']}, {'name': 'Shadow', 'thai': 'เงา', 'pillar': 'Constructs', 'descTH': 'ควบคุมเงา รูปร่างมืด และการซ่อนตัว เหมาะกับการลอบโจมตี', 'descEN': 'Controls shadows, dark forms, and concealment for ambush tactics.', 'authority': 'Shadow · Concealment · Ambush', 'examplesTH': ['เคลื่อนที่ผ่านเงาระยะสั้น', 'สร้างเงาโจมตีจากมุมอับ', 'ซ่อนตัวและเสียงในความมืด'], 'examplesEN': ['Move through shadows briefly', 'Attack from blind spots with shadow forms', 'Hide presence in darkness']}];
 
 const CORE_BEASTS = [
   { file: "/images/beasts/beast-1.png", name: "CRYONIX OF ICE", path: "Ice", tagTH: "Core Beast · เส้นทางน้ำแข็ง", tagEN: "Core Beast · Path of Ice", descTH: "Core Beast แห่งเส้นทางน้ำแข็ง ผู้เป็นตัวแทนของความนิ่ง ความหนาว และความเงียบงัน ร่างกายของมันปกคลุมด้วยผลึกน้ำแข็ง Core ที่ดูดซับความร้อนและพลังงานรอบตัวอย่างต่อเนื่อง จนพื้นที่ที่มันอาศัยกลายเป็นดินแดนน้ำแข็งอันเงียบสงบและมี Madness ต่ำผิดธรรมชาติ", descEN: "A Core Beast of the Ice Path that embodies stillness, cold, and silence. Its crystalline Core ice continuously absorbs heat and surrounding energy, turning its territory into a silent frozen wasteland where Madness becomes unnaturally calm.", metaTH: "Nature: Cold • Silent • Territorial | Relation: Rare • Difficult to Link • Highly Stable", metaEN: "Nature: Cold • Silent • Territorial | Relation: Rare • Difficult to Link • Highly Stable" },
@@ -400,6 +400,83 @@ const SACRED_REALMS = {
 };
 
 const PATH_ARCHIVES = {
+  Flame: {
+    image: "/images/paths/flame-banner.png",
+    accent: "from-orange-500/25 via-red-500/20 to-yellow-300/10",
+    level0Name: "FLAME",
+    titleTH: "เส้นทางแห่งเพลิง",
+    titleEN: "Path of Flame",
+    subtitleTH: "เปลวไฟ ความร้อน การเผาไหม้ และการเปลี่ยนสภาพ",
+    subtitleEN: "Flame, heat, combustion, and transformation",
+    quoteTH: "เพลิงไม่เคยหยุดนิ่ง และทุกสิ่งที่มันสัมผัส...ย่อมต้องเปลี่ยนแปลง",
+    quoteEN: "Flame never remains still, and everything it touches must change.",
+    authority: "Fire • Heat • Combustion • Burning • Transformation • Destruction",
+    conceptTitle: "Endless Flame",
+    conceptTH:
+      "Flame ไม่ใช่เพียงการควบคุมไฟ แต่คือการเผาไหม้ที่บังคับให้ทุกสิ่งเปลี่ยนสภาพ เพลิงของเส้นทางนี้ไม่หยุดนิ่ง ยิ่งลุกลาม ยิ่งกลืนกิน และยิ่งผลักดันทุกสิ่งให้เข้าสู่การสลาย การปะทุ หรือการเกิดใหม่ในรูปแบบที่บิดเบี้ยวกว่าเดิม ยิ่งระดับสูงขึ้น ผู้ใช้ยิ่งเสี่ยงถูกความร้อนและความบ้าคลั่งของตนเองเผาผลาญจากภายใน",
+    conceptEN:
+      "Flame is not merely the control of fire, but combustion that forces all things into transformation. The flame of this Path never remains still; it spreads, consumes, and drives everything toward decay, eruption, or rebirth in a more distorted form. As users ascend, they risk being burned from within by their own heat and madness.",
+    sequences: [
+      [
+        9,
+        "SPARK IGNITER",
+        "สร้างประกายไฟจากพลังภายใน / จุดการเผาไหม้บนเป้าหมาย / เพิ่มอุณหภูมิรอบตัว / เริ่มต้นการลุกไหม้ของสสาร",
+        "Create sparks from inner power / ignite combustion on a target / raise surrounding temperature / begin the burning of matter",
+      ],
+      [
+        8,
+        "FLAME CONTROLLER",
+        "ควบคุมเปลวไฟได้อย่างต่อเนื่อง / ยิงเปลวไฟระยะกลาง / สร้างโล่และกำแพงเพลิง / เผาศัตรูอย่างต่อเนื่อง",
+        "Continuously control flames / launch mid-range fire / create shields and walls of flame / burn enemies over time",
+      ],
+      [
+        7,
+        "BURN ACCELERATOR",
+        "เร่งอัตราการเผาไหม้ / เพิ่มความร้อนและความเร็วของเปลวไฟ / ศัตรูที่ถูกเผาสูญเสียพลังอย่างต่อเนื่อง / ควบคุมจังหวะการลุกไหม้",
+        "Accelerate combustion rate / increase the heat and speed of flame / drain enemies caught in fire over time / control the rhythm of burning",
+      ],
+      [
+        6,
+        "FLAME MAGE",
+        "สร้างระเบิดเพลิงและพายุไฟ / ควบคุมเปลวไฟหลายทิศทาง / ยกระดับอุณหภูมิทั่วพื้นที่ / เผาผลาญศัตรูอย่างรุนแรง",
+        "Create fire explosions and firestorms / control flames from multiple directions / raise the temperature across an area / burn enemies with violent force",
+      ],
+      [
+        5,
+        "FLAME DOMINATOR",
+        "ครอบครองสนามรบด้วยทะเลเพลิง / สร้างกำแพงเพลิงขนาดมหึมา / เปลี่ยนพื้นที่ให้กลายเป็นดินแดนแห่งไฟ / ทุกการโจมตีทิ้งการเผาไหม้อย่างต่อเนื่อง",
+        "Dominate the battlefield with a sea of flames / create massive walls of fire / turn terrain into a burning domain / leave lingering combustion after every attack",
+      ],
+      [
+        4,
+        "ANGEL OF BLAZING FLAME",
+        "ร่างกายแปรสภาพเป็นเปลวเพลิงบางส่วน / ปลดปล่อยความร้อนมหาศาล / เปลี่ยนทุกย่างก้าวให้กลายเป็นทะเลเพลิง / การโจมตีสามารถกวาดล้างพื้นที่ขนาดใหญ่",
+        "Partially transform the body into blazing flame / release overwhelming heat / turn every step into a field of fire / unleash attacks capable of sweeping large areas",
+      ],
+      [
+        3,
+        "INFERNO SOVEREIGN",
+        "ควบคุมการปะทุของเพลิงทุกชนิด / สร้างนรกเพลิงที่เผาไหม้อย่างไม่มีวันดับ / เปลี่ยนสนามรบทั้งผืนให้เป็นแดนมอดไหม้ / เพลิงยังคงเผาไหม้แม้ไร้เชื้อเพลิง",
+        "Control eruptions of every kind of flame / create an inferno that refuses to die / turn the entire battlefield into a burning wasteland / maintain fire even without ordinary fuel",
+      ],
+      [
+        2,
+        "WORLD FLAME LORD",
+        "ควบคุมเปลวเพลิงระดับภูมิภาค / สร้างพายุเพลิงและคลื่นความร้อนมหาศาล / หลอมละลายเมืองและเปลี่ยนภูมิประเทศ / ทุกการเผาไหม้อยู่ภายใต้การควบคุม",
+        "Control flames across a regional scale / create firestorms and massive heat waves / melt cities and reshape terrain / bring every act of burning under control",
+      ],
+      [
+        1,
+        "PRIMORDIAL FLAME DEITY",
+        "ควบคุมแนวคิดของการเผาไหม้ / ทุกสิ่งที่สัมผัสเข้าสู่กระบวนการเปลี่ยนสภาพ / จุดหรือดับการเผาไหม้ได้ในขอบเขตอำนาจ / เพลิงดำรงอยู่แม้ไร้อากาศและไร้เชื้อเพลิง",
+        "Control the concept of combustion / force everything touched into transformation / ignite or extinguish burning within their authority / sustain flame even without air or fuel",
+      ],
+    ],
+    ascensionTH:
+      "Level 0 คือ FLAME — ตัวตนแห่งการเผาไหม้โดยสมบูรณ์ ไม่ได้ควบคุมเปลวไฟอีกต่อไป แต่กลายเป็นแนวคิดของการเปลี่ยนสภาพผ่านเพลิง ทุกสิ่งที่สามารถเผาไหม้ได้ล้วนอยู่ภายใต้อำนาจของมัน และแม้สิ่งที่ไม่อาจเผาไหม้ ก็สามารถถูกทำให้เข้าสู่กระบวนการสลายตัวได้ สิ่งที่หลงเหลืออยู่ไม่ใช่มนุษย์ แต่เป็นเศษความคิด ความปรารถนา และแรงเผาผลาญที่ไม่มีวันดับ",
+    ascensionEN:
+      "Level 0 is FLAME — the complete existence of combustion itself. They no longer control fire; they become the concept of transformation through flame. Everything capable of burning falls under their authority, and even things that should not burn can be forced into a process of decay. What remains is no longer human, but fragments of thought, desire, and an undying hunger to consume.",
+  },
   Gales: {
     image: "/images/paths/gales-banner.png",
     video: "/videos/paths/gales.mp4",
@@ -746,6 +823,43 @@ export default function CoreWardenWebsite() {
   const [musicOn, setMusicOn] = useState(false);
   const audioRef = useRef(null);
   const t = UI[lang];
+  const conceptInteractionRule = {
+    th: {
+      kicker: "CONCEPT INTERACTION RULE",
+      title: "กฎการแทรกแซงแนวคิด",
+      paragraphs: [
+        "แม้ว่าพลังของหลายเส้นทางจะเริ่มต้นจากพลังเชิงกายภาพ เช่น เพลิง น้ำแข็ง วายุ ธรณี หรือสายน้ำ แต่เมื่อผู้ใช้เข้าใจแก่นแท้ของเส้นทางตนเองลึกซึ้งเพียงพอ พลังเหล่านั้นจะสามารถแทรกแซง “แนวคิด” ได้",
+        "ผลลัพธ์ไม่ได้ขึ้นอยู่กับประเภทของเส้นทางเพียงอย่างเดียว แต่ขึ้นอยู่กับ Authority ระดับพลัง ความเข้าใจ และความต่างชั้นระหว่างผู้ใช้",
+      ],
+      cards: [
+        "Flame อาจเผาการหยุดเวลา",
+        "Ice อาจแช่แข็งสัจจะ",
+        "Gales อาจพัดกระจายภาพลวงตา",
+        "Terra อาจบดขยี้มิติ",
+        "Thunder อาจทำลายการเชื่อมโยงของพลัง",
+        "Tides อาจชะล้างคำสาป",
+      ],
+      quote: "ไม่มีเส้นทางใดชนะกันโดยสมบูรณ์ ผู้ที่เข้าใจเส้นทางของตนลึกซึ้งกว่าคือผู้ได้เปรียบ",
+    },
+    en: {
+      kicker: "CONCEPT INTERACTION RULE",
+      title: "Concept Interference Rule",
+      paragraphs: [
+        "Although many Paths begin as physical forces, such as Flame, Ice, Gales, Terra, or Tides, those powers can interfere with “concepts” once the user understands the true essence of their Path deeply enough.",
+        "The result is not determined by Path type alone. It depends on Authority, power level, understanding, and the difference in rank between the users.",
+      ],
+      cards: [
+        "Flame may burn suspended time",
+        "Ice may freeze truth itself",
+        "Gales may scatter illusions",
+        "Terra may crush spatial distortion",
+        "Thunder may sever power connections",
+        "Tides may wash away curses",
+      ],
+      quote: "No Path wins absolutely. The one who understands their own Path more deeply holds the advantage.",
+    },
+  };
+  const rule = conceptInteractionRule[lang] || conceptInteractionRule.th;
 
   useEffect(() => {
     if (!audioRef.current) return;
@@ -928,27 +1042,19 @@ export default function CoreWardenWebsite() {
         <h2 className="text-5xl md:text-7xl font-black">{t.pillarsTitle}</h2>
         <p className="mt-5 max-w-3xl text-white/60 leading-relaxed">{t.pillarsDesc}</p>
         <div className="concept-rule-card">
-          <p className="concept-rule-kicker">CONCEPT INTERACTION RULE</p>
-          <h3 className="concept-rule-title">กฎการแทรกแซงแนวคิด</h3>
+          <p className="concept-rule-kicker">{rule.kicker}</p>
+          <h3 className="concept-rule-title">{rule.title}</h3>
           <div className="concept-rule-text">
-            <p>
-              แม้ว่าพลังของหลายเส้นทางจะเริ่มต้นจากพลังเชิงกายภาพ เช่น เพลิง น้ำแข็ง วายุ ธรณี หรือสายฟ้า แต่เมื่อผู้ใช้เข้าใจแก่นแท้ของเส้นทางตนเองลึกซึ้งเพียงพอ พลังเหล่านั้นจะสามารถแทรกแซง “แนวคิด” ได้
-            </p>
-            <p>
-              ผลลัพธ์ไม่ได้ขึ้นอยู่กับประเภทของเส้นทางเพียงอย่างเดียว แต่ขึ้นอยู่กับ Authority ระดับพลัง ความเข้าใจ และความต่างชั้นระหว่างผู้ใช้
-            </p>
+            {rule.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
           <div className="concept-rule-examples">
-            <span>Flame อาจเผาการหยุดเวลา</span>
-            <span>Ice อาจแช่แข็งสัจจะ</span>
-            <span>Gales อาจพัดกระจายภาพลวงตา</span>
-            <span>Terra อาจบดขยี้มิติ</span>
-            <span>Thunder อาจทำลายการเชื่อมโยงของพลัง</span>
-            <span>Tides อาจชะล้างคำสาป</span>
+            {rule.cards.map((card) => (
+              <span key={card}>{card}</span>
+            ))}
           </div>
-          <p className="concept-rule-note">
-            ไม่มีเส้นทางใดชนะกันโดยสมบูรณ์ ผู้ที่เข้าใจเส้นทางของตนลึกซึ้งกว่าคือผู้ได้เปรียบ
-          </p>
+          <p className="concept-rule-note">{rule.quote}</p>
         </div>
         <div className="grid lg:grid-cols-[0.75fr_1.25fr] gap-8 items-start">
           <div className="grid gap-4">
@@ -1399,10 +1505,19 @@ function FullPathArchive({ archive, lang }) {
         <div className="rounded-[2rem] border border-violet-200/15 bg-white/[0.035] p-5 md:p-6">
           <p className="text-xs uppercase tracking-[0.35em] text-violet-200/60">Sequence Archive 9 → 1</p>
           <div className="mt-6 grid gap-4">
-            {archive.sequences.map(([level, , en, descTH, descEN, conceptTH, conceptEN]) => (
+            {archive.sequences.map((sequence) => {
+              const isCompactSequence = sequence.length === 4;
+              const [level] = sequence;
+              const englishName = isCompactSequence ? sequence[1] : sequence[2];
+              const descTH = isCompactSequence ? sequence[2] : sequence[3];
+              const descEN = isCompactSequence ? sequence[3] : sequence[4];
+              const conceptTH = isCompactSequence ? null : sequence[5];
+              const conceptEN = isCompactSequence ? null : sequence[6];
+
+              return (
               <div key={level} className="rounded-2xl border border-white/10 bg-black/35 p-5">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h4 className="text-xl font-black">{level} | {en}</h4>
+                  <h4 className="text-xl font-black">{level} | {englishName}</h4>
                 </div>
                 <p className="mt-3 text-white/65 leading-relaxed">{lang === "th" ? descTH : descEN}</p>
                 {conceptTH && (
@@ -1416,7 +1531,8 @@ function FullPathArchive({ archive, lang }) {
                   </div>
                 )}
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
