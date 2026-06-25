@@ -402,6 +402,7 @@ const SACRED_REALMS = {
 const PATH_ARCHIVES = {
   Gales: {
     image: "/images/paths/gales-banner.png",
+    video: "/videos/paths/gales.mp4",
     accent: "from-sky-500/25 via-slate-500/20 to-cyan-300/10",
     level0Name: "GALES",
     titleTH: "เส้นทางแห่งวายุ",
