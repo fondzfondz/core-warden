@@ -926,7 +926,30 @@ export default function CoreWardenWebsite() {
       >
         <p className="text-violet-200/70 tracking-[0.35em] text-xs uppercase mb-4">{t.systemStructure}</p>
         <h2 className="text-5xl md:text-7xl font-black">{t.pillarsTitle}</h2>
-        <p className="mt-5 mb-12 max-w-3xl text-white/60 leading-relaxed">{t.pillarsDesc}</p>
+        <p className="mt-5 max-w-3xl text-white/60 leading-relaxed">{t.pillarsDesc}</p>
+        <div className="concept-rule-card">
+          <p className="concept-rule-kicker">CONCEPT INTERACTION RULE</p>
+          <h3 className="concept-rule-title">กฎการแทรกแซงแนวคิด</h3>
+          <div className="concept-rule-text">
+            <p>
+              แม้ว่าพลังของหลายเส้นทางจะเริ่มต้นจากพลังเชิงกายภาพ เช่น เพลิง น้ำแข็ง วายุ ธรณี หรือสายฟ้า แต่เมื่อผู้ใช้เข้าใจแก่นแท้ของเส้นทางตนเองลึกซึ้งเพียงพอ พลังเหล่านั้นจะสามารถแทรกแซง “แนวคิด” ได้
+            </p>
+            <p>
+              ผลลัพธ์ไม่ได้ขึ้นอยู่กับประเภทของเส้นทางเพียงอย่างเดียว แต่ขึ้นอยู่กับ Authority ระดับพลัง ความเข้าใจ และความต่างชั้นระหว่างผู้ใช้
+            </p>
+          </div>
+          <div className="concept-rule-examples">
+            <span>Flame อาจเผาการหยุดเวลา</span>
+            <span>Ice อาจแช่แข็งสัจจะ</span>
+            <span>Gales อาจพัดกระจายภาพลวงตา</span>
+            <span>Terra อาจบดขยี้มิติ</span>
+            <span>Thunder อาจทำลายการเชื่อมโยงของพลัง</span>
+            <span>Tides อาจชะล้างคำสาป</span>
+          </div>
+          <p className="concept-rule-note">
+            ไม่มีเส้นทางใดชนะกันโดยสมบูรณ์ ผู้ที่เข้าใจเส้นทางของตนลึกซึ้งกว่าคือผู้ได้เปรียบ
+          </p>
+        </div>
         <div className="grid lg:grid-cols-[0.75fr_1.25fr] gap-8 items-start">
           <div className="grid gap-4">
             {PILLARS.map((pillar) => (
