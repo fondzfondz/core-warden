@@ -402,6 +402,7 @@ const SACRED_REALMS = {
 const PATH_ARCHIVES = {
   Flame: {
     image: "/images/paths/flame-banner.png",
+    video: "/videos/paths/flame.mp4",
     accent: "from-orange-500/25 via-red-500/20 to-yellow-300/10",
     level0Name: "FLAME",
     titleTH: "เส้นทางแห่งเพลิง",
@@ -715,6 +716,7 @@ const PATH_ARCHIVES = {
 
   Ice: {
     image: "/images/paths/ice-banner.png",
+    video: "/videos/paths/ice.mp4",
     accent: "from-cyan-400/25 via-blue-500/20 to-slate-200/10",
     level0Name: "ICE",
     titleTH: "เส้นทางแห่งน้ำแข็ง",
@@ -793,6 +795,7 @@ const PATH_ARCHIVES = {
 
   Terra: {
     image: "/images/paths/terra-banner.png",
+    video: "/videos/paths/terra.mp4",
     accent: "from-stone-500/25 via-amber-700/20 to-emerald-300/10",
     level0Name: "TERRA",
     titleTH: "เส้นทางแห่งปฐพี",
@@ -871,6 +874,7 @@ const PATH_ARCHIVES = {
 
   Thunder: {
     image: "/images/paths/thunder-banner.png",
+    video: "/videos/paths/thunder.mp4",
     accent: "from-violet-500/25 via-blue-500/20 to-yellow-300/10",
     level0Name: "THUNDER",
     titleTH: "เส้นทางแห่งอสุนี",
@@ -949,6 +953,7 @@ const PATH_ARCHIVES = {
 
   Machinery: {
     image: "/images/paths/machinery-banner.png",
+    video: "/videos/paths/machinery.mp4",
     accent: "from-zinc-400/25 via-amber-500/20 to-cyan-300/10",
     level0Name: "MACHINERY",
     titleTH: "เส้นทางแห่งจักรกล",
@@ -1027,6 +1032,7 @@ const PATH_ARCHIVES = {
 
   Shadow: {
     image: "/images/paths/shadow-banner.png",
+    video: "/videos/paths/shadow.mp4",
     accent: "from-slate-950/40 via-purple-900/25 to-zinc-700/10",
     level0Name: "SHADOW",
     titleTH: "เส้นทางแห่งเงา",
@@ -1106,6 +1112,7 @@ const PATH_ARCHIVES = {
 
   Restoration: {
     image: "/images/paths/restoration-banner.png",
+    video: "/videos/paths/restoration.mp4",
     accent: "from-emerald-300/25 via-teal-400/20 to-white/10",
     level0Name: "RESTORATION",
     titleTH: "เส้นทางแห่งการฟื้นฟู",
@@ -1183,6 +1190,7 @@ const PATH_ARCHIVES = {
   },
   Spirit: {
     image: "/images/paths/spirit-banner.png",
+    video: "/videos/paths/spirit.mp4",
     accent: "from-cyan-300/25 via-violet-500/20 to-slate-950/20",
     level0Name: "SPIRIT",
     titleTH: "เส้นทางแห่งวิญญาณ",
