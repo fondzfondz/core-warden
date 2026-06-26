@@ -1,4 +1,4 @@
-
+﻿
 /* UMBRAL COVENANT PATCH READY */
 import { useEffect, useMemo, useRef, useState } from "react";
 
@@ -639,9 +639,9 @@ const PATH_ARCHIVES = {
     authority: "Wisdom • Analysis • Interpretation • Prediction • Power Structure • Countermeasure • Understanding",
     conceptTitle: "Infinite Understanding",
     conceptTH:
-      "Wisdom คือเส้นทางแห่งการวิเคราะห์ การตีความ และความเข้าใจในกลไกของโลก ผู้ใช้เส้นทางนี้ไม่ได้ชนะด้วยพลังดิบ แต่ชนะด้วยการอ่านโครงสร้างพลังของศัตรู คาดการณ์ผลลัพธ์ แก้ทาง และสร้างวิธีตอบโต้ที่แม่นยำ Wisdom ไม่ได้ขโมยพลังของเส้นทางอื่น และไม่ได้ถือ Authority จริงของเส้นทางเหล่านั้น แต่มันสามารถถอดแบบกลไกบางส่วนแล้วสร้างเป็นพลังเวอร์ชันตีความของตนเองได้ ยิ่งเข้าใจมาก พลังยิ่งหลากหลาย แต่ไม่มีการจำลองใดสมบูรณ์เท่าผู้ถือ Path ต้นฉบับ โดยเฉพาะ Authority ระดับลึก Sacred Realm และ Concept ของ Level 0",
+      "Wisdom คือเส้นทางแห่งการวิเคราะห์ การตีความ และความเข้าใจในกลไกของโลก ผู้ใช้เส้นทางนี้ไม่ได้ชนะด้วยพลังดิบ แต่ชนะด้วยการอ่านโครงสร้างพลังของศัตรู คาดการณ์ผลลัพธ์ แก้ทาง และสร้างวิธีตอบโต้ที่แม่นยำ Wisdom ไม่ได้ขโมยพลังของเส้นทางอื่น และไม่ได้ถือ Authority จริงของเส้นทางเหล่านั้น แต่มันสามารถถอดแบบกลไกบางส่วนแล้วสร้างเป็นพลังเวอร์ชันตีความของตนเองได้ ยิ่งเข้าใจมาก พลังยิ่งหลากหลาย แต่ไม่มีการจำลองใดสมบูรณ์เท่าผู้ถือ Path ต้นฉบับ",
     conceptEN:
-      "Wisdom is the Path of analysis, interpretation, and understanding the mechanisms of the world. Its users do not win through raw power, but through reading the structure of enemy abilities, predicting outcomes, building counters, and creating precise responses. Wisdom does not steal the powers of other Paths, nor does it hold their true Authority. It can deconstruct part of a mechanism and rebuild it as an interpreted version of its own. The deeper the understanding, the more versatile the power becomes, but no imitation is ever as complete as the original Path holder, especially when facing deep Authority, Sacred Realms, or Level 0 Concepts.",
+      "Wisdom is the Path of analysis, interpretation, and understanding the mechanisms of the world. Its users do not win through raw power, but through reading the structure of enemy abilities, predicting outcomes, building counters, and creating precise responses. Wisdom does not steal the powers of other Paths, nor does it hold their true Authority. It can deconstruct part of a mechanism and rebuild it as an interpreted version of its own. The deeper the understanding, the more versatile the power becomes, but no imitation is ever as complete as the original Path holder.",
     sequences: [
       [
         9,
