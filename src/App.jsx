@@ -628,6 +628,7 @@ const PATH_ARCHIVES = {
   },
   Wisdom: {
     image: "/images/paths/wisdom-banner.png",
+    video: "/videos/paths/wisdom.mp4",
     accent: "from-sky-300/25 via-indigo-500/20 to-amber-200/10",
     level0Name: "WISDOM",
     titleTH: "เส้นทางแห่งปัญญา",
@@ -705,6 +706,7 @@ const PATH_ARCHIVES = {
   },
   Truth: {
     image: "/images/paths/truth-banner.png",
+    video: "/videos/paths/truth.mp4",
     accent: "from-white/25 via-amber-300/20 to-blue-400/10",
     level0Name: "TRUTH",
     titleTH: "เส้นทางแห่งสัจจะ",
@@ -1509,6 +1511,7 @@ const PATH_ARCHIVES = {
   },
   Time: {
     image: "/images/paths/time-banner.png",
+    video: "/videos/paths/time.mp4",
     accent: "from-violet-300/25 via-blue-500/20 to-cyan-200/10",
     level0Name: "TIME",
     titleTH: "เส้นทางแห่งกาลเวลา",
@@ -1586,6 +1589,7 @@ const PATH_ARCHIVES = {
   },
   Fate: {
     image: "/images/paths/fate-banner.png",
+    video: "/videos/paths/fate.mp4",
     accent: "from-fuchsia-400/25 via-violet-500/20 to-yellow-200/10",
     level0Name: "FATE",
     titleTH: "เส้นทางแห่งโชคชะตา",
@@ -1663,6 +1667,7 @@ const PATH_ARCHIVES = {
   },
   "Chaos-Space": {
     image: "/images/paths/chaos-space-banner.png",
+    video: "/videos/paths/chaos-space.mp4",
     accent: "from-fuchsia-500/25 via-indigo-600/20 to-cyan-300/10",
     level0Name: "CHAOS-SPACE",
     titleTH: "เส้นทางแห่งโกลาหล-มิติ",
