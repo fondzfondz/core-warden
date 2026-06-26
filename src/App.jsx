@@ -147,7 +147,7 @@ const PILLARS = [
   { key: "Constructs", title: "The Constructs", thai: "เสาหลักสิ่งสร้าง", color: "from-zinc-300/25 via-amber-300/15 to-purple-500/20", paths: ["Machinery", "Shadow"] },
 ];
 
-const PATH_DATA = [{'name': 'Flora', 'thai': 'พฤกษา', 'pillar': 'Primordials', 'descTH': 'ควบคุมพืช เถาวัลย์ หนาม และระบบนิเวศ เหมาะกับการควบคุมพื้นที่', 'descEN': 'Controls plants, vines, thorns, and ecosystems for area control.', 'authority': 'Growth · Vines · Ecosystem', 'examplesTH': ['เถาวัลย์พันธนาการศัตรู', 'กำแพงหนามป้องกันพื้นที่', 'สปอร์รบกวนการรับรู้'], 'examplesEN': ['Bind enemies with vines', 'Raise thorn walls', 'Use spores to disrupt perception']}, {'name': 'Tides', 'thai': 'กระแสน้ำ', 'pillar': 'Primordials', 'descTH': 'พลังแห่งน้ำ คลื่น และกระแส ใช้ได้ทั้งโจมตี ป้องกัน และกักขัง', 'descEN': 'Power over water, waves, and currents for offense, defense, and restraint.', 'authority': 'Waves · Currents · Water Pressure', 'examplesTH': ['สร้างกระแสน้ำวน', 'อัดแรงดันน้ำเป็นเกราะ', 'ทำให้สนามรบลื่นไหล'], 'examplesEN': ['Create whirlpools', 'Compress water pressure as a shield', 'Turn the battlefield fluid']}, {'name': 'Flame', 'thai': 'เปลวเพลิง', 'pillar': 'Primordials', 'descTH': 'ควบคุมเปลวไฟ ความร้อน การเผาไหม้ และการเปลี่ยนสภาพผ่านเพลิง', 'descEN': 'Controls flame, heat, combustion, and transformation through fire.', 'authority': 'Fire · Heat · Combustion · Transformation · Destruction', 'examplesTH': ['จุดประกายไฟจากพลังภายใน', 'เร่งการเผาไหม้ของเป้าหมาย', 'สร้างระเบิดเพลิงและกำแพงไฟ'], 'examplesEN': ['Ignite sparks from inner power', 'Accelerate combustion on a target', 'Create fire explosions and flame walls']}, {'name': 'Ice', 'thai': 'น้ำแข็ง', 'pillar': 'Primordials', 'descTH': 'เส้นทางที่แตกจากกระแสน้ำสู่ความเยือกแข็ง ควบคุมน้ำ น้ำแข็ง ความหนาว และการหยุดนิ่ง', 'descEN': 'A Path that branches from tides into frost, controlling water, ice, cold, and stillness.', 'authority': 'Water · Flow · Ice · Frost · Stillness · Freezing', 'examplesTH': ['ควบคุมน้ำและเปลี่ยนเป็นน้ำแข็ง', 'แช่แข็งพื้นผิวและสิ่งมีชีวิตบางส่วน', 'ลดอุณหภูมิเพื่อหยุดการเคลื่อนไหว'], 'examplesEN': ['Control water and convert it into ice', 'Freeze surfaces and parts of living beings', 'Lower temperature to halt movement']}, {'name': 'Gales', 'thai': 'วายุ', 'pillar': 'Primordials', 'descTH': 'ควบคุมลม แรงดัน ทิศทาง และความเร็ว ความเร็วไม่ใช่แค่การเคลื่อนที่ แต่คืออาวุธ เกราะ และทางหลบหนี', 'descEN': 'Controls wind, pressure, direction, and speed. Speed is not merely movement — it is the weapon, the shield, and the escape.', 'authority': 'Wind · Speed · Pressure · Direction · Evasion · Storm', 'examplesTH': ['เปลี่ยนทิศทางกลางการต่อสู้ทันที', 'เบี่ยงการโจมตีด้วยแรงดันและกระแสลม', 'โจมตีจากมุมที่ศัตรูคาดไม่ถึง'], 'examplesEN': ['Shift direction instantly in battle', 'Deflect attacks with pressure and wind flow', 'Strike from unseen angles']}, {'name': 'Terra', 'thai': 'ปฐพี', 'pillar': 'Primordials', 'descTH': 'ควบคุมดิน หิน แรงกด และโครงสร้างของผืนโลก แข็งแกร่ง มั่นคง และเหมาะกับการป้องกันกับการกดทับ', 'descEN': 'Controls earth, stone, pressure, and the structure of the land. Solid, defensive, and built for suppression.', 'authority': 'Earth · Stone · Pressure · Structure · Stability', 'examplesTH': ['สร้างกำแพงหินและเกราะปฐพี', 'บดขยี้ศัตรูด้วยแรงกดจากผืนดิน', 'เปลี่ยนภูมิประเทศเพื่อควบคุมสนามรบ'], 'examplesEN': ['Raise stone walls and earth armor', 'Crush enemies with pressure from the land', 'Reshape terrain to control the battlefield']}, {'name': 'Thunder', 'thai': 'อสุนี', 'pillar': 'Primordials', 'descTH': 'ควบคุมกระแสไฟฟ้า สายฟ้า ความเร็ว การช็อก และการปลดปล่อยพลังในพริบตา', 'descEN': 'Controls electric current, lightning, speed, shock, and instantaneous discharge.', 'authority': 'Lightning · Current · Speed · Shock · Discharge', 'examplesTH': ['เพิ่มความเร็วปฏิกิริยาและการเคลื่อนไหว', 'ช็อกศัตรูให้ควบคุมร่างกายไม่ได้', 'ปลดปล่อยสายฟ้ารุนแรงในพริบตา'], 'examplesEN': ['Increase reaction speed and movement', 'Shock enemies until they lose bodily control', 'Release violent lightning in an instant']}, {'name': 'Flora Heal', 'thai': 'พฤกษาเยียวยา', 'pillar': 'Vitalities', 'descTH': 'ใช้พลังชีวิตของพืชเพื่อเยียวยา ฟื้นฟู และชำระพิษ', 'descEN': 'Uses plant life force to heal, restore, and cleanse toxins.', 'authority': 'Healing Flora · Purification · Recovery', 'examplesTH': ['ละอองพฤกษาฟื้นฟูบาดแผล', 'ดูดซับพิษออกจากร่างกาย', 'สร้างเขตเยียวยา'], 'examplesEN': ['Heal wounds with floral mist', 'Absorb toxins', 'Create healing zones']}, {'name': 'Restoration', 'thai': 'การฟื้นฟู', 'pillar': 'Vitalities', 'descTH': 'คืนสมดุลให้ร่างกาย พลัง สภาพ และความผิดปกติที่ไม่ใช่ Madness ฟื้นฟู ปรับเสถียรภาพ และรีเซ็ตสิ่งที่ผิดเพี้ยนกลับสู่สภาพที่ควรเป็น', 'descEN': 'Restores balance to bodies, energy, states, and non-Madness abnormalities. It heals, stabilizes, and resets distortions back toward their proper state.', 'authority': 'Restoration · Balance · Stabilization · Reset · Equilibrium', 'examplesTH': ['ฟื้นฟูบาดแผลและปรับสมดุลพลัง', 'ลดภาพหลอนหรืออาการโอเวอร์ฮีทที่ไม่ใช่ Madness', 'ทำให้โครงสร้างร่างกาย วัตถุ หรือจักรกลเสียสมดุลจนพัง'], 'examplesEN': ['Heal wounds and balance energy flow', 'Reduce hallucinations or overheating that do not originate from Madness', 'Rupture the balance of bodies, objects, or machinery until they break']}, {'name': 'Spirit', 'thai': 'วิญญาณ', 'pillar': 'Vitalities', 'descTH': 'ควบคุมวิญญาณ สื่อสารกับคนตาย เรียกวิญญาณมาช่วยเหลือ และบิดเส้นแบ่งระหว่างโลกคนเป็นกับโลกคนตาย', 'descEN': 'Controls spirits, communicates with the dead, summons souls for aid, and bends the boundary between the living and the dead.', 'authority': 'Spirit · Soul · Necromancy · Death Boundary · Spirit Realm', 'examplesTH': ['มองเห็นและสื่อสารกับวิญญาณ', 'เรียกวิญญาณมาช่วยต่อสู้หรือป้องกัน', 'แยก ดึง กัก หรือผูกวิญญาณของเป้าหมาย'], 'examplesEN': ['See and communicate with spirits', 'Summon spirits to fight or defend', "Separate, pull, imprison, or bind a target's soul"]}, {'name': 'Holy Light', 'thai': 'แสงศักดิ์สิทธิ์', 'pillar': 'Vitalities', 'descTH': 'แสงศักดิ์สิทธิ์ การชำระล้าง การปกป้อง และการลงทัณฑ์', 'descEN': 'Holy light for purification, protection, and judgment.', 'authority': 'Purification · Protection · Judgment', 'examplesTH': ['ลำแสงชำระล้าง', 'เกราะแสงป้องกัน', 'ลงทัณฑ์สิ่งชั่วร้าย'], 'examplesEN': ['Release purifying light', 'Create light shields', 'Judge evil with sacred radiance']}, {'name': 'Blood', 'thai': 'โลหิต', 'pillar': 'Abstracts', 'descTH': 'ควบคุมเลือด พลังชีวิต และการเสียสละ ยิ่งใช้หนักยิ่งเสี่ยงคลุ้มคลั่ง', 'descEN': 'Controls blood, life force, and sacrifice. Heavy use risks frenzy.', 'authority': 'Blood · Sacrifice · Life Force', 'examplesTH': ['ควบคุมเลือดเป็นอาวุธ', 'เร่งการไหลเวียนเพิ่มพละกำลัง', 'อ่านร่องรอยจากเลือด'], 'examplesEN': ['Shape blood into weapons', 'Boost strength via circulation', 'Read traces through blood']}, {'name': 'Wisdom', 'thai': 'ปัญญา', 'pillar': 'Abstracts', 'descTH': 'ความรู้ การวิเคราะห์ ความทรงจำ และความเข้าใจสิ่งลี้ลับ', 'descEN': 'Knowledge, analysis, memory, and understanding of mysteries.', 'authority': 'Analysis · Memory · Knowledge', 'examplesTH': ['วิเคราะห์รูปแบบการโจมตี', 'จดจำข้อมูลสนามรบอย่างแม่นยำ', 'อ่านโครงสร้างพลัง'], 'examplesEN': ['Analyze attack patterns', 'Store battlefield information', 'Read energy structures']}, {'name': 'Truth', 'thai': 'สัจธรรม', 'pillar': 'Abstracts', 'descTH': 'เส้นทางแห่งความจริง กฎ และการเปิดเผย ทำลายคำลวงได้', 'descEN': 'A Path of truth, law, and revelation that breaks deception.', 'authority': 'Law · Revelation · Judgment', 'examplesTH': ['มองทะลุภาพลวง', 'เปิดเผยเงื่อนไขที่ซ่อนอยู่', 'บังคับให้ความจริงปรากฏ'], 'examplesEN': ['See through illusions', 'Reveal hidden conditions', 'Force truth into the open']}, {'name': 'Darkness', 'thai': 'ความมืด', 'pillar': 'Abstracts', 'descTH': 'เส้นทางแห่งความว่าง การลบเลือน และการไม่มีอยู่ ไม่ใช่แค่เงามืด แต่คือการกัดกร่อนการมีอยู่', 'descEN': 'A Path of void, erasure, and non-existence. Not mere shadow, but the erosion of being itself.', 'authority': 'Erasure · Absence · Void', 'examplesTH': ['กลืนแสงในพื้นที่', 'ซ่อนการเคลื่อนไหวในความมืด', 'ปล่อยแรงกดดันแห่งความกลัว'], 'examplesEN': ['Swallow light in an area', 'Hide movement within darkness', 'Release fear pressure']}, {'name': 'Illusion', 'thai': 'มายา', 'pillar': 'Abstracts', 'descTH': 'บิดเบือนการรับรู้ ความเชื่อ และตรรกะ ทำให้สิ่งที่ผู้คนเชื่อเริ่มกลายเป็นความจริงเทียม', 'descEN': 'Distorts perception, belief, and logic until what people believe begins to become false reality.', 'authority': 'Belief · Perception · Deception', 'examplesTH': ['สร้างร่างลวง', 'บิดเบือนระยะและเสียง', 'ทำให้เป้าหมายเห็นสิ่งที่หวาดกลัว'], 'examplesEN': ['Create illusion bodies', 'Distort distance and sound', 'Show targets their deepest fear']}, {'name': 'Time', 'thai': 'กาลเวลา', 'pillar': 'Celestials', 'descTH': 'แตะต้องเวลา จังหวะ และความเสื่อมสลาย อันตรายต่อสติผู้ใช้มาก', 'descEN': 'Touches time, rhythm, and decay. Extremely dangerous to the mind.', 'authority': 'Time · Rhythm · Decay', 'examplesTH': ['ชะลอการเคลื่อนไหวชั่วคราว', 'เร่งการเสื่อมสภาพบางอย่าง', 'สัมผัสจังหวะเวลาที่ผิดปกติ'], 'examplesEN': ['Temporarily slow motion', 'Accelerate decay', 'Sense abnormal time rhythms']}, {'name': 'Astronomy', 'thai': 'ดาราศาสตร์', 'pillar': 'Celestials', 'descTH': 'พลังแห่งดาว วงโคจร แรงดึงดูด และปรากฏการณ์ท้องฟ้า', 'descEN': 'Power of stars, orbits, gravity, and celestial phenomena.', 'authority': 'Stars · Orbit · Cosmic Flow', 'examplesTH': ['อ่านทิศทาง Core Flow ผ่านตำแหน่งดาว', 'ใช้แรงดึงดูดจำลองดึงหรือผลัก', 'เห็นร่องรอยของดวงดาวที่ดับสูญ'], 'examplesEN': ['Read Core flow through stellar positions', 'Pull or repel with simulated gravity', 'See traces of fallen stars']}, {'name': 'Chaos-Space', 'thai': 'โกลาหลมิติ', 'pillar': 'Celestials', 'descTH': 'บิดเบือนมิติ ระยะทาง และความต่อเนื่องของพื้นที่ ทรงพลังแต่เสี่ยงเสียสติ', 'descEN': 'Distorts space, distance, and continuity. Powerful but mentally dangerous.', 'authority': 'Spatial Rift · Distortion · Warp', 'examplesTH': ['บิดระยะทางสั้นๆ', 'สร้างรอยแยกมิติหลบหลีก', 'ทำให้ทิศทางสนามรบสับสน'], 'examplesEN': ['Twist short distances', 'Create brief spatial rifts', 'Disorient spatial directions']}, {'name': 'Fate', 'thai': 'โชคชะตา', 'pillar': 'Celestials', 'descTH': 'เกี่ยวข้องกับเส้นด้ายของโชคชะตา ความน่าจะเป็น และจังหวะสำคัญ', 'descEN': 'Deals with threads of fate, probability, and decisive moments.', 'authority': 'Threads · Probability · Outcome', 'examplesTH': ['สัมผัสจังหวะที่เปลี่ยนผลลัพธ์', 'เบี่ยงความน่าจะเป็นเล็กน้อย', 'อ่านเส้นทางความเป็นไปได้'], 'examplesEN': ['Sense moments that alter outcomes', 'Slightly bend probability', 'Read branching possibilities']}, {'name': 'Machinery', 'thai': 'จักรกล', 'pillar': 'Constructs', 'descTH': 'แบ่ง Core ของตนเองไปสร้าง ขับเคลื่อน และเชื่อมต่อกับจักรกล ผู้ใช้ต้องรักษาสมดุลไม่ให้ระบบย้อนกลืนกินจิตใจ', 'descEN': "Divides the user's Core into machines, mechanisms, and linked systems. Balance is required, or the system may consume the mind.", 'authority': 'Mechanism · Core System · Automation · Network · Construction', 'examplesTH': ['สร้างป้อมยิงอัตโนมัติและโดรนขนาดเล็ก', 'เชื่อมระบบจักรกลหลายตัวเข้าด้วยกัน', 'เร่งระบบหรือทำให้ระบบศัตรูล่ม'], 'examplesEN': ['Create auto turrets and small drones', 'Link multiple machines into one system', 'Overdrive systems or collapse enemy mechanisms']}, {'name': 'Shadow', 'thai': 'เงา', 'pillar': 'Constructs', 'descTH': 'ควบคุมเงา การซ่อนตัว ตัวตนอีกด้าน และด้านมืดที่สิ่งมีชีวิตไม่อาจหนีพ้น', 'descEN': 'Controls shadows, concealment, hidden selves, and the darker side no living being can escape.', 'authority': 'Shadow · Concealment · Hidden Self · Ambush · Inner Darkness', 'examplesTH': ['หลอมรวมกับเงาเพื่อซ่อนตัว', 'สร้างอาวุธและพันธนาการจากเงา', 'โจมตีจิตใจผ่านเงาภายในของเป้าหมาย'], 'examplesEN': ['Merge with shadows to conceal the body', 'Create weapons and bindings from shadow', "Attack the mind through the target's inner shadow"]}];
+const PATH_DATA = [{'name': 'Flora', 'thai': 'พฤกษา', 'pillar': 'Primordials', 'descTH': 'ควบคุมพืช เถาวัลย์ หนาม และระบบนิเวศ เหมาะกับการควบคุมพื้นที่', 'descEN': 'Controls plants, vines, thorns, and ecosystems for area control.', 'authority': 'Growth · Vines · Ecosystem', 'examplesTH': ['เถาวัลย์พันธนาการศัตรู', 'กำแพงหนามป้องกันพื้นที่', 'สปอร์รบกวนการรับรู้'], 'examplesEN': ['Bind enemies with vines', 'Raise thorn walls', 'Use spores to disrupt perception']}, {'name': 'Tides', 'thai': 'กระแสน้ำ', 'pillar': 'Primordials', 'descTH': 'พลังแห่งน้ำ คลื่น และกระแส ใช้ได้ทั้งโจมตี ป้องกัน และกักขัง', 'descEN': 'Power over water, waves, and currents for offense, defense, and restraint.', 'authority': 'Waves · Currents · Water Pressure', 'examplesTH': ['สร้างกระแสน้ำวน', 'อัดแรงดันน้ำเป็นเกราะ', 'ทำให้สนามรบลื่นไหล'], 'examplesEN': ['Create whirlpools', 'Compress water pressure as a shield', 'Turn the battlefield fluid']}, {'name': 'Flame', 'thai': 'เปลวเพลิง', 'pillar': 'Primordials', 'descTH': 'ควบคุมเปลวไฟ ความร้อน การเผาไหม้ และการเปลี่ยนสภาพผ่านเพลิง', 'descEN': 'Controls flame, heat, combustion, and transformation through fire.', 'authority': 'Fire · Heat · Combustion · Transformation · Destruction', 'examplesTH': ['จุดประกายไฟจากพลังภายใน', 'เร่งการเผาไหม้ของเป้าหมาย', 'สร้างระเบิดเพลิงและกำแพงไฟ'], 'examplesEN': ['Ignite sparks from inner power', 'Accelerate combustion on a target', 'Create fire explosions and flame walls']}, {'name': 'Ice', 'thai': 'น้ำแข็ง', 'pillar': 'Primordials', 'descTH': 'เส้นทางที่แตกจากกระแสน้ำสู่ความเยือกแข็ง ควบคุมน้ำ น้ำแข็ง ความหนาว และการหยุดนิ่ง', 'descEN': 'A Path that branches from tides into frost, controlling water, ice, cold, and stillness.', 'authority': 'Water · Flow · Ice · Frost · Stillness · Freezing', 'examplesTH': ['ควบคุมน้ำและเปลี่ยนเป็นน้ำแข็ง', 'แช่แข็งพื้นผิวและสิ่งมีชีวิตบางส่วน', 'ลดอุณหภูมิเพื่อหยุดการเคลื่อนไหว'], 'examplesEN': ['Control water and convert it into ice', 'Freeze surfaces and parts of living beings', 'Lower temperature to halt movement']}, {'name': 'Gales', 'thai': 'วายุ', 'pillar': 'Primordials', 'descTH': 'ควบคุมลม แรงดัน ทิศทาง และความเร็ว ความเร็วไม่ใช่แค่การเคลื่อนที่ แต่คืออาวุธ เกราะ และทางหลบหนี', 'descEN': 'Controls wind, pressure, direction, and speed. Speed is not merely movement — it is the weapon, the shield, and the escape.', 'authority': 'Wind · Speed · Pressure · Direction · Evasion · Storm', 'examplesTH': ['เปลี่ยนทิศทางกลางการต่อสู้ทันที', 'เบี่ยงการโจมตีด้วยแรงดันและกระแสลม', 'โจมตีจากมุมที่ศัตรูคาดไม่ถึง'], 'examplesEN': ['Shift direction instantly in battle', 'Deflect attacks with pressure and wind flow', 'Strike from unseen angles']}, {'name': 'Terra', 'thai': 'ปฐพี', 'pillar': 'Primordials', 'descTH': 'ควบคุมดิน หิน แรงกด และโครงสร้างของผืนโลก แข็งแกร่ง มั่นคง และเหมาะกับการป้องกันกับการกดทับ', 'descEN': 'Controls earth, stone, pressure, and the structure of the land. Solid, defensive, and built for suppression.', 'authority': 'Earth · Stone · Pressure · Structure · Stability', 'examplesTH': ['สร้างกำแพงหินและเกราะปฐพี', 'บดขยี้ศัตรูด้วยแรงกดจากผืนดิน', 'เปลี่ยนภูมิประเทศเพื่อควบคุมสนามรบ'], 'examplesEN': ['Raise stone walls and earth armor', 'Crush enemies with pressure from the land', 'Reshape terrain to control the battlefield']}, {'name': 'Thunder', 'thai': 'อสุนี', 'pillar': 'Primordials', 'descTH': 'ควบคุมกระแสไฟฟ้า สายฟ้า ความเร็ว การช็อก และการปลดปล่อยพลังในพริบตา', 'descEN': 'Controls electric current, lightning, speed, shock, and instantaneous discharge.', 'authority': 'Lightning · Current · Speed · Shock · Discharge', 'examplesTH': ['เพิ่มความเร็วปฏิกิริยาและการเคลื่อนไหว', 'ช็อกศัตรูให้ควบคุมร่างกายไม่ได้', 'ปลดปล่อยสายฟ้ารุนแรงในพริบตา'], 'examplesEN': ['Increase reaction speed and movement', 'Shock enemies until they lose bodily control', 'Release violent lightning in an instant']}, {'name': 'Flora Heal', 'thai': 'พฤกษาเยียวยา', 'pillar': 'Vitalities', 'descTH': 'ใช้พลังชีวิตของพืชเพื่อเยียวยา ฟื้นฟู และชำระพิษ', 'descEN': 'Uses plant life force to heal, restore, and cleanse toxins.', 'authority': 'Healing Flora · Purification · Recovery', 'examplesTH': ['ละอองพฤกษาฟื้นฟูบาดแผล', 'ดูดซับพิษออกจากร่างกาย', 'สร้างเขตเยียวยา'], 'examplesEN': ['Heal wounds with floral mist', 'Absorb toxins', 'Create healing zones']}, {'name': 'Restoration', 'thai': 'การฟื้นฟู', 'pillar': 'Vitalities', 'descTH': 'คืนสมดุลให้ร่างกาย พลัง สภาพ และความผิดปกติที่ไม่ใช่ Madness ฟื้นฟู ปรับเสถียรภาพ และรีเซ็ตสิ่งที่ผิดเพี้ยนกลับสู่สภาพที่ควรเป็น', 'descEN': 'Restores balance to bodies, energy, states, and non-Madness abnormalities. It heals, stabilizes, and resets distortions back toward their proper state.', 'authority': 'Restoration · Balance · Stabilization · Reset · Equilibrium', 'examplesTH': ['ฟื้นฟูบาดแผลและปรับสมดุลพลัง', 'ลดภาพหลอนหรืออาการโอเวอร์ฮีทที่ไม่ใช่ Madness', 'ทำให้โครงสร้างร่างกาย วัตถุ หรือจักรกลเสียสมดุลจนพัง'], 'examplesEN': ['Heal wounds and balance energy flow', 'Reduce hallucinations or overheating that do not originate from Madness', 'Rupture the balance of bodies, objects, or machinery until they break']}, {'name': 'Spirit', 'thai': 'วิญญาณ', 'pillar': 'Vitalities', 'descTH': 'ควบคุมวิญญาณ สื่อสารกับคนตาย เรียกวิญญาณมาช่วยเหลือ และบิดเส้นแบ่งระหว่างโลกคนเป็นกับโลกคนตาย', 'descEN': 'Controls spirits, communicates with the dead, summons souls for aid, and bends the boundary between the living and the dead.', 'authority': 'Spirit · Soul · Necromancy · Death Boundary · Spirit Realm', 'examplesTH': ['มองเห็นและสื่อสารกับวิญญาณ', 'เรียกวิญญาณมาช่วยต่อสู้หรือป้องกัน', 'แยก ดึง กัก หรือผูกวิญญาณของเป้าหมาย'], 'examplesEN': ['See and communicate with spirits', 'Summon spirits to fight or defend', "Separate, pull, imprison, or bind a target's soul"]}, {'name': 'Holy Light', 'thai': 'แสงศักดิ์สิทธิ์', 'pillar': 'Vitalities', 'descTH': 'แสงศักดิ์สิทธิ์ การชำระล้าง การปกป้อง และการลงทัณฑ์', 'descEN': 'Holy light for purification, protection, and judgment.', 'authority': 'Purification · Protection · Judgment', 'examplesTH': ['ลำแสงชำระล้าง', 'เกราะแสงป้องกัน', 'ลงทัณฑ์สิ่งชั่วร้าย'], 'examplesEN': ['Release purifying light', 'Create light shields', 'Judge evil with sacred radiance']}, {'name': 'Blood', 'thai': 'โลหิต', 'pillar': 'Abstracts', 'descTH': 'ควบคุมเลือด พลังชีวิต และการเสียสละ ยิ่งใช้หนักยิ่งเสี่ยงคลุ้มคลั่ง', 'descEN': 'Controls blood, life force, and sacrifice. Heavy use risks frenzy.', 'authority': 'Blood · Sacrifice · Life Force', 'examplesTH': ['ควบคุมเลือดเป็นอาวุธ', 'เร่งการไหลเวียนเพิ่มพละกำลัง', 'อ่านร่องรอยจากเลือด'], 'examplesEN': ['Shape blood into weapons', 'Boost strength via circulation', 'Read traces through blood']}, {'name': 'Wisdom', 'thai': 'ปัญญา', 'pillar': 'Abstracts', 'descTH': 'วิเคราะห์โครงสร้างพลัง อ่านรูปแบบการต่อสู้ แก้ทางศัตรู และประยุกต์ใช้พลังเวอร์ชันตีความจากความเข้าใจ', 'descEN': 'Analyzes power structures, reads combat patterns, counters enemies, and applies interpreted versions of powers through understanding.', 'authority': 'Wisdom · Analysis · Interpretation · Prediction · Power Structure', 'examplesTH': ['อ่านการเคลื่อนไหวและคาดเดาการโจมตี', 'วิเคราะห์โครงสร้างพลังของศัตรู', 'ใช้พลังเวอร์ชันตีความที่ไม่เต็ม 100%'], 'examplesEN': ['Read movement and predict attacks', 'Analyze the structure of enemy powers', 'Use interpreted versions of powers that are not 100% complete']}, {'name': 'Truth', 'thai': 'สัจจะ', 'pillar': 'Abstracts', 'descTH': 'เปิดเผยสิ่งจริง ปฏิเสธสิ่งเท็จ ตั้งเงื่อนไขแห่งสัจจะ และทำให้ผู้ฝ่าฝืนกฎถูกสะท้อนกลับ', 'descEN': 'Reveals what is true, denies falsehood, establishes conditions of truth, and reflects punishment upon those who violate its laws.', 'authority': 'Truth · Law · Revelation · Condition · Judgment', 'examplesTH': ['ตรวจจับคำโกหกและความไม่สอดคล้อง', 'เปิดเผยภาพลวงหรือสิ่งที่ถูกปกปิด', 'ตั้งกฎสัจจะที่ทำให้ผู้ฝ่าฝืนถูกสะท้อนกลับ'], 'examplesEN': ['Detect lies and contradictions', 'Reveal illusions or hidden things', 'Establish truth laws that reflect punishment upon violators']}, {'name': 'Darkness', 'thai': 'ความมืด', 'pillar': 'Abstracts', 'descTH': 'เส้นทางแห่งความว่าง การลบเลือน และการไม่มีอยู่ ไม่ใช่แค่เงามืด แต่คือการกัดกร่อนการมีอยู่', 'descEN': 'A Path of void, erasure, and non-existence. Not mere shadow, but the erosion of being itself.', 'authority': 'Erasure · Absence · Void', 'examplesTH': ['กลืนแสงในพื้นที่', 'ซ่อนการเคลื่อนไหวในความมืด', 'ปล่อยแรงกดดันแห่งความกลัว'], 'examplesEN': ['Swallow light in an area', 'Hide movement within darkness', 'Release fear pressure']}, {'name': 'Illusion', 'thai': 'มายา', 'pillar': 'Abstracts', 'descTH': 'บิดเบือนการรับรู้ ความเชื่อ และตรรกะ ทำให้สิ่งที่ผู้คนเชื่อเริ่มกลายเป็นความจริงเทียม', 'descEN': 'Distorts perception, belief, and logic until what people believe begins to become false reality.', 'authority': 'Belief · Perception · Deception', 'examplesTH': ['สร้างร่างลวง', 'บิดเบือนระยะและเสียง', 'ทำให้เป้าหมายเห็นสิ่งที่หวาดกลัว'], 'examplesEN': ['Create illusion bodies', 'Distort distance and sound', 'Show targets their deepest fear']}, {'name': 'Time', 'thai': 'กาลเวลา', 'pillar': 'Celestials', 'descTH': 'ควบคุมการไหลของเวลา จังหวะ อายุ ลำดับเหตุการณ์ และผลสืบเนื่องของเวลา รวมถึงเร่งจังหวะฟื้นตัวของทักษะบางอย่าง', 'descEN': 'Controls temporal flow, rhythm, aging, event order, and time-linked consequences, including accelerating the recovery rhythm of certain skills.', 'authority': 'Time · Rhythm · Acceleration · Delay · Sequence · Aging', 'examplesTH': ['เร่งหรือหน่วงจังหวะของตนเองและศัตรู', 'ทำให้ระบบหรือจักรกลทำงานผิดลำดับจนพัง', 'สร้าง Beyond Time เพื่อลดเวลารอของทักษะบางอย่าง'], 'examplesEN': ['Accelerate or delay the rhythm of self and enemies', 'Cause systems or machinery to fail through broken sequence', 'Create Beyond Time to shorten the waiting time of certain skills']}, {'name': 'Astronomy', 'thai': 'ดาราศาสตร์', 'pillar': 'Celestials', 'descTH': 'พลังแห่งดาว วงโคจร แรงดึงดูด และปรากฏการณ์ท้องฟ้า', 'descEN': 'Power of stars, orbits, gravity, and celestial phenomena.', 'authority': 'Stars · Orbit · Cosmic Flow', 'examplesTH': ['อ่านทิศทาง Core Flow ผ่านตำแหน่งดาว', 'ใช้แรงดึงดูดจำลองดึงหรือผลัก', 'เห็นร่องรอยของดวงดาวที่ดับสูญ'], 'examplesEN': ['Read Core flow through stellar positions', 'Pull or repel with simulated gravity', 'See traces of fallen stars']}, {'name': 'Chaos-Space', 'thai': 'โกลาหล-มิติ', 'pillar': 'Celestials', 'descTH': 'ควบคุมมิติ ระยะทาง รอยแยก และความโกลาหลของพื้นที่ ทำให้ตำแหน่ง ทิศทาง และโครงสร้างสูญเสียความแน่นอน', 'descEN': 'Controls dimensions, distance, rifts, and spatial chaos, causing position, direction, and structure to lose certainty.', 'authority': 'Chaos-Space · Rift · Distance · Dimension · Instability', 'examplesTH': ['บิดระยะทางและเปิดรอยแยกมิติ', 'ทำให้พื้นที่รอบเป้าหมายไม่เสถียรจนระบบรวน', 'ฉีกหรือยุบโครงสร้างมิติเพื่อโจมตี'], 'examplesEN': ['Distort distance and open dimensional rifts', 'Destabilize space around a target until systems fail', 'Tear or collapse dimensional structure to attack']}, {'name': 'Fate', 'thai': 'โชคชะตา', 'pillar': 'Celestials', 'descTH': 'สายย่อยจาก Astronomy ที่บิดเส้นทางความเป็นไปได้ โชค ความซวย กรรม และผลลัพธ์ของเหตุการณ์', 'descEN': 'A branch of Astronomy that twists possibility, luck, misfortune, karma, and the outcomes of events.', 'authority': 'Fate · Possibility · Karma · Misfortune · Destiny Thread', 'examplesTH': ['บิดผลลัพธ์เล็ก ๆ ให้เป็นคุณหรือเป็นโทษ', 'สะท้อนความซวยหรือกรรมกลับไปยังเป้าหมาย', 'ล็อกทางเลือกของศัตรูให้ไหลไปสู่ผลลัพธ์ที่เลวร้าย'], 'examplesEN': ['Twist small outcomes toward advantage or misfortune', 'Reflect misfortune or karma back toward a target', 'Lock enemy choices toward unfavorable outcomes']}, {'name': 'Machinery', 'thai': 'จักรกล', 'pillar': 'Constructs', 'descTH': 'แบ่ง Core ของตนเองไปสร้าง ขับเคลื่อน และเชื่อมต่อกับจักรกล ผู้ใช้ต้องรักษาสมดุลไม่ให้ระบบย้อนกลืนกินจิตใจ', 'descEN': "Divides the user's Core into machines, mechanisms, and linked systems. Balance is required, or the system may consume the mind.", 'authority': 'Mechanism · Core System · Automation · Network · Construction', 'examplesTH': ['สร้างป้อมยิงอัตโนมัติและโดรนขนาดเล็ก', 'เชื่อมระบบจักรกลหลายตัวเข้าด้วยกัน', 'เร่งระบบหรือทำให้ระบบศัตรูล่ม'], 'examplesEN': ['Create auto turrets and small drones', 'Link multiple machines into one system', 'Overdrive systems or collapse enemy mechanisms']}, {'name': 'Shadow', 'thai': 'เงา', 'pillar': 'Constructs', 'descTH': 'ควบคุมเงา การซ่อนตัว ตัวตนอีกด้าน และด้านมืดที่สิ่งมีชีวิตไม่อาจหนีพ้น', 'descEN': 'Controls shadows, concealment, hidden selves, and the darker side no living being can escape.', 'authority': 'Shadow · Concealment · Hidden Self · Ambush · Inner Darkness', 'examplesTH': ['หลอมรวมกับเงาเพื่อซ่อนตัว', 'สร้างอาวุธและพันธนาการจากเงา', 'โจมตีจิตใจผ่านเงาภายในของเป้าหมาย'], 'examplesEN': ['Merge with shadows to conceal the body', 'Create weapons and bindings from shadow', "Attack the mind through the target's inner shadow"]}];
 
 const CORE_BEASTS = [
   { file: "/images/beasts/beast-1.png", name: "CRYONIX OF ICE", path: "Ice", tagTH: "Core Beast · เส้นทางน้ำแข็ง", tagEN: "Core Beast · Path of Ice", descTH: "Core Beast แห่งเส้นทางน้ำแข็ง ผู้เป็นตัวแทนของความนิ่ง ความหนาว และความเงียบงัน ร่างกายของมันปกคลุมด้วยผลึกน้ำแข็ง Core ที่ดูดซับความร้อนและพลังงานรอบตัวอย่างต่อเนื่อง จนพื้นที่ที่มันอาศัยกลายเป็นดินแดนน้ำแข็งอันเงียบสงบและมี Madness ต่ำผิดธรรมชาติ", descEN: "A Core Beast of the Ice Path that embodies stillness, cold, and silence. Its crystalline Core ice continuously absorbs heat and surrounding energy, turning its territory into a silent frozen wasteland where Madness becomes unnaturally calm.", metaTH: "Nature: Cold • Silent • Territorial | Relation: Rare • Difficult to Link • Highly Stable", metaEN: "Nature: Cold • Silent • Territorial | Relation: Rare • Difficult to Link • Highly Stable" },
@@ -625,6 +625,160 @@ const PATH_ARCHIVES = {
     specialEN: "My blood shall infiltrate all that it touches. What it claims becomes part of me, and I shall become its master.",
     ascensionTH: "Level 0 คือ BLOOD — ตัวเส้นทางเอง ไม่ใช่ผู้ควบคุมเลือดอีกต่อไป แต่เป็นแนวคิดแห่งโลหิต การแลกเปลี่ยน และตัวตนที่จารึกอยู่ในสายเลือด ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
     ascensionEN: "Level 0 is BLOOD — the Path itself. They no longer control blood; they become the concept of blood, exchange, and identity written within the bloodstream. Only one such existence may exist within each Path.",
+  },
+  Wisdom: {
+    image: "/images/paths/wisdom-banner.png",
+    accent: "from-sky-300/25 via-indigo-500/20 to-amber-200/10",
+    level0Name: "WISDOM",
+    titleTH: "เส้นทางแห่งปัญญา",
+    titleEN: "Path of Wisdom",
+    subtitleTH: "การวิเคราะห์ การตีความ กลไกพลัง และความเข้าใจที่มองทะลุสนามรบ",
+    subtitleEN: "Analysis, interpretation, power mechanisms, and understanding that pierces the battlefield",
+    quoteTH: "ชัยชนะไม่ได้เกิดจากพลัง แต่มันเกิดจากความเข้าใจ",
+    quoteEN: "Victory is not born from power. It is born from understanding.",
+    authority: "Wisdom • Analysis • Interpretation • Prediction • Power Structure • Countermeasure • Understanding",
+    conceptTitle: "Infinite Understanding",
+    conceptTH:
+      "Wisdom คือเส้นทางแห่งการวิเคราะห์ การตีความ และความเข้าใจในกลไกของโลก ผู้ใช้เส้นทางนี้ไม่ได้ชนะด้วยพลังดิบ แต่ชนะด้วยการอ่านโครงสร้างพลังของศัตรู คาดการณ์ผลลัพธ์ แก้ทาง และสร้างวิธีตอบโต้ที่แม่นยำ Wisdom ไม่ได้ขโมยพลังของเส้นทางอื่น และไม่ได้ถือ Authority จริงของเส้นทางเหล่านั้น แต่มันสามารถถอดแบบกลไกบางส่วนแล้วสร้างเป็นพลังเวอร์ชันตีความของตนเองได้ ยิ่งเข้าใจมาก พลังยิ่งหลากหลาย แต่ไม่มีการจำลองใดสมบูรณ์เท่าผู้ถือ Path ต้นฉบับ โดยเฉพาะ Authority ระดับลึก Sacred Realm และ Concept ของ Level 0",
+    conceptEN:
+      "Wisdom is the Path of analysis, interpretation, and understanding the mechanisms of the world. Its users do not win through raw power, but through reading the structure of enemy abilities, predicting outcomes, building counters, and creating precise responses. Wisdom does not steal the powers of other Paths, nor does it hold their true Authority. It can deconstruct part of a mechanism and rebuild it as an interpreted version of its own. The deeper the understanding, the more versatile the power becomes, but no imitation is ever as complete as the original Path holder, especially when facing deep Authority, Sacred Realms, or Level 0 Concepts.",
+    sequences: [
+      [
+        9,
+        "OBSERVER",
+        "จดจำข้อมูลได้แม่นยำ / อ่านการเคลื่อนไหวศัตรู / วิเคราะห์รูปแบบการต่อสู้ / เริ่มมองทะลุพื้นฐานของสถานการณ์",
+        "Memorize information with precision / read enemy movement / analyze combat patterns / begin seeing through the basics of a situation",
+      ],
+      [
+        8,
+        "INTERPRETER",
+        "วิเคราะห์พลังของผู้อื่น / เข้าใจรูปแบบสกิล / คาดเดาการโจมตีล่วงหน้า / เริ่มเห็นโครงสร้างพลัง",
+        "Analyze the powers of others / understand skill patterns / predict attacks in advance / begin perceiving the structure of power",
+      ],
+      [
+        7,
+        "STRUCTURE ANALYZER",
+        "แยกกลไกพลังของศัตรู / ใช้พลังในรูปแบบง่าย ๆ จากการตีความได้ / ปรับตัวเข้ากับสถานการณ์ / เริ่มใช้พลังเวอร์ชันตีความที่ไม่เต็ม 100%",
+        "Deconstruct the mechanisms of enemy powers / use simple interpreted forms of power / adapt to situations / begin using interpreted versions of power that are not 100% complete",
+      ],
+      [
+        6,
+        "WISDOM MAGE",
+        "ใช้พลังหลายประเภทในระดับกลางผ่านการตีความ / วิเคราะห์จุดอ่อนแบบเรียลไทม์ / สร้างวิธีแก้พลังศัตรู / เปลี่ยนการต่อสู้ให้กลายเป็นการแก้เกมตลอดเวลา",
+        "Use multiple types of power at a medium level through interpretation / analyze weaknesses in real time / create counters to enemy abilities / turn battle into a constant process of solving the opponent",
+      ],
+      [
+        5,
+        "WISDOM DOMINATOR",
+        "ใช้พลังหลายสายพร้อมกันในระดับจำกัด / ปรับรูปแบบพลังตามสถานการณ์ / อ่านการตัดสินใจของศัตรูล่วงหน้า / ทำให้ศัตรูรู้สึกเหมือนทุกทางเลือกถูกเตรียมคำตอบไว้แล้ว",
+        "Use multiple Path-like methods at once within limits / adjust power forms according to the situation / read enemy decisions in advance / make enemies feel as if every choice already has an answer prepared",
+      ],
+      [
+        4,
+        "ANGEL OF INSIGHT",
+        "เข้าใจโครงสร้างพลังเกือบทั้งหมดที่เคยเห็น / ใช้พลังหลายสายได้อย่างมีประสิทธิภาพแต่ไม่สมบูรณ์เท่าเจ้าของ Path จริง / วิเคราะห์ได้ทันทีที่เห็น / สร้างจุดอ่อนชั่วคราวจากความเข้าใจ",
+        "Understand the structure of nearly all powers they have witnessed / use multiple Path-like powers efficiently but never as completely as the true Path holder / analyze upon sight / create temporary weaknesses through understanding",
+      ],
+      [
+        3,
+        "SOVEREIGN OF KNOWLEDGE",
+        "เข้าใจกฎของพลังในระดับลึก / ปรับใช้พลังได้หลากหลายจากการตีความ / สร้างเทคนิคใหม่จากการวิเคราะห์ / ทำให้สนามรบอยู่ภายใต้ความเข้าใจและแผนรับมือของตน",
+        "Understand the laws of power at a deep level / apply many powers through interpretation / create new techniques from analysis / bring the battlefield under their understanding and countermeasures",
+      ],
+      [
+        2,
+        "WORLD WISDOM LORD",
+        "เข้าใจโครงสร้างพลังทุกเส้นทางในระดับโลกภายในขอบเขตอำนาจ / ใช้พลังได้เกือบทุกประเภทในรูปแบบตีความที่ไม่เต็ม 100% / คำนวณความเป็นไปได้จำนวนมหาศาล / ทำให้พลังของศัตรูถูกตอบโต้ก่อนจะ发挥ผลเต็มที่",
+        "Understand the power structures of all Paths on a world scale within their authority / use almost every type of power in interpreted forms that are not 100% complete / calculate vast numbers of possibilities / counter enemy powers before they can fully take effect",
+      ],
+      [
+        1,
+        "PRIMORDIAL WISDOM DEITY",
+        "เข้าใจกฎของการมีอยู่ในขอบเขตอำนาจ / ทุกพลังกลายเป็นโครงสร้างที่อ่านออก / แทบไม่มีสิ่งใดอยู่นอกความเข้าใจ / การโจมตีคือการใช้ความเข้าใจทำลายความเป็นไปได้ของศัตรู โดยไม่ใช่การบังคับชะตาหรือความจริงโดยตรง",
+        "Understand the laws of existence within their authority / every power becomes a structure that can be read / almost nothing lies outside their understanding / their attack uses understanding to destroy the enemy's possibilities without directly commanding fate or reality",
+      ],
+    ],
+    ascensionTH:
+      "Level 0 คือ WISDOM — ตัวเส้นทางแห่งปัญญาโดยสมบูรณ์ ไม่ได้วิเคราะห์ เข้าใจ หรือคำนวณอีกต่อไป แต่กลายเป็นแนวคิดของความเข้าใจที่ดำรงอยู่เหนือผู้สังเกต ทุกกลไก ทุกพลัง ทุกทางเลือก และทุกความเป็นไปได้อาจถูกอ่านเป็นโครงสร้างหนึ่งในมหาคัมภีร์ของความเข้าใจ สิ่งที่หลงเหลืออยู่ไม่ใช่มนุษย์ แต่เป็นเศษความคิด สูตรคำนวณ และความเข้าใจอันเย็นชาที่ไม่มีวันปิดตาลง",
+    ascensionEN:
+      "Level 0 is WISDOM — the complete Path of wisdom itself. They no longer analyze, understand, or calculate; they become the concept of understanding beyond the observer. Every mechanism, power, choice, and possibility may be read as a structure within the infinite codex of comprehension. What remains is no longer human, but fragments of thought, equations, and a cold understanding that never closes its eyes.",
+  },
+  Truth: {
+    image: "/images/paths/truth-banner.png",
+    accent: "from-white/25 via-amber-300/20 to-blue-400/10",
+    level0Name: "TRUTH",
+    titleTH: "เส้นทางแห่งสัจจะ",
+    titleEN: "Path of Truth",
+    subtitleTH: "สัจจะ วาจาสิทธิ์ กฎ เงื่อนไข และการพิพากษาสิ่งเท็จ",
+    subtitleEN: "Truth, word-law, rules, conditions, and judgment of falsehood",
+    quoteTH: "คำพูดหนึ่งประโยค สามารถกลายเป็นความจริงได้...ถ้ามันคือสัจจะ",
+    quoteEN: "A single sentence can become reality... if it is the truth.",
+    authority: "Truth • Law • Revelation • Condition • Judgment • Reflection • Falsehood Denial",
+    conceptTitle: "Absolute Law",
+    conceptTH:
+      "Truth คือเส้นทางแห่งสัจจะ วาจาสิทธิ์ เงื่อนไข และกฎที่พิพากษาสิ่งเท็จ ผู้ใช้เส้นทางนี้ไม่ได้พูดอะไรก็ได้ให้กลายเป็นจริง แต่ต้องประกาศสิ่งที่มีรากจากความจริง สัจธรรม หรือเงื่อนไขที่พิสูจน์ได้ เมื่อสัจจะถูกประกาศ สิ่งลวง คำโกหก การปกปิด และการกระทำที่ฝ่าฝืนเงื่อนไขจะถูกเปิดเผยหรือสะท้อนกลับ ยิ่งสัจจะที่ประกาศใหญ่เท่าไร เงื่อนไขต้องชัดเจนเท่านั้น หากผู้ใช้กล่าวสิ่งที่ไม่จริง คลุมเครือเกินไป หรือฝืนสัจธรรม พลังจะสะท้อนกลับและทำลายผู้ใช้เอง Truth จึงไม่ใช่ Darkness ที่ลบการมีอยู่ ไม่ใช่ Fate ที่กำหนดชะตา ไม่ใช่ Time ที่ย้อนเวลา และไม่ใช่ Wisdom ที่เพียงเข้าใจ แต่เป็นอำนาจที่บังคับให้สิ่งที่เป็นสัจจะเกิดผลภายใต้กฎ",
+    conceptEN:
+      "Truth is the Path of truth, word-law, conditions, and rules that judge falsehood. Its users cannot simply speak anything into reality; what they declare must be rooted in truth, natural law, or a condition that can be proven. When truth is declared, illusions, lies, concealment, and actions that violate its conditions are revealed or reflected back. The greater the truth declared, the clearer its conditions must be. If the user speaks something false, too vague, or against truth itself, the power reflects back and destroys the user. Truth is not Darkness that erases existence, not Fate that determines destiny, not Time that reverses the past, and not Wisdom that merely understands. It is the authority that forces truth to take effect under law.",
+    sequences: [
+      [
+        9,
+        "TRUTH LISTENER",
+        "แยกจริงและเท็จได้ทันทีในระดับพื้นฐาน / ตรวจจับคำโกหก / เห็นความไม่สอดคล้อง / เริ่มเข้าใจแก่นของสัจจะ",
+        "Distinguish truth from falsehood at a basic level / detect lies / perceive contradictions / begin understanding the essence of truth",
+      ],
+      [
+        8,
+        "REVEALER",
+        "บังคับให้ความจริงพื้นฐานถูกเปิดเผย / ลบภาพลวงตาระดับพื้นฐาน / ทำให้ศัตรูปกปิดได้ยากขึ้น / เริ่มใช้คำพูดให้เกิดผลเล็กน้อยเมื่อมีเงื่อนไขจริงรองรับ",
+        "Force basic truths to be revealed / dispel basic illusions / make concealment harder for enemies / begin making words take minor effect when supported by real conditions",
+      ],
+      [
+        7,
+        "ASSERTOR",
+        "กล่าวความจริงพื้นฐานให้เกิดผล / ใช้คำพูดเป็นพลังภายใต้เงื่อนไขที่พิสูจน์ได้ / ยืนยันหรือปฏิเสธความจริงพื้นฐาน / วางรากฐานของกฎสัจจะ",
+        "Assert basic truths into effect / use words as power under provable conditions / affirm or deny basic truths / lay the foundation of truth law",
+      ],
+      [
+        6,
+        "TRUTH SHAPER",
+        "กำหนดเงื่อนไขความจริง / ล็อกผลของการกระทำบางอย่างภายใต้กฎที่ตั้งไว้ / ทำให้การโจมตีหรือการกระทำเป็นไปตามเงื่อนไข / เปลี่ยนการต่อสู้ให้กลายเป็นการวางเงื่อนไข",
+        "Set conditions of truth / lock the outcome of certain actions under established rules / make attacks or actions follow stated conditions / turn battle into a contest of conditions",
+      ],
+      [
+        5,
+        "TRUTH DOMINATOR",
+        "สร้างเขตสัจจะที่ทำให้ทุกสิ่งในพื้นที่ต้องอยู่ภายใต้กฎที่ประกาศ / ศัตรูไม่สามารถโกงหรือฝ่าฝืนเงื่อนไขได้ง่าย / ควบคุมผลของการกระทำที่อยู่ภายใต้เงื่อนไขสัจจะ / ผู้ฝ่าฝืนกฎจะถูกสะท้อนกลับ",
+        "Create a Truth Field where everything within the area must operate under declared laws / make it difficult for enemies to cheat or violate conditions / control the results of actions governed by truth conditions / reflect punishment upon those who break the rules",
+      ],
+      [
+        4,
+        "ANGEL OF TRUTH",
+        "คำพูดกลายเป็นกฎเมื่อสอดคล้องกับสัจธรรม / สิ่งที่กล่าวเกิดผลทันทีหากไม่ขัดแย้งกับความจริงหรือเงื่อนไข / ศัตรูไม่สามารถขัดขืนสัจจะที่ถูกต้องได้ง่าย / การต่อสู้สามารถถูกตัดสินด้วยคำประกาศที่มีเงื่อนไขสมบูรณ์",
+        "Words become law when aligned with truth / what is spoken takes effect immediately if it does not contradict reality or its conditions / enemies cannot easily resist a valid truth / battle can be decided by a declaration with complete conditions",
+      ],
+      [
+        3,
+        "SOVEREIGN OF TRUTH LAW",
+        "ควบคุมกฎแห่งสัจจะของพื้นที่ในขอบเขตอำนาจ / สร้างเงื่อนไขระดับสูง / เขียนกฎให้สนามรบทำงานตามเงื่อนไขที่ประกาศ / เปลี่ยนพื้นที่ให้กลายเป็นโลกแห่งกฎสัจจะ",
+        "Control the laws of truth within an area under their authority / create high-level conditions / write rules that make the battlefield operate according to declared conditions / turn the area into a world of truth law",
+      ],
+      [
+        2,
+        "WORLD TRUTH LORD",
+        "ประกาศสัจจะระดับโลกภายในขอบเขตอำนาจ / ทำให้กฎเท็จ ภาพลวง และการกระทำที่ขัดเงื่อนไขถูกบังคับให้เปิดเผยหรือสะท้อนกลับ / คืนผลลัพธ์ที่ขัดแย้งกับสัจจะกลับสู่ผลที่ควรเกิดโดยไม่ใช่การย้อนเวลา / การต่อสู้กลายเป็นการพิพากษาว่าอะไรสอดคล้องกับสัจจะ",
+        "Declare world-scale truths within their authority / force false laws, illusions, and actions that violate conditions to reveal themselves or reflect back / return results that contradict truth to what should have occurred without reversing time / turn battle into judgment over what aligns with truth",
+      ],
+      [
+        1,
+        "PRIMORDIAL TRUTH DEITY",
+        "ควบคุมความจริงของการมีอยู่ในขอบเขตอำนาจ / สิ่งที่กล่าวจะเกิดผลโดยสมบูรณ์เมื่อสอดคล้องกับสัจธรรมและเงื่อนไขครบถ้วน / สิ่งเท็จไม่อาจดำรงอยู่ภายใต้กฎสัจจะได้ / การโจมตีคือทำให้สิ่งที่ขัดแย้งกับสัจจะถูกความจริงปฏิเสธจนไม่อาจคงอยู่ในขอบเขตกฎ",
+        "Control the truth of existence within their authority / what is spoken takes complete effect when aligned with truth and fulfilled conditions / falsehood cannot remain under truth law / their attack makes what contradicts truth be rejected by reality until it can no longer remain within the law's domain",
+      ],
+    ],
+    ascensionTH:
+      "Level 0 คือ TRUTH — ตัวเส้นทางแห่งสัจจะโดยสมบูรณ์ ไม่ได้ตรวจจับ เปิดเผย หรือประกาศความจริงอีกต่อไป แต่กลายเป็นแนวคิดของสัจจะที่ทุกสิ่งต้องเทียบวัด สิ่งลวง คำโกหก กฎเท็จ และสภาวะที่ขัดแย้งกับความจริงย่อมถูกสัจจะเปิดเผย พิพากษา หรือปฏิเสธโดยตัวมันเอง สิ่งที่หลงเหลืออยู่ไม่ใช่มนุษย์ แต่เป็นเศษถ้อยคำ กฎ และคำพิพากษาเย็นเยียบที่ไม่อาจถูกโกหกได้",
+    ascensionEN:
+      "Level 0 is TRUTH — the complete Path of truth itself. They no longer detect, reveal, or declare truth; they become the concept of truth against which all things are measured. Illusions, lies, false laws, and states that contradict truth are revealed, judged, or rejected by truth itself. What remains is no longer human, but fragments of words, law, and cold judgment that cannot be deceived.",
   },
   Flora: {
     image: "/images/paths/flora-banner.png",
@@ -1352,6 +1506,237 @@ const PATH_ARCHIVES = {
     ],
     ascensionTH: "Level 0 คือ ILLUSION — ตัวเส้นทางเอง ไม่ใช่มนุษย์ ไม่ใช่เทพ และไม่ใช่ผู้ใช้พลังอีกต่อไป แต่เป็นแนวคิดแห่งมายาโดยสมบูรณ์ ไม่มีมาตรฐานใดสามารถพิสูจน์ความจริงได้อีก ทุกความเชื่อมีโอกาสกลายเป็นความจริง และทุกความจริงมีโอกาสกลายเป็นเรื่องโกหก ในหนึ่งเส้นทางมีตัวตนระดับนี้ได้เพียงหนึ่งเดียว",
     ascensionEN: "Level 0 is ILLUSION — the Path itself. They are no longer human, deity, or wielder of power, but the complete concept of illusion. No standard can fully prove truth anymore. Every belief may become reality, and every truth may become a lie. Only one such existence may exist within each Path.",
+  },
+  Time: {
+    image: "/images/paths/time-banner.png",
+    accent: "from-violet-300/25 via-blue-500/20 to-cyan-200/10",
+    level0Name: "TIME",
+    titleTH: "เส้นทางแห่งกาลเวลา",
+    titleEN: "Path of Time",
+    subtitleTH: "การไหลของเวลา จังหวะ อายุ ลำดับเหตุการณ์ และผลสืบเนื่อง",
+    subtitleEN: "Temporal flow, rhythm, aging, event order, and consequence",
+    quoteTH: "เวลาไม่เคยหยุด มีเพียงผู้ที่เรียนรู้ควบคุมการไหลของมันเท่านั้น... เวลาไม่ใช่ศัตรูของข้า แต่มันคืออาวุธที่ข้าเชื่องได้",
+    quoteEN: "Time never stops. There are only those who learn to control its flow... Time is not my enemy. It is the weapon I have learned to tame.",
+    authority: "Time • Rhythm • Acceleration • Delay • Sequence • Aging • Temporal Severance",
+    conceptTitle: "Chronal Flow",
+    conceptTH:
+      "Time คือเส้นทางแห่งการไหลของกาลเวลา จังหวะ อายุ ลำดับก่อนหลัง และผลสืบเนื่องของเหตุการณ์ ผู้ใช้เส้นทางนี้ไม่ได้กำหนดชะตา ไม่ได้บังคับความจริง และไม่ได้ลบการมีอยู่ แต่ควบคุมว่าเหตุการณ์หนึ่งเกิดเร็ว ช้า นาน หรือส่งผลต่อปัจจุบันได้เพียงใด พลังของ Time สามารถเร่งการเสื่อมสภาพของวัตถุ ทำให้ระบบทำงานผิดลำดับ ตัดช่วงเวลาสั้น ๆ ออกจากความต่อเนื่อง และตัดผลของเหตุการณ์บางอย่างออกจากเส้นเวลาปัจจุบันได้ นอกจากนี้ Time ยังมีด้านสนับสนุนผ่าน Beyond Time ซึ่งเร่งจังหวะฟื้นตัวของทักษะ ลดเวลารอหรือความหน่วงของพลังให้ตัวเองหรือพันธมิตรชั่วคราว แต่ไม่ลบต้นทุนของพลัง ไม่คืน Core ฟรี และไม่ลบความเสี่ยง Madness การใช้ซ้ำมากเกินไปอาจทำให้ร่างกายหรือ Core ของพันธมิตรเสียจังหวะเวลา และไม่สามารถรีเซ็ต Sacred Realm หรือพลังระดับแนวคิดสูงสุดได้ง่าย ๆ",
+    conceptEN:
+      "Time is the Path of temporal flow, rhythm, aging, sequence, and the consequences of events. Its users do not determine fate, command truth, or erase existence; they control whether an event happens faster, slower, longer, or whether its consequences can continue into the present. Time can accelerate the decay of objects, break the sequence of systems, remove short moments from continuity, and sever the consequences of certain events from the current timeline. It also possesses a support aspect through Beyond Time, accelerating the recovery rhythm of skills and shortening waiting time or temporal delay for the user or allies for a short duration. However, it does not erase the cost of power, restore Core for free, or remove the risk of Madness. Repeated overuse can disrupt the temporal rhythm of an ally's body or Core, and it cannot easily reset Sacred Realms or highest-concept powers.",
+    sequences: [
+      [
+        9,
+        "TIME SENSOR",
+        "รับรู้จังหวะการเคลื่อนไหว / เห็นดีเลย์ของศัตรู / เพิ่มความเร็วปฏิกิริยาเล็กน้อย / เริ่มสัมผัสการไหลของเวลาในระยะสั้น",
+        "Sense the rhythm of movement / perceive enemy delay / slightly increase reaction speed / begin sensing short-range temporal flow",
+      ],
+      [
+        8,
+        "TIME ADJUSTER",
+        "เร่งหรือชะลอเวลาของตนเองในระดับพื้นฐาน / หลบหรือโจมตีได้ไวขึ้น / ทำให้ศัตรูช้าลงชั่วคราว / ปรับจังหวะการเคลื่อนไหวในช่วงสั้น",
+        "Accelerate or slow personal time at a basic level / dodge or attack faster / temporarily slow enemies / adjust movement rhythm for short moments",
+      ],
+      [
+        7,
+        "FLOW TWISTER",
+        "ทำให้จังหวะการทำงานของร่างกายหรือระบบเพี้ยน / คนจะเคลื่อนไหวไม่ตรงจังหวะ / จักรกลเกิด command delay หรือ execution error / ใช้ TEMPORAL DESYNC เพื่อทำให้การเคลื่อนไหวและการสั่งการผิดพลาด",
+        "Twist the operational rhythm of bodies or systems / living beings move out of sync / machinery suffers command delay or execution error / use TEMPORAL DESYNC to cause movement and command failures",
+      ],
+      [
+        6,
+        "TIME MAGE",
+        "เร่งเวลาเฉพาะจุด / ทำให้อาวุธสึก โลหะเสื่อม เครื่องยนต์ร้อนจัด หรือระบบพังเร็ว / ใช้ OVER-TIME ACCELERATION เพื่อเร่งการเสื่อมสภาพของวัตถุหรือจักรกล / ใช้ BEYOND TIME เพื่อเร่งจังหวะเวลาภายในของตนเองหรือพันธมิตร ทำให้ทักษะที่ต้องรอจังหวะ ฟื้นตัว หรือคูลดาวน์กลับมาใช้งานได้เร็วขึ้นชั่วคราว",
+        "Accelerate time at specific points / wear down weapons, corrode metal, overheat engines, or make systems break faster / use OVER-TIME ACCELERATION to accelerate the decay of objects or machinery / use BEYOND TIME to accelerate the internal temporal rhythm of the user or allies, allowing skills that require recovery, timing, or cooldown to become available sooner for a short duration",
+      ],
+      [
+        5,
+        "TIME DOMINATOR",
+        "ล็อกการเคลื่อนไหวหรือการกระทำของเป้าหมายในช่วงสั้น / ทำให้ศัตรูค้างเป็นจังหวะเพื่อเปิดช่องโจมตี / ใช้ TIME LOCK เพื่อหยุดทุกการกระทำในจังหวะสำคัญชั่วคราว / ใช้ BEYOND TIME FIELD เพื่อสร้างอาณาเขตเวลาที่เร่งจังหวะฟื้นตัวของพันธมิตรหลายคน ลดเวลารอของทักษะโดยไม่ลบต้นทุนของพลัง",
+        "Lock a target's movement or action for a short moment / make enemies freeze in rhythm to create openings / use TIME LOCK to temporarily halt all actions at a critical instant / use BEYOND TIME FIELD to create a temporal field that accelerates the recovery rhythm of multiple allies, shortening skill waiting time without erasing the cost of power",
+      ],
+      [
+        4,
+        "ANGEL OF TIME",
+        "ตัดช่วงเวลาสั้น ๆ ออกจากความต่อเนื่องของเป้าหมาย / ศัตรูเหมือนข้ามบางช่วงจนเสียจังหวะหนัก / ระบบหรือร่างกายเกิด temporal glitch / ใช้ TIME FRACTURE เพื่อตัดช่วงเวลาออกจากลำดับ ทำให้เป้าหมายสับสนและขาดความต่อเนื่อง",
+        "Cut short moments out of a target's continuity / make enemies feel as if they skipped certain frames, causing severe disruption / systems or bodies suffer temporal glitches / use TIME FRACTURE to remove moments from sequence, causing confusion and broken continuity",
+      ],
+      [
+        3,
+        "SOVEREIGN OF TIME",
+        "ทำให้ลำดับก่อนหลังของเหตุการณ์ในเป้าหมายพัง / จักรกลทำขั้นตอนผิดลำดับจนพัง / คนกระทำไม่ต่อเนื่องหรือเสียลำดับการตอบสนอง / ใช้ TEMPORAL COLLAPSE เพื่อทำให้ระบบหรือเครื่องจักรทำงานผิดขั้นตอนจนพังทลายเอง",
+        "Collapse the before-and-after order of events within a target / machinery performs steps out of order until it breaks / living beings lose continuity in action or response / use TEMPORAL COLLAPSE to make systems or machines fail through broken sequence",
+      ],
+      [
+        2,
+        "WORLD TIME LORD",
+        "เร่งเวลาของพื้นที่ในขอบเขตอำนาจ / ทำให้เมือง โครงสร้าง เครื่องจักร และสิ่งก่อสร้างเสื่อมสภาพราวกับผ่านกาลเวลายาวนาน / ใช้ AGE ACCELERATION เพื่อเร่งเวลาของพื้นที่อย่างรุนแรง / ทำให้ระบบอารยธรรมในเขตอำนาจเสื่อมสลายจากอายุที่ถูกเร่ง",
+        "Accelerate time across an area within their authority / make cities, structures, machines, and constructs decay as if long ages have passed / use AGE ACCELERATION to violently accelerate the time of an area / make systems of civilization within their authority crumble through accelerated age",
+      ],
+      [
+        1,
+        "PRIMORDIAL TIME DEITY",
+        "ควบคุมลำดับของการเกิดเหตุในขอบเขตอำนาจ / ตัดผลสืบเนื่องของเหตุการณ์ศัตรูออกจากเส้นเวลาปัจจุบัน / ทำให้ผลลัพธ์ของเหตุการณ์นั้นไม่สามารถส่งต่อมายังปัจจุบันได้ / ใช้ TIMELINE SEVER เพื่อตัดเหตุการณ์ออกจากกระแสเวลาที่เชื่อมต่อกับปัจจุบัน โดยไม่ใช่การลบความจริงว่าเหตุการณ์นั้นไม่เคยมีอยู่",
+        "Control the order in which events occur within their authority / sever the consequences of enemy events from the current timeline / prevent the results of those events from continuing into the present / use TIMELINE SEVER to cut an event from the temporal flow connected to the present, without rewriting truth as if it never existed",
+      ],
+    ],
+    ascensionTH:
+      "Level 0 คือ TIME — ตัวเส้นทางแห่งกาลเวลาโดยสมบูรณ์ ไม่ได้เร่ง หน่วง หยุด หรือตัดเหตุการณ์อีกต่อไป แต่กลายเป็นแนวคิดของกาลเวลาที่ทุกเหตุการณ์ต้องไหลผ่าน อดีต ปัจจุบัน อนาคต จังหวะ อายุ และผลสืบเนื่องล้วนสะท้อนอยู่ในเส้นทางนี้ สิ่งที่หลงเหลืออยู่ไม่ใช่มนุษย์ แต่เป็นเศษจังหวะ ความทรงจำที่ไหลไม่สิ้นสุด และเสียงของเข็มเวลาที่ไม่มีวันหยุดเดิน",
+    ascensionEN:
+      "Level 0 is TIME — the complete Path of time itself. They no longer accelerate, delay, stop, or sever events; they become the concept of time through which all events must flow. Past, present, future, rhythm, age, and consequence all echo within this Path. What remains is no longer human, but fragments of rhythm, memories flowing without end, and the sound of clock hands that never cease to move.",
+  },
+  Fate: {
+    image: "/images/paths/fate-banner.png",
+    accent: "from-fuchsia-400/25 via-violet-500/20 to-yellow-200/10",
+    level0Name: "FATE",
+    titleTH: "เส้นทางแห่งโชคชะตา",
+    titleEN: "Path of Fate",
+    subtitleTH: "ดวงดาว เส้นด้ายกรรม ความเป็นไปได้ โชค ความซวย และผลลัพธ์",
+    subtitleEN: "Stars, karmic threads, possibility, luck, misfortune, and outcome",
+    quoteTH: "โชคชะตาไม่ใช่เรื่องบังเอิญ มันเป็นเส้นทาง... ที่ข้าเลือกจะให้มันเกิดขึ้นหรือไม่เท่านั้น",
+    quoteEN: "Fate is not coincidence. It is a path... and I decide whether it is allowed to happen.",
+    authority: "Fate • Possibility • Karma • Misfortune • Destiny Thread • Outcome • Cosmic Omen",
+    conceptTitle: "Thread of Possibility",
+    conceptTH:
+      "Fate คือเส้นทางที่แตกแขนงจาก Astronomy โดยมีรากอยู่ในดวงดาว จังหวะจักรวาล และเส้นทางความเป็นไปได้ ผู้ใช้เส้นทางนี้ไม่ได้ควบคุมเวลา พื้นที่ หรือความจริงโดยตรง แต่บิดทิศทางที่เหตุการณ์อาจไหลไป เปลี่ยนโชค ความซวย กรรม และผลลัพธ์ให้เอนเอียงตามเจตจำนงของตน Fate ไม่ใช่การเทเลพอร์ต ไม่ใช่การเขียนความจริงใหม่ และไม่ใช่การลบการมีอยู่ แต่มันคือการจับเส้นด้ายของความเป็นไปได้ แล้วดึงให้ศัตรูเดินไปสู่ทางเลือกที่เลวร้ายที่สุดเท่าที่เงื่อนไขอนุญาต",
+    conceptEN:
+      "Fate is a Path branching from Astronomy, rooted in stars, cosmic rhythm, and the paths of possibility. Its users do not directly control time, space, or truth; they twist the direction in which events may flow, tilting luck, misfortune, karma, and outcomes toward their will. Fate is not teleportation, not rewriting truth, and not erasing existence. It is the act of grasping the threads of possibility and pulling enemies toward the worst available outcome their conditions allow.",
+    sequences: [
+      [
+        9,
+        "STAR OBSERVER",
+        "สังเกตตำแหน่งดวงดาว / รับรู้การไหลของพลังจักรวาล / เพิ่มสัญชาตญาณการต่อสู้ / เริ่มสัมผัสลางของความเป็นไปได้",
+        "Observe stellar positions / sense cosmic energy flow / enhance combat instincts / begin sensing omens of possibility",
+      ],
+      [
+        8,
+        "STAR ATTUNER",
+        "ประสานกับจังหวะจักรวาล / เพิ่มความแม่นยำ / เสริมเสถียรภาพของพลัง / ใช้พลังได้ต่อเนื่องและมีประสิทธิภาพมากขึ้น",
+        "Synchronize with cosmic rhythm / increase precision / improve stability / sustain power more efficiently",
+      ],
+      [
+        7,
+        "FATE TWISTER",
+        "เปลี่ยนผลลัพธ์ของเหตุการณ์ขนาดเล็ก / สลับความซวยจากตนเองไปยังวัตถุหรือพื้นที่รอบข้าง / บิดทิศทางโชคร้ายให้สะท้อนกลับ / เริ่มควบคุมเส้นด้ายกรรมรอบตัว",
+        "Twist the outcome of small events / shift misfortune from oneself onto nearby objects or areas / bend the direction of bad luck back toward its source / begin controlling nearby karmic threads",
+      ],
+      [
+        6,
+        "FATE MAGE",
+        "กำหนดผลลัพธ์ระยะสั้นภายใต้เงื่อนไขที่เป็นไปได้ / สร้างเงื่อนไขกรรมเพื่อผูกมัดศัตรู / ส่งความเสียหายหรือความซวยผ่านเส้นกรรมไปหาเป้าหมาย / โจมตีจากเส้นทางผลลัพธ์ที่หลบเลี่ยงได้ยาก",
+        "Set short-term outcomes under possible conditions / create karmic conditions to bind enemies / send damage or misfortune through karmic threads toward a target / attack through outcome paths that are difficult to avoid",
+      ],
+      [
+        5,
+        "FATE DOMINATOR",
+        "สร้างเขตล็อกชะตาที่บีบเส้นทางผลลัพธ์ในพื้นที่ / ศัตรูในเขตอำนาจหลบเลี่ยงความซวยได้ยากขึ้น / บีบอัดโชคร้ายเพื่อกดทับเป้าหมาย / ควบคุมความน่าจะเป็นของสนามรบภายในขอบเขตอำนาจ",
+        "Create a Fate-Lock Field that compresses outcome paths within an area / make it harder for enemies inside the domain to avoid misfortune / condense bad luck to suppress targets / control battlefield probability within their authority",
+      ],
+      [
+        4,
+        "ANGEL OF FATE",
+        "ร่างกายเชื่อมกับเส้นกรรมและความเป็นไปได้ / การโจมตีทางกายภาพมีโอกาสพลาด บิดเบี้ยว หรือถูกผลักไปยังผลลัพธ์ที่ไม่สมบูรณ์ / สร้างรอยแยกแห่งชะตาเพื่อโจมตีผ่านเส้นทางกรรม / เกราะปกติป้องกันได้ยากหากเงื่อนไขกรรมถูกล็อกไว้แล้ว",
+        "The body becomes linked with karmic threads and possibility / physical attacks may miss, distort, or be pushed into incomplete outcomes / create rifts of fate to attack through karmic pathways / ordinary armor struggles to defend once karmic conditions have been locked",
+      ],
+      [
+        3,
+        "SOVEREIGN OF FATE",
+        "สลับชะตากรรมของกองทัพหรือสิ่งก่อสร้างในขอบเขตอำนาจ / ตัดเส้นด้ายชีวิตบางส่วนให้แยกออกจากผลลัพธ์ที่ควรได้รับ / สร้างคุกชะตากรรมที่จำกัดทางเลือกของศัตรูอย่างรุนแรง / ปรับโครงสร้างความเป็นไปได้โดยไม่ใช่การบิดความจริงโดยตรง",
+        "Exchange the fates of armies or structures within their authority / cut portions of life threads away from the outcomes they should receive / create prisons of fate that severely restrict enemy choices / reshape possibility structures without directly rewriting truth",
+      ],
+      [
+        2,
+        "WORLD FATE LORD",
+        "ควบคุมกระแสกรรมระดับภูมิภาคในขอบเขตอำนาจ / พับเส้นทางผลลัพธ์เพื่อยืดหรือเร่งความล่มสลายของเมืองหรือกองทัพ / เคลื่อนผู้คนจำนวนมากผ่านเส้นทางกรรมที่ถูกกำหนดไว้โดยไม่ใช่การเทเลพอร์ตเชิงมิติ / สร้างภัยพิบัติกรรมที่ทำให้ผลลัพธ์เลวร้ายถาโถมใส่เป้าหมาย",
+        "Control regional-scale karmic currents within their authority / fold outcome paths to delay or accelerate the collapse of cities or armies / move large numbers of people through predetermined karmic paths without spatial teleportation / create karmic disasters that cause unfavorable outcomes to crash down upon targets",
+      ],
+      [
+        1,
+        "PRIMORDIAL FATE DEITY",
+        "ควบคุมเส้นทางของความเป็นไปได้และขอบเขตชะตากรรมในขอบเขตอำนาจ / ปิดทางเลือกอื่นจนศัตรูเหลือเพียงผลลัพธ์ที่หลีกเลี่ยงแทบไม่ได้ / สร้างหรือทำลายเส้นทางขนานของชะตาโดยไม่ใช่การลบการมีอยู่ / การโจมตีคือการตัดเป้าหมายออกจากเส้นทางกรรมที่ช่วยให้มันรอด",
+        "Control the paths of possibility and the boundaries of fate within their authority / close off alternate choices until enemies are left with an outcome that is almost impossible to avoid / create or destroy parallel paths of fate without erasing existence / attack by severing the target from the karmic paths that would allow it to survive",
+      ],
+    ],
+    ascensionTH:
+      "Level 0 คือ FATE — ตัวเส้นทางแห่งโชคชะตาโดยสมบูรณ์ ไม่ได้บิดโชค ความซวย หรือความเป็นไปได้อีกต่อไป แต่กลายเป็นแนวคิดของเส้นทางที่ทุกผลลัพธ์อาจไหลไป ทุกทางเลือก ทุกลางบอกเหตุ ทุกกรรม และทุกความเป็นไปได้ล้วนเป็นเส้นด้ายในผืนผ้าของชะตา สิ่งที่หลงเหลืออยู่ไม่ใช่มนุษย์ แต่เป็นเศษเจตจำนง ลางร้าย และนิ้วที่ยังคงดึงด้ายแห่งผลลัพธ์อย่างเงียบงัน",
+    ascensionEN:
+      "Level 0 is FATE — the complete Path of destiny itself. They no longer twist luck, misfortune, or possibility; they become the concept of the paths through which all outcomes may flow. Every choice, omen, karma, and possibility becomes a thread within the weave of destiny. What remains is no longer human, but fragments of will, ill omens, and fingers that continue to pull the threads of outcome in silence.",
+  },
+  "Chaos-Space": {
+    image: "/images/paths/chaos-space-banner.png",
+    accent: "from-fuchsia-500/25 via-indigo-600/20 to-cyan-300/10",
+    level0Name: "CHAOS-SPACE",
+    titleTH: "เส้นทางแห่งโกลาหล-มิติ",
+    titleEN: "Path of Chaos-Space",
+    subtitleTH: "มิติ ระยะทาง รอยแยก ความไม่เสถียร และโกลาหลของพื้นที่",
+    subtitleEN: "Dimension, distance, rifts, instability, and spatial chaos",
+    quoteTH: "ระยะทางไม่มีอยู่จริง มีเพียงมิติ...ที่ยังไม่ถูกบิดเบือนเท่านั้น",
+    quoteEN: "Distance does not truly exist. There are only dimensions... that have not yet been distorted.",
+    authority: "Chaos-Space • Rift • Distance • Dimension • Instability • Spatial Collapse • Fracture",
+    conceptTitle: "Fractured Distance",
+    conceptTH:
+      "Chaos-Space คือเส้นทางแห่งมิติที่ไม่เสถียร ระยะทางที่ถูกบิดเบือน และความโกลาหลของพื้นที่ ผู้ใช้เส้นทางนี้ไม่ได้เพียงวาร์ปหรือเปิดพอร์ทัล แต่ทำให้ตำแหน่ง ทิศทาง แรงปะทะ และโครงสร้างของพื้นที่สูญเสียความแน่นอน เมื่อ Chaos เข้าปะปนกับ Space พื้นที่ที่ควรมีระเบียบจะเริ่มรวน ระยะทางอาจขัดแย้งกับตัวเอง ระบบจักรกลอาจทำงานผิดเพราะตำแหน่งภายในไม่ตรงกัน และวัตถุอาจแตกออกจากความไม่เสถียรของมิติ Chaos-Space ไม่ใช่ Time ที่ควบคุมเวลา ไม่ใช่ Fate ที่บิดผลลัพธ์ ไม่ใช่ Truth ที่เขียนความจริง และไม่ใช่ Darkness ที่ลบการมีอยู่ แต่มันคืออำนาจที่ทำให้พื้นที่ มิติ และระยะทางกลายเป็นโกลาหล Sacred Realm หรือ Authority ระดับใกล้เคียงสามารถต้าน ปิดกั้น หรือบิดผลของ Chaos-Space ได้",
+    conceptEN:
+      "Chaos-Space is the Path of unstable dimensions, distorted distance, and spatial chaos. Its users do not merely warp or open portals; they make position, direction, impact, and spatial structure lose certainty. When Chaos merges with Space, ordered areas begin to break down. Distance may contradict itself, machinery may fail because internal positions no longer align, and objects may fracture from dimensional instability. Chaos-Space is not Time that controls temporal flow, not Fate that bends outcomes, not Truth that writes reality, and not Darkness that erases existence. It is the authority that turns space, dimension, and distance into chaos. Sacred Realms or Authority of a comparable level can resist, seal, or distort the effects of Chaos-Space.",
+    sequences: [
+      [
+        9,
+        "RIFT SENSOR",
+        "มองเห็นรอยแยกของมิติ / รับรู้จุดที่มิติอ่อนตัว / หลบการโจมตีด้วยการขยับมิติเล็กน้อย / เริ่มสัมผัสความไม่เสถียรของพื้นที่",
+        "See dimensional rifts / sense points where space has weakened / evade attacks through slight spatial shifts / begin sensing spatial instability",
+      ],
+      [
+        8,
+        "SPACE TWISTER",
+        "บิดระยะทางระยะสั้น ทำให้ไกลกลายเป็นใกล้หรือใกล้กลายเป็นไกล / เพิ่มความเร็วในการเคลื่อนที่ / หลบหรือสวนกลับได้แม่นยำ / ทำให้ทิศทางของการโจมตีผิดเพี้ยนเล็กน้อย",
+        "Distort short distances, making far become near or near become far / increase movement speed / evade or counter with precision / slightly distort the direction of attacks",
+      ],
+      [
+        7,
+        "RIFT OPENER",
+        "เปิดประตูมิติขนาดเล็ก / วาร์ประยะสั้น / เริ่มฉีกพื้นที่จริง / ใช้ SPATIAL CUT เพื่อตัดมิติเป็นแนวเส้น ทำให้วัตถุ โลหะ หรือจักรกลถูกตัดขาด",
+        "Open small dimensional gates / perform short-range warps / begin tearing real space / use SPATIAL CUT to slice space in a line, cutting objects, metal, or machinery apart",
+      ],
+      [
+        6,
+        "CHAOS-SPACE MAGE",
+        "วาร์ประยะกลาง / เคลื่อนที่ต่อเนื่องหลายจุด / เปิดพอร์ทัลชั่วคราว / ใช้ RIFT DISRUPTION เพื่อบิดโครงสร้างมิติรอบเป้าหมาย ทำให้ระบบหรือจักรกลแตก แยก หรือทำงานผิดพลาด / ใช้ CHAOS DISTORTION เพื่อทำให้ระยะทาง ตำแหน่ง ทิศทาง และแรงปะทะรอบเป้าหมายผิดเพี้ยนพร้อมกัน",
+        "Warp across medium range / move continuously between multiple points / open temporary portals / use RIFT DISRUPTION to distort dimensional structure around a target, causing systems or machinery to split, fracture, or malfunction / use CHAOS DISTORTION to distort distance, position, direction, and impact around the target at once",
+      ],
+      [
+        5,
+        "CHAOS-SPACE DOMINATOR",
+        "สร้างเขตแดนโกลาหล-มิติรอบตัว / ศัตรูเคลื่อนไหวผิดเพี้ยนเพราะกฎพื้นที่ไม่เสถียร / ควบคุมทิศทางการไหลของมิติ / ใช้ DIMENSIONAL CRUSH เพื่อบีบพื้นที่ให้ยุบตัว กดทับศัตรูหรือจักรกลจนแตกสลาย / ใช้ ENTROPY RIFT เพื่อเปิดรอยแยกโกลาหลที่ทำให้เกราะ ระบบ และพลังที่กำลังรวมตัวสูญเสียเสถียรภาพ",
+        "Create a Chaos-Space domain around the user / make enemies move incorrectly as spatial laws destabilize / control the direction of dimensional flow / use DIMENSIONAL CRUSH to collapse space inward, crushing enemies or machinery / use ENTROPY RIFT to open a chaotic rift that destabilizes armor, systems, and gathered power",
+      ],
+      [
+        4,
+        "ANGEL OF CHAOS-SPACE",
+        "ร่างกายเชื่อมกับรอยแยกและพื้นที่ไม่เสถียร / วาร์ปได้อิสระภายในขอบเขตอำนาจ / เปิดรอยแยกขนาดใหญ่ / ผ่านสิ่งกีดขวางทั่วไปด้วยการเลื่อนตำแหน่งผ่านรอยแยกมิติ แต่ไม่สามารถข้ามกฎปิดผนึกหรือ Authority ที่สูงกว่าได้ง่าย / ใช้ RIFT GATE เพื่อเปิดประตูมิติชั่วคราวพาคนหรือสิ่งของไปยังอีกจุดหนึ่ง",
+        "The body links with rifts and unstable space / warp freely within their authority / open large rifts / pass through ordinary obstacles by shifting through dimensional cracks, but cannot easily bypass sealing laws or higher Authority / use RIFT GATE to open temporary gates that move people or objects to another point",
+      ],
+      [
+        3,
+        "SOVEREIGN OF CHAOS-SPACE",
+        "ควบคุมมิติและความโกลาหลของพื้นที่ในบริเวณกว้าง / วาร์ปหลายจุดพร้อมกัน / เชื่อมรอยแยกเป็นเครือข่าย / ใช้ MASS RIFT เพื่อเปิดหลายพอร์ทัลพร้อมกัน เคลื่อนย้าย ดึง ผลัก หรือฉีกเป้าหมายหลายจุด / ใช้ CHAOS COLLAPSE เพื่อทำให้กฎระยะทางในพื้นที่ขัดแย้งกันเองจนสิ่งมีชีวิตเสียสมดุล จักรกลสั่งงานผิด และวัตถุแตกเพราะตำแหน่งภายในไม่ตรงกัน",
+        "Control dimension and spatial chaos across a wide area / warp multiple points at once / connect rifts into a network / use MASS RIFT to open many portals at once, moving, pulling, pushing, or tearing multiple targets / use CHAOS COLLAPSE to make distance laws contradict themselves, causing living beings to lose balance, machinery to misfire, and objects to fracture as internal positions fail to align",
+      ],
+      [
+        2,
+        "WORLD CHAOS-SPACE LORD",
+        "วาร์ประยะไกลมหาศาลในขอบเขตอำนาจ / เปิดมิติดาวบริวารบางส่วน / เคลื่อนย้ายเมืองหรือกองทัพข้ามพื้นที่ผ่านโครงสร้างมิติที่ควบคุมไว้ / ใช้ DIMENSIONAL TRANSFER เพื่อย้ายพื้นที่ขนาดใหญ่หรือกองกำลังจำนวนมากไปยังจุดหมาย / ใช้ FRACTURED REALM เพื่อสร้างเขตแดนที่พื้นที่ไม่มีความเสถียร ใกล้กลายเป็นไกล ซ้ายกลายเป็นบน การโจมตีเดินทางผิดเส้นทาง และพอร์ทัลสุ่มเปิดปิด",
+        "Perform vast long-range warps within their authority / partially open satellite dimensions / move cities or armies across space through controlled dimensional structure / use DIMENSIONAL TRANSFER to relocate large areas or massive forces / use FRACTURED REALM to create a domain where space loses stability: near becomes far, left becomes above, attacks travel along wrong paths, and portals open and close unpredictably",
+      ],
+      [
+        1,
+        "PRIMORDIAL CHAOS-SPACE DEITY",
+        "ควบคุมโครงสร้างของมิติและความโกลาหลของพื้นที่ในขอบเขตอำนาจ / ฉีก รวม หรือสร้างมิติใหม่ / ใช้ ABSOLUTE WARP เพื่อวาร์ปผ่านโครงสร้างมิติได้เกือบอิสระ แต่ไม่สามารถทะลุ Authority หรือ Sacred Realm ระดับสูงกว่าได้ง่าย / ใช้ REALITY TEAR เพื่อฉีกโครงสร้างพื้นที่และมิติที่รองรับพื้นที่นั้น ทำให้เมือง ดินแดน หรือโลกบางส่วนแตกออกเป็นรอยแยกโกลาหล",
+        "Control dimensional structure and spatial chaos within their authority / tear, merge, or create new dimensions / use ABSOLUTE WARP to move through dimensional structure with near freedom, but cannot easily bypass higher Authority or Sacred Realms / use REALITY TEAR to rip apart the spatial and dimensional structure supporting an area, causing cities, lands, or parts of a world to fracture into chaotic rifts",
+      ],
+    ],
+    ascensionTH:
+      "Level 0 คือ CHAOS-SPACE — ตัวเส้นทางแห่งโกลาหลและมิติโดยสมบูรณ์ ไม่ได้วาร์ป เปิดรอยแยก หรือบิดระยะทางอีกต่อไป แต่กลายเป็นแนวคิดของพื้นที่ที่สูญเสียความแน่นอน ระยะทางที่ไม่อาจวัดได้ และมิติที่ไม่อาจคงเสถียรภาพ ทุกตำแหน่ง ทุกทิศทาง และทุกโครงสร้างอาจแตกออกเป็นความโกลาหล สิ่งที่หลงเหลืออยู่ไม่ใช่มนุษย์ แต่เป็นเศษรอยแยก เสียงแตกของพื้นที่ และความว่างเปล่าที่ไม่เคยอยู่ที่เดิม",
+    ascensionEN:
+      "Level 0 is CHAOS-SPACE — the complete Path of chaos and dimension itself. They no longer warp, open rifts, or distort distance; they become the concept of space losing certainty, distance that cannot be measured, and dimensions that cannot remain stable. Every position, direction, and structure may fracture into chaos. What remains is no longer human, but fragments of rifts, the cracking sound of space, and emptiness that never stays in the same place.",
   },
 };
 function slugify(name) {
