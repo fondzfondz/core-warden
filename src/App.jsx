@@ -1752,7 +1752,7 @@ function videoPathForPath(pathName) {
 }
 
 export default function CoreWardenWebsite() {
-  const [lang, setLang] = useState("th");
+  const [lang, setLang] = useState("en");
   const [activePillar, setActivePillar] = useState("Primordials");
   const [selectedPath, setSelectedPath] = useState(null);
   const [selectedCharacter, setSelectedCharacter] = useState(null);
