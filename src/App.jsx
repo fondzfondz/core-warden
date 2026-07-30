@@ -689,7 +689,7 @@ const PATH_ARCHIVES = {
       [
         2,
         "WORLD WISDOM LORD",
-        "เข้าใจโครงสร้างพลังทุกเส้นทางในระดับโลกภายในขอบเขตอำนาจ / ใช้พลังได้เกือบทุกประเภทในรูปแบบตีความที่ไม่เต็ม 100% / คำนวณความเป็นไปได้จำนวนมหาศาล / ทำให้พลังของศัตรูถูกตอบโต้ก่อนจะ发挥ผลเต็มที่",
+        "เข้าใจโครงสร้างพลังทุกเส้นทางในระดับโลกภายในขอบเขตอำนาจ / ใช้พลังได้เกือบทุกประเภทในรูปแบบตีความที่ไม่เต็ม 100% / คำนวณความเป็นไปได้จำนวนมหาศาล / ทำให้พลังของศัตรูถูกตอบโต้ก่อนจะแสดงผลเต็มที่",
         "Understand the power structures of all Paths on a world scale within their authority / use almost every type of power in interpreted forms that are not 100% complete / calculate vast numbers of possibilities / counter enemy powers before they can fully take effect",
       ],
       [
